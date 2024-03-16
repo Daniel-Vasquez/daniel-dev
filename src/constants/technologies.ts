@@ -7,7 +7,6 @@ export const TECHNOLOGIES = [
   {
     name: "Tailwind CSS",
     description: "Construcción de interfaces web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de estilos y la generación de páginas web responsivas, lo que me permite crear aplicaciones web rápidas y eficientes.",
-    link: "https://salinasabogados.mx"
   },
   {
     name: "React",
@@ -31,5 +30,10 @@ export const TECHNOLOGIES = [
   {
     name: "Python",
     description: "Cuento con experiencia en Python, dominando conceptos como el entorno virtual, list comprehensions, high order functions y módulos. Esto me ha permitido abordar proyectos desde diferentes perspectivas y ofrecer soluciones eficientes."
+  },
+  {
+    name: "Shopify",
+    description: "He trabajado con Shopify, abarcando temas como la creación de temas personalizados, la gestión de productos y la configuración de aplicaciones. Estos conocimientos me han permitido crear componentes eficientes y atractivas para los usuarios.",
+    link: "https://mascaradelatex.com/pages/mayoreo"
   }
 ]

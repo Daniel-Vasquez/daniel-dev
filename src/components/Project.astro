@@ -4,6 +4,7 @@ interface Props {
   description: string;
   href: string;
   img: string;
+  gif: string;
 };
 
 const { title, description, href, img } = Astro.props;
@@ -13,7 +14,7 @@ const { title, description, href, img } = Astro.props;
   <div class="relative">
     <a 
       href={href}
-      transition:name=`media-image-${img}`
+      transition:name=`media-image-${img.split('.')[0]}`
     >
       <img
         class="w-full h-60"

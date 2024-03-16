@@ -1,4 +1,22 @@
 import { type ProjectType } from "@/types/projects";
+import lawyerImg from "../images/lawyer.png"
+import lawyerGif from "../images/lawyer.gif"
+import blocImg from "../images/bloc.png"
+import blocGif from "../images/bloc.gif"
+import shoppingImg from "../images/shopping-cart.png"
+import shoppingGif from "../images/shopping-cart.gif"
+import instaImg from "../images/insta.png"
+import instaGif from "../images/insta.gif"
+import ticTacToeImg from "../images/tic-tac-toe.png"
+import ticTacToeGif from "../images/tic-tac-toe.gif"
+import timerImg from "../images/timer.png"
+import timerGif from "../images/timer.gif"
+import pokedexImg from "../images/pokedex.png"
+import pokedexGif from "../images/pokedex.gif"
+import simuladorImg from "../images/mi-credito.png"
+import simuladorGif from "../images/mi-credito.gif"
+import petsBattleImg from "../images/pets-battle.png"
+import petsBattleGif from "../images/pets-battle.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -29,7 +47,8 @@ export const PROJECTS: ProjectType[] = [
       "Tailwind CSS",
       "HTML",
     ],
-    img: "./lawyer.gif",
+    img: `${lawyerImg.src}`,
+    gif: `${lawyerGif.src}`,
     link: "https://www.salinasabogados.mx/",
     repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
   },
@@ -66,7 +85,8 @@ export const PROJECTS: ProjectType[] = [
       "Tailwind CSS",
       "Dark mode",
     ],
-    img: "./bloc.gif",
+    img: `${blocImg.src}`,
+    gif: `${blocGif.src}`,
     link: "https://notes-deploy-client.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/notes-deploy",
   },
@@ -91,7 +111,8 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
       "CSS",
     ],
-    img: "./shopping-cart.gif",
+    img: `${shoppingImg.src}`,
+    gif: `${shoppingGif.src}`,
     link: "https://shopping-cart-wine-two.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/shopping-cart",
   },
@@ -116,7 +137,8 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
       "CSS",
     ],
-    img: "./insta.gif",
+    img: `${instaImg.src}`,
+    gif: `${instaGif.src}`,
     link: "https://instagram-dani.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/instagram",
   },
@@ -140,7 +162,8 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
       "CSS",
     ],
-    img: "./tic-tac-toe.gif",
+    img: `${ticTacToeImg.src}`,
+    gif: `${ticTacToeGif.src}`,
     link: "https://tic-tac-toe-daniel-vasquez.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/tic-tac-toe",
   },
@@ -164,7 +187,8 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
       "CSS",
     ],
-    img: "./timer.gif",
+    img: `${timerImg.src}`,
+    gif: `${timerGif.src}`,
     link: "https://timer-coral-zeta.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/timer",
   },
@@ -189,7 +213,8 @@ export const PROJECTS: ProjectType[] = [
       "CSS",
       "TypeScript"
     ],
-    img: "./pokedex.gif",
+    img: `${pokedexImg.src}`,
+    gif: `${pokedexGif.src}`,
     link: "https://pokedex-beryl-one.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/pokedex",
   },
@@ -213,7 +238,8 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
       "CSS",
     ],
-    img: "./mi-credito.gif",
+    img: `${simuladorImg.src}`,
+    gif: `${simuladorGif.src}`,
     link: "https://mi-credito.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/mi-credito",
   },
@@ -241,7 +267,8 @@ export const PROJECTS: ProjectType[] = [
       "CSS",
       "HTML"
     ],
-    img: "./pets-battle.gif",
+    img: `${petsBattleImg.src}`,
+    gif: `${petsBattleGif.src}`,
     link: "https://daniel-vasquez.github.io/pet-battle/",
     repo: "https://github.com/Daniel-Vasquez/pet-battle",
   },

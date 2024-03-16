@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import instaImg from "@/images/insta.png"
 
 const INFO = [
   " Manejo de estado.",
@@ -24,13 +25,14 @@ const INFO = [
 
     <div class="flex flex-col gap-5 lg:flex-row">
       <a
+      class="rounded-lg aspect-video"
         href="https://instagram-dani.vercel.app/"
         target="_black"
         title="Visitar"
       >
         <img
-          class="rounded"
-          src="./insta-1.png"
+          class="rounded aspect-video"
+          src={instaImg.src}
           alt="Instagram"
         />
       </a>

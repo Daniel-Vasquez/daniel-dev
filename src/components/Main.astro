@@ -3,34 +3,57 @@ import { LogoWhatsapp } from "@/components/icons/LogoWhatsapp";
 import { LogoGithub } from "@/components/icons/LogoGithub";
 import { LogoDownload } from "@/components/icons/LogoDownload";
 import { LogoLinkedin } from "@/components/icons/LogoLinkedin";
-
+import danielImg from "../images/daniel-vasquez.jpg"
 
 const PUBLIC_MY_PHONE = import.meta.env.PUBLIC_MY_PHONE;
 const PUBLIC_GITHUB_LINK = import.meta.env.PUBLIC_GITHUB_LINK;
 const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
-
-
 ---
 <main class="container max-w-7xl m-auto mb-24 mt-7 flex items-center justify-evenly gap-7 flex-wrap h-auto">
   <div class="w-52 h-72 rounded-md border-2 border-border ">
-    <img
-      class="aspect-square w-full h-full transform translate-x-0 translate-y-0 rounded-md shadow-md lg:translate-x-7 lg:translate-y-7"
-      src="./daniel-vasquez.jpg"
-      alt="Daniel Vásquez, Desarrollador Full Stack."
-    />
+    <a
+      href={PUBLIC_LINKEDIN_LINK}
+      target="_blank"
+      title="Linkedin"
+      class="aspect-square hover:scale-95"
+    >
+      <img
+        class="aspect-square w-full h-72 transform translate-x-0 translate-y-0 rounded-md shadow-md transition lg:translate-x-7 lg:translate-y-7 hover:scale-105"
+        src={danielImg.src}
+        alt="Daniel Vásquez, Desarrollador Full Stack."
+      />
+    </a>
   </div>
 
-  <div class="max-w-xl flex flex-col justify-center gap-3 translate-y-0 lg:translate-y-7">
+  <div class="max-w-3xl flex flex-col justify-center gap-3 translate-y-0 lg:translate-y-7">
     <div>
-      <h1 class="text-3xl font-bold text-golden md:text-4xl">
-        Daniel Vásquez,
-      </h1>
-      <h1 class="text-xl font-bold text-white md:text-2xl">
-        Desarrollador Full Stack.
+      <h1 class="text-3xl font-bold text-center text-golden md:text-4xl md:text-start">
+        Daniel Vásquez, <span class="text-xl font-bold text-white">Desarrollador Full Stack.</span>
       </h1>
     </div>
-    <p class="text-xl text-white">
-      Poseo una sólida experiencia en programación de alrededor de un dos años, durante el cual he trabajado en proyectos desafiantes utilizando lenguajes de programación como Python y herramientas de servicios en la nube de AWS, como: S3 y Cloudwatch. Además, he trabajado con los hooks de React, tales como: useState, useEffect y useContext. Tengo expreriencia trabajando con Astro, tailwind, redux y redux toolkit. Soy apasionado por el diseño web y siempre estoy en busca de nuevas oportunidades para aprender y mejorar mis habilidades como desarrollador.
+    <p class="text-xl text-white text-justify">
+      Poseo una sólida experiencia en programación de alrededor de un dos años, 
+      durante el cual he trabajado en proyectos desafiantes utilizando lenguajes 
+      de programación como <span>Javascript</span> con experiencia en 
+      <span class="text-golden font-bold">Shopify</span> y 
+      <span class="text-golden font-bold">liquid</span>.
+    </p>
+    <p class="text-xl text-white text-justify">
+      Con <span class="text-golden font-bold">Python</span> y 
+      herramientas de servicios en la nube de AWS, 
+      como: <span class="text-golden font-bold">S3 y Cloudwatch</span>. 
+      Además, he trabajado con los hooks de 
+      <span class="text-golden font-bold">React</span>, tales como: useState, 
+      useEffect y useContext. Tengo expreriencia trabajando con 
+      <span class="text-golden font-bold">Astro</span>, 
+      <span class="text-golden font-bold">tailwind</span>, 
+      <span class="text-golden font-bold">redux</span> y 
+      <span class="text-golden font-bold">redux toolkit</span>.
+    </p>
+    <p class="text-xl text-white text-justify">
+      Soy apasionado por el diseño web y 
+      siempre estoy en busca de nuevas oportunidades para aprender y mejorar mis 
+      habilidades como desarrollador.
     </p>
     <div class="flex gap-7 justify-center items-center">
       <a

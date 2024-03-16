@@ -4,7 +4,8 @@ export type ProjectType = {
   description: string;
   href: string;
   content: string;
-  img: string;
+  img?: any;
+  gif?: any;
   technologies: Array<string>;
   link: string;
   repo: string;

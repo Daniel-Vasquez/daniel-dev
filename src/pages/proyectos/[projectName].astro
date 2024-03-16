@@ -1,7 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { PROJECTS } from "@/constants/projects";
-// import List from "@/UI/List.astro";
 import { List } from "@/UI/List.jsx";
 
 export async function getStaticPaths() {
@@ -11,27 +10,27 @@ export async function getStaticPaths() {
       title,
       content,
       description,
-      img,
+      gif,
       technologies,
       link,
       repo,
     }) => {
       return {
         params: { projectName },
-        props: { title, content, description, img, technologies, link, repo },
+        props: { title, content, description, gif, technologies, link, repo },
       };
     }
   );
 }
 
-const { title, content, description, img, technologies, link, repo } =
-  Astro.props;
+const { title, content, description, gif, technologies, link, repo } = Astro.props;
+
 ---
 
 <Layout title={title} description={description}>
   <div
     class="container max-w-4xl m-auto mt-7 p-4 flex flex-col justify-center gap-5 mb-20 lg:max-w-6xl"
-    transition:name=`media-image-${img}`
+    transition:name=`media-image-${gif.split('.')[0]}`
   >
     <div class="flex flex-col gap-4 w-full m-auto">
       <h1 class="mb-2 py-2 text-4xl font-bold text-center text-golden border-b-2 border-border">
@@ -39,13 +38,14 @@ const { title, content, description, img, technologies, link, repo } =
       </h1>
       <div>
         <a
+          class="aspect-video"
           href={link}
           target="_blank"
           title="Visitar"
         >
           <img
             class="max-h-96 min-h-52 m-auto rounded-md aspect-video sm:min-h-96"
-            src={img}
+            src={gif}
             alt={title}
           />
         </a>

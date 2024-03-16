@@ -2,7 +2,7 @@ export const EXPERIENCE = [
   {
     name: "Atoms",
     position: "Desarrollador web",
-    skills: "Shopify Liquid y javascript",
+    skills: "Shopify, Liquid y javascript",
     start_date: "Abril 2022",
     end_date: "Noviembre 2022",
     link: "https://www.linkedin.com/company/atomsmx/",
