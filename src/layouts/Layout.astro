@@ -2,6 +2,7 @@
 import { ViewTransitions } from 'astro:transitions';
 import Navbar from "@/components/Navbar.astro";
 import Footer from "@/components/Footer.astro";
+import danielImg from "@/images/daniel-vasquez.jpg"
 
 interface Props {
   title: string;
@@ -23,6 +24,7 @@ const { title, description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description || title} />
+    <meta property="og:image" content={danielImg.src} />
     <title>{title}</title>
     <ViewTransitions />
     
