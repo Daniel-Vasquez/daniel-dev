@@ -1,8 +1,14 @@
 ---
-import { LogoFacebook } from "@/components/icons/LogoFacebook";
-import { LogoInstagram } from "@/components/icons/LogoInstagram";
-const PUBLIC_FACEBOOK_LINK = import.meta.env.PUBLIC_FACEBOOK_LINK;
-const PUBLIC_INSTAGRAM_LINK = import.meta.env.PUBLIC_INSTAGRAM_LINK;
+import { LogoWhatsapp } from "@/components/icons/LogoWhatsapp";
+import { LogoGithub } from "@/components/icons/LogoGithub";
+import { LogoDownload } from "@/components/icons/LogoDownload";
+import { LogoLinkedin } from "@/components/icons/LogoLinkedin";
+
+
+const PUBLIC_MY_PHONE = import.meta.env.PUBLIC_MY_PHONE;
+const PUBLIC_GITHUB_LINK = import.meta.env.PUBLIC_GITHUB_LINK;
+const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
+
 
 ---
 <main class="container max-w-7xl m-auto mb-24 mt-7 flex items-center justify-evenly gap-7 flex-wrap h-auto">
@@ -26,23 +32,41 @@ const PUBLIC_INSTAGRAM_LINK = import.meta.env.PUBLIC_INSTAGRAM_LINK;
     <p class="text-xl text-white">
       Poseo una sólida experiencia en programación de alrededor de un dos años, durante el cual he trabajado en proyectos desafiantes utilizando lenguajes de programación como Python y herramientas de servicios en la nube de AWS, como: S3 y Cloudwatch. Además, he trabajado con los hooks de React, tales como: useState, useEffect y useContext. Tengo expreriencia trabajando con Astro, tailwind, redux y redux toolkit. Soy apasionado por el diseño web y siempre estoy en busca de nuevas oportunidades para aprender y mejorar mis habilidades como desarrollador.
     </p>
-    <div class="flex gap-4 justify-center sm:justify-start">
+    <div class="flex gap-7 justify-center items-center">
       <a
-        class="transition-all hover:scale-90"
-        href={PUBLIC_FACEBOOK_LINK}
+        class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-green-600 font-bold"
+        href={`https://api.whatsapp.com/send?phone=${PUBLIC_MY_PHONE}`}
         target="_blank"
-        title="Facebook"
+        title="Whatsapp"
       >
-        <LogoFacebook className="text-golden w-10" />
+        <LogoWhatsapp className="text-green-600 w-10" />
       </a>
 
       <a
-        class="transition-all hover:scale-90"
-        href={PUBLIC_INSTAGRAM_LINK}
+        class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-purple-600 font-bold"
+        href={PUBLIC_GITHUB_LINK}
         target="_blank"
-        title="Instagram"
+        title="Git Hub"
       >
-        <LogoInstagram className="text-golden w-10" />
+        <LogoGithub className="text-purple-600 w-10" />
+      </a>
+
+      <a
+        class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-blue-400 font-bold"
+        href={PUBLIC_LINKEDIN_LINK}
+        target="_blank"
+        title="Linkedin"
+      >
+        <LogoLinkedin className="w-9 h-9 text-blue-500" />
+      </a>
+
+      <a
+        class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-blue-400 font-bold"
+        href='./CV-Daniel-Vasquez.pdf'
+        download
+        title="Descargar CV"
+      >
+        <LogoDownload className="w-9 h-9 text-orange-600" />
       </a>
     </div>
   </div>
