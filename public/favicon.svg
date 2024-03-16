@@ -1,0 +1,22 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  class="si-glyph si-glyph-law-hammer"
+  viewBox="0 0 17 17"
+>
+  <path
+    fill="#212121"
+    fill-rule="evenodd"
+    d="M14.44 7.389 9.662 2.61l.57-.569-.917-.919-4.247 4.245.92.918.53-.53 1.955 1.954-8.535 8.535.83.829 8.533-8.534 1.994 1.993-.529.531.918.917 4.254-4.253-.917-.918-.581.58Z"
+    class="si-glyph-fill"
+  />
+  <style>
+    path {
+      fill: #000;
+    }
+    @media (prefers-color-scheme: dark) {
+      path {
+        fill: #fff;
+      }
+    }
+  </style>
+</svg>

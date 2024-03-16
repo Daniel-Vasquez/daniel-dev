@@ -1,0 +1,38 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import Navbar from "@/components/Navbar.astro";
+import Footer from "@/components/Footer.astro";
+import { getImage } from "@/utils";
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description, image = getImage("logo.png") } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content={description || title} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description || title} />
+    {image && <meta property="og:image" content={image} />}
+    <title>{title}</title>
+    <ViewTransitions />
+    
+  </head>
+  <body class="bg-blue-medium">
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
+</html>

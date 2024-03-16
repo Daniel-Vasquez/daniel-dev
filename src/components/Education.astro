@@ -1,0 +1,40 @@
+---
+import { EDUCATION } from "@/constants/education";
+
+---
+<section class="bg-blue-light p-5 rounded-xl">
+  <div>
+    <p class="text-white text-3xl text-center font-semibold mb-5 sm:text-start">
+      Educación
+    </p>
+  </div>
+  <div>
+    {EDUCATION.map((element) => (
+      <div class="flex flex-col text-center items-center gap-3 p-2 border-b-2 border-white sm:flex-row sm:text-start">
+        <div class="w-12">
+          <img
+            class="rounded-full"
+            src={element.logo}
+            alt={element.name}
+          />
+        </div>
+        <div>
+          <h4 class="text-blue-600 font-semibold mb-1 underline hover:opacity-80">
+            <a
+              href={ element.link }
+              target="_blank"
+            >
+              {element.name}
+            </a>
+          </h4>
+          <p class="mb-1 text-white">
+            {element.title}
+          </p>
+          <p class="mb-1 text-white">
+            {element.date}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

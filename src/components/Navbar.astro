@@ -1,0 +1,67 @@
+---
+import { DropdownMenu } from "@/components/DropdownMenu";
+import { ROUTES } from "@/constants/routes";
+
+---
+<header
+  id="header"
+  class="p-3 fixed top-0 right-0 left-0 transition-colors duration-500 z-10"
+>
+  <div class="container mx-auto">
+    <div class="flex items-center justify-between border-t-2 border-b-2 border-border py-7">
+      <a href="/">
+        <div class="flex items-center gap-2">
+          <h2 class="text-white text-lg font-bold opacity-80 hover:opacity-100">
+            Daniel Vásquez
+          </h2>
+        </div>
+      </a>
+      <nav class="hidden md:block">
+        <ul class="sm:flex gap-3">
+          {ROUTES.map(({ href, label }) =>
+            <li>
+              <a
+                href={href}
+                class="text-white hover:text-golden transition-colors duration-300"
+              >
+                {label}
+              </a>
+            </li>
+          )}
+        </ul>
+      </nav>
+      <div class="block md:hidden">
+        <DropdownMenu client:idle />
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("scroll", () => {
+    const header = document.getElementById("header");
+    if (header !== null && header !== undefined) {
+      if (window.scrollY > 50) {
+        header.classList.add("bg-blue");
+      } else {
+        header.classList.remove("bg-blue");
+      }
+    }
+  });
+</script>
+
+<style>
+  /* Estilo para el menú desplegable */
+  .submenu {
+    display: none;
+    height: 310px;
+    overflow-y: scroll;
+    min-width: 270px;
+    scrollbar-color: #fbbf24 transparent;
+  }
+
+  /* Mostrar el menú desplegable al hacer hover */
+  .menu:hover .submenu {
+    display: block;
+  }
+</style>
