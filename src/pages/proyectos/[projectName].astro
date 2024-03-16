@@ -1,7 +1,8 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { PROJECTS } from "@/constants/projects";
-import List from "@/UI/List.astro";
+// import List from "@/UI/List.astro";
+import { List } from "@/UI/List.jsx";
 
 export async function getStaticPaths() {
   return PROJECTS.map(
@@ -36,6 +37,19 @@ const { title, content, description, img, technologies, link, repo } =
       <h1 class="mb-2 py-2 text-4xl font-bold text-center text-golden border-b-2 border-border">
         {title.toUpperCase()}
       </h1>
+      <div>
+        <a
+          href={link}
+          target="_blank"
+          title="Visitar"
+        >
+          <img
+            class="max-h-96 min-h-52 m-auto rounded-md aspect-video sm:min-h-96"
+            src={img}
+            alt={title}
+          />
+        </a>
+      </div>
       <div class="flex flex-col gap-3 text-white" set:html={content} />
       <div class="flex gap-4">
         <a
@@ -54,20 +68,12 @@ const { title, content, description, img, technologies, link, repo } =
         </a>
       </div>
     </div>
-    {technologies.length > 0 && (
-      <div class="text-white text-lg">
-        <h2 class="text-2xl font-bold mb-2">
-          Tecnologías utilizadas en el proyecto:
-        </h2>
-        <List listServices={technologies} />
-      </div>
-    )}
-    <div>
-      <img
-        class="max-h-96 min-h-52 m-auto rounded-md aspect-video sm:min-h-96"
-        src={img}
-        alt={title}
-      />
+
+    <div class="text-white text-lg">
+      <h2 class="text-2xl font-bold mb-2 text-center">
+        Tecnologías utilizadas en el proyecto:
+      </h2>
+      <List listTechnologies={technologies} />
     </div>
   </div>
 </Layout>

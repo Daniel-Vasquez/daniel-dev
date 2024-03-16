@@ -60,8 +60,8 @@ export const PROJECTS: ProjectType[] = [
       </p>
     `,
     technologies: [
-      "Node.js",
-      "Express",
+      "Node js",
+      "Express js",
       "React",
       "Tailwind CSS",
       "Dark mode",
