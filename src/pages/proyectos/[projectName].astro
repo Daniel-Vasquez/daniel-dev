@@ -5,21 +5,31 @@ import List from "@/UI/List.astro";
 
 export async function getStaticPaths() {
   return PROJECTS.map(
-    ({ projectName, title, content, description, img, technologies }) => {
+    ({
+      projectName,
+      title,
+      content,
+      description,
+      img,
+      technologies,
+      link,
+      repo,
+    }) => {
       return {
         params: { projectName },
-        props: { title, content, description, img, technologies },
+        props: { title, content, description, img, technologies, link, repo },
       };
     }
   );
 }
 
-const { title, content, description, img, technologies } = Astro.props;
+const { title, content, description, img, technologies, link, repo } =
+  Astro.props;
 ---
 
 <Layout title={title} description={description}>
   <div
-    class="container max-w-4xl m-auto mt-36 p-4 flex flex-col justify-center gap-5 mb-20 lg:max-w-6xl"
+    class="container max-w-4xl m-auto mt-7 p-4 flex flex-col justify-center gap-5 mb-20 lg:max-w-6xl"
     transition:name=`media-image-${img}`
   >
     <div class="flex flex-col gap-4 w-full m-auto">
@@ -27,11 +37,27 @@ const { title, content, description, img, technologies } = Astro.props;
         {title.toUpperCase()}
       </h1>
       <div class="flex flex-col gap-3 text-white" set:html={content} />
+      <div class="flex gap-4">
+        <a
+          href={link}
+          target="_blank"
+          class="bg-golden text-black text-lg font-bold py-2 px-4 rounded-md hover:bg-blue-light hover:text-white"
+        >
+          Visitar
+        </a>
+        <a
+          href={repo}
+          target="_blank"
+          class="bg-golden text-black text-lg font-bold py-2 px-4 rounded-md hover:bg-blue-light hover:text-white"
+        >
+          Ver código
+        </a>
+      </div>
     </div>
     {technologies.length > 0 && (
       <div class="text-white text-lg">
         <h2 class="text-2xl font-bold mb-2">
-          Te podemos apoyar con:
+          Tecnologías utilizadas en el proyecto:
         </h2>
         <List listServices={technologies} />
       </div>

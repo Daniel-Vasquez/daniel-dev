@@ -29,7 +29,9 @@ export const PROJECTS: ProjectType[] = [
       "Tailwind CSS",
       "HTML",
     ],
-    img: "./lawyer-1.png",
+    img: "./lawyer.gif",
+    link: "https://www.salinasabogados.mx/",
+    repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
   },
   {
     title: "Bloc",
@@ -57,8 +59,16 @@ export const PROJECTS: ProjectType[] = [
         márgenes específicos para un diseño visualmente agradable.
       </p>
     `,
-    technologies: [],
-    img: "./bloc-1.png",
+    technologies: [
+      "Node.js",
+      "Express",
+      "React",
+      "Tailwind CSS",
+      "Dark mode",
+    ],
+    img: "./bloc.gif",
+    link: "https://notes-deploy-client.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/notes-deploy",
   },
   {
     title: "Shopping cart",
@@ -81,7 +91,9 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
       "CSS",
     ],
-    img: "./shopping-cart-1.png",
+    img: "./shopping-cart.gif",
+    link: "https://shopping-cart-wine-two.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/shopping-cart",
   },
   {
     title: "Instagram (2020)",
@@ -104,7 +116,9 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
       "CSS",
     ],
-    img: "./insta-1.png",
+    img: "./insta.gif",
+    link: "https://instagram-dani.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/instagram",
   },
   {
     title: "Tic Tac Toe",
@@ -126,7 +140,9 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
       "CSS",
     ],
-    img: "./tic-tac-toe-1.png",
+    img: "./tic-tac-toe.gif",
+    link: "https://tic-tac-toe-daniel-vasquez.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/tic-tac-toe",
   },
   {
     title: "Temporizador",
@@ -148,7 +164,9 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
       "CSS",
     ],
-    img: "./timer-1.png",
+    img: "./timer.gif",
+    link: "https://timer-coral-zeta.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/timer",
   },
   {
     title: "Pokedex",
@@ -169,8 +187,11 @@ export const PROJECTS: ProjectType[] = [
       "API",
       "JavaScript",
       "CSS",
+      "TypeScript"
     ],
-    img: "./pokedex-1.png",
+    img: "./pokedex.gif",
+    link: "https://pokedex-beryl-one.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/pokedex",
   },
   {
     title: "Simulador de crédito",
@@ -192,7 +213,9 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
       "CSS",
     ],
-    img: "./mi-credito-1.png",
+    img: "./mi-credito.gif",
+    link: "https://mi-credito.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/mi-credito",
   },
   {
     title: "Batalla de mascotas",
@@ -218,6 +241,8 @@ export const PROJECTS: ProjectType[] = [
       "CSS",
       "HTML"
     ],
-    img: "./pets-battle-1.png",
+    img: "./pets-battle.gif",
+    link: "https://daniel-vasquez.github.io/pet-battle/",
+    repo: "https://github.com/Daniel-Vasquez/pet-battle",
   },
 ];
