@@ -1,0 +1,74 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+const INFO = [
+  " Manejo de estado.",
+  " User Interface.",
+  " Manejo de single page apps.",
+  " Llamada a APIs externas.",
+  " Manejo de rutas (Route).",
+  " Manejo de Portal y Modal.",
+  " Implementación de componentes Stateful y Stateless.",
+]
+
+---
+
+<Layout
+  title="Instagram (2020)"
+  description="Replica de la página de inicio de Instagram (2020)"
+>
+  <div class="container max-w-7xl m-auto mb-24 px-4">
+    <h1 class="text-4xl text-center py-3 text-white font-extrabold">
+      Replica de Instagram (2020)
+    </h1>
+
+    <div class="flex flex-col gap-5 lg:flex-row">
+      <a
+        href="https://instagram-dani.vercel.app/"
+        target="_black"
+        title="Visitar"
+      >
+        <img
+          class="rounded"
+          src="./insta-1.png"
+          alt="Instagram"
+        />
+      </a>
+      <div class="bg-blue-light rounded-lg p-5">
+        <h1 class="text-golden text-3xl font-extrabold">Instagram</h1>
+        <p class="text-white">
+          Proyecto hecho con{" "}
+          <span class="text-blue-500 font-semibold">
+            React JS
+          </span>
+          y cuenta con:
+        </p>
+        <ul class="my-2 text-white">
+          {INFO.map((info) => (
+            <li class="flex gap-2">
+              <span class="text-golden">►</span>
+              {info}
+            </li>
+          ))}
+        </ul>
+        <div class="flex gap-5">
+          <a
+            class="bg-golden text-black font-semibold flex justify-center items-center px-5 py-3 rounded-md hover:bg-blue-medium hover:text-white"
+            href="https://instagram-dani.vercel.app/"
+            target="_black"
+          >
+            Visitar
+          </a>
+
+          <a
+            class="bg-golden text-black font-semibold flex justify-center items-center px-5 py-3 rounded-md hover:bg-blue-medium hover:text-white"
+            href="https://github.com/Daniel-Vasquez/instagram"
+            target="_black"
+          >
+            Ver código
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
