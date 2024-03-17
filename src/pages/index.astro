@@ -1,5 +1,4 @@
 ---
-import { fade } from 'astro:transitions';
 import Layout from "@/layouts/Layout.astro";
 import Projects from "@/components/Projects.astro";
 import { PROJECTS } from "@/constants/projects";
@@ -14,10 +13,7 @@ import { Certificates } from '@/components/Certificates';
   title="Daniel Vásquez"
   description="Soy Desarrollador Full Stack, poseo una sólida experiencia en programación de alrededor de un dos años, durante el cual he trabajado en proyectos desafiantes utilizando lenguajes de programación como Python y herramientas de servicios en la nube de AWS, como: S3 y Cloudwatch."
 >
-  <div 
-    class="container max-w-7xl m-auto mb-10 p-4 lg:mt-0" 
-    transition:animate={fade({ duration: '0.5s' })}
-  >
+  <div class="container max-w-7xl m-auto mb-10 p-4 lg:mt-0">
     <Main />
     <AboutMe />
     <Experience />

@@ -1,15 +1,11 @@
 ---
-import { LogoWhatsapp } from "@/components/icons/LogoWhatsapp";
-import { LogoGithub } from "@/components/icons/LogoGithub";
-import { LogoDownload } from "@/components/icons/LogoDownload";
-import { LogoLinkedin } from "@/components/icons/LogoLinkedin";
 import danielImg from "@/images/daniel-vasquez.jpg"
+import SocialNetworks from "@/components/SocialNetworks.astro";
 
-const PUBLIC_MY_PHONE = import.meta.env.PUBLIC_MY_PHONE;
-const PUBLIC_GITHUB_LINK = import.meta.env.PUBLIC_GITHUB_LINK;
 const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
+
 ---
-<main class="container max-w-7xl m-auto mb-24 mt-7 flex items-center justify-evenly gap-7 flex-wrap h-auto">
+<main class="container max-w-7xl m-auto mb-24 mt-0 flex items-center justify-evenly gap-7 flex-wrap h-auto md:mt-7">
   <div class="w-52 h-72 rounded-md border-2 border-border ">
     <a
       href={PUBLIC_LINKEDIN_LINK}
@@ -18,7 +14,7 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
       class="aspect-square hover:scale-95"
     >
       <img
-        class="aspect-square w-full h-72 transform translate-x-0 translate-y-0 rounded-md shadow-md transition lg:translate-x-7 lg:translate-y-7 hover:scale-105"
+        class="aspect-square w-full h-72 transform translate-x-0 translate-y-0 rounded-md shadow-md transition lg:translate-x-4 lg:translate-y-4 hover:scale-105"
         src={danielImg.src}
         alt="Daniel Vásquez, Desarrollador Full Stack."
       />
@@ -55,42 +51,6 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
       siempre estoy en busca de nuevas oportunidades para aprender y mejorar mis 
       habilidades como desarrollador.
     </p>
-    <div class="flex gap-7 justify-center items-center">
-      <a
-        class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-green-600 font-bold"
-        href={`https://api.whatsapp.com/send?phone=${PUBLIC_MY_PHONE}`}
-        target="_blank"
-        title="Whatsapp"
-      >
-        <LogoWhatsapp className="text-green-600 w-10" />
-      </a>
-
-      <a
-        class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-purple-600 font-bold"
-        href={PUBLIC_GITHUB_LINK}
-        target="_blank"
-        title="Git Hub"
-      >
-        <LogoGithub className="text-purple-600 w-10" />
-      </a>
-
-      <a
-        class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-blue-400 font-bold"
-        href={PUBLIC_LINKEDIN_LINK}
-        target="_blank"
-        title="Linkedin"
-      >
-        <LogoLinkedin className="w-9 h-9 text-blue-500" />
-      </a>
-
-      <a
-        class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-blue-400 font-bold"
-        href='./CV-Daniel-Vasquez.pdf'
-        download
-        title="Descargar CV"
-      >
-        <LogoDownload className="w-9 h-9 text-orange-600" />
-      </a>
-    </div>
+    <SocialNetworks />
   </div>
 </main>

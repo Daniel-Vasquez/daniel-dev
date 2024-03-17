@@ -1,0 +1,48 @@
+---
+import { LogoWhatsapp } from "@/components/icons/LogoWhatsapp";
+import { LogoGithub } from "@/components/icons/LogoGithub";
+import { LogoDownload } from "@/components/icons/LogoDownload";
+import { LogoLinkedin } from "@/components/icons/LogoLinkedin";
+
+const PUBLIC_MY_PHONE = import.meta.env.PUBLIC_MY_PHONE;
+const PUBLIC_GITHUB_LINK = import.meta.env.PUBLIC_GITHUB_LINK;
+const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
+
+---
+<div class="flex flex-wrap gap-7 justify-center items-center my-3">
+  <a
+    class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-green-600 font-bold"
+    href={`https://api.whatsapp.com/send?phone=${PUBLIC_MY_PHONE}`}
+    target="_blank"
+    title="Whatsapp"
+  >
+    <LogoWhatsapp className="text-green-600 w-9" />
+  </a>
+
+  <a
+    class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-purple-600 font-bold"
+    href={PUBLIC_GITHUB_LINK}
+    target="_blank"
+    title="Git Hub"
+  >
+    <LogoGithub className="text-purple-600 w-9" />
+  </a>
+
+  <a
+    class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-blue-400 font-bold"
+    href={PUBLIC_LINKEDIN_LINK}
+    target="_blank"
+    title="Linkedin"
+  >
+    <LogoLinkedin className="w-8 text-blue-500" />
+  </a>
+
+  <a
+    class="transition-all hover:scale-90 flex flex-col items-center gap-1 text-blue-400 font-bold"
+    href='./CV-Daniel-Vasquez.pdf'
+    download
+    title="Descargar CV"
+  >
+    <LogoDownload className="w-8 text-orange-600" />
+  </a>
+</div>

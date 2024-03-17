@@ -2,61 +2,13 @@ export const IconMenu = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
       className={`ionicon ${className}`}
-      viewBox="0 0 512 512"
       fill="currentColor"
     >
-      <rect
-        width={176}
-        height={176}
-        x={48}
-        y={48}
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={32}
-        rx={20}
-        ry={20}
-      />
-      <rect
-        width={176}
-        height={176}
-        x={288}
-        y={48}
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={32}
-        rx={20}
-        ry={20}
-      />
-      <rect
-        width={176}
-        height={176}
-        x={48}
-        y={288}
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={32}
-        rx={20}
-        ry={20}
-      />
-      <rect
-        width={176}
-        height={176}
-        x={288}
-        y={288}
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={32}
-        rx={20}
-        ry={20}
+      <path
+        fillRule="evenodd"
+        d="M19 4a1 1 0 0 1-1 1H2a1 1 0 0 1 0-2h16a1 1 0 0 1 1 1zm0 6a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h16a1 1 0 0 1 1 1zm-1 7a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2h16z"
       />
     </svg>
   )
