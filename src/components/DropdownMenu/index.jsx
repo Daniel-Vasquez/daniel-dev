@@ -20,7 +20,7 @@ export function DropdownMenu() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="z-50 absolute right-0 mt-2 w-72 focus:outline-none">
+          <Menu.Items className="z-10 absolute -right-3 mt-2 w-72 focus:outline-none">
             <div className="bg-blue flex flex-col gap-3 px-4 py-7 rounded-md border border-border">
               {ROUTES.map(({ href, label }, index) => (
                 <Menu.Item key={index}>
