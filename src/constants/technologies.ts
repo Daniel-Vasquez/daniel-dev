@@ -34,6 +34,5 @@ export const TECHNOLOGIES = [
   {
     name: "Shopify",
     description: "He trabajado con Shopify, abarcando temas como la creación de temas personalizados, la gestión de productos y la configuración de aplicaciones. Estos conocimientos me han permitido crear componentes eficientes y atractivas para los usuarios.",
-    link: "https://mascaradelatex.com/pages/mayoreo"
   }
 ]
