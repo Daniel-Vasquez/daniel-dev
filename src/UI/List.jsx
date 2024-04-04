@@ -11,6 +11,8 @@ import { LogoHtml } from "@/components/icons/LogoHtml";
 import { LogoCss } from "@/components/icons/LogoCss";
 import { LogoDark } from "@/components/icons/LogoDark";
 import { LogoApi } from "@/components/icons/LogoApi";
+import { LogoRedux } from "@/components/icons/LogoRedux";
+import { LogoAntDesign } from "@/components/icons/LogoAntDesign";
 
 const LOGOSSVG = [
   {
@@ -69,13 +71,25 @@ const LOGOSSVG = [
     name: "api",
     svg: <LogoApi className="w-11 h-11 text-green-500" />,
   },
+  {
+    name: "redux",
+    svg: <LogoRedux className="w-11 h-11 text-purple-500" />,
+  },
+  {
+    name: "redux persist",
+    svg: <LogoRedux className="w-11 h-11 text-purple-500" />,
+  },
+  {
+    name: "ant design",
+    svg: <LogoAntDesign className="w-11" />,
+  },
 ]
 
 export const List = ({ listTechnologies }) => {
   return (
-    <ul class="bg-blue-light max-w-xl m-auto flex flex-wrap justify-center gap-7 text-white text-lg mb-4 py-14 rounded-md">
+    <ul className="bg-blue-light max-w-2xl m-auto flex flex-wrap justify-center gap-7 text-white text-lg mb-4 py-14 px-3 rounded-md">
       {listTechnologies.map((listTechnology, index) => (
-        <li class="flex flex-col items-center justify-center gap-2" key={index}>
+        <li className="flex flex-col items-center justify-center gap-2" key={index}>
           <span>
             {LOGOSSVG.find((logo) => logo.name.toLowerCase() === listTechnology.toLowerCase())?.svg || listTechnology}
           </span>

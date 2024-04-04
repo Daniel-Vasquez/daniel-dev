@@ -10,8 +10,8 @@ export const TECHNOLOGIES = [
   },
   {
     name: "React",
-    description: "Haciendo uso de conceptos como useContext, useState, useEffect, hooks y props. Esto me ha permitido crear aplicaciones web modernas y escalables, brindando a los usuarios una experiencia única e interactiva.",
-    link: "https://shopping-cart-wine-two.vercel.app/"
+    description: "Haciendo uso de conceptos como useContext, useState, useEffect, hooks y props. Esto me ha permitido crear aplicaciones web modernas y escalables, brindando a los usuarios una experiencia única e interactiva. Puedes accerder al siguiente proyecto utilizando cualquier correo y contraseña.",
+    link: "https://ecommerce-react-lime.vercel.app/"
   },
   {
     name: "Node.js",

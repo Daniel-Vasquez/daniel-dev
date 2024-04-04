@@ -1,24 +1,114 @@
 import { type ProjectType } from "@/types/projects";
-import lawyerImg from "../images/lawyer.png"
-import lawyerGif from "../images/lawyer.gif"
-import blocImg from "../images/bloc.png"
-import blocGif from "../images/bloc.gif"
-import shoppingImg from "../images/shopping-cart.png"
-import shoppingGif from "../images/shopping-cart.gif"
-import instaImg from "../images/insta.png"
-import instaGif from "../images/insta.gif"
-import ticTacToeImg from "../images/tic-tac-toe.png"
-import ticTacToeGif from "../images/tic-tac-toe.gif"
-import timerImg from "../images/timer.png"
-import timerGif from "../images/timer.gif"
-import pokedexImg from "../images/pokedex.png"
-import pokedexGif from "../images/pokedex.gif"
-import simuladorImg from "../images/mi-credito.png"
-import simuladorGif from "../images/mi-credito.gif"
-import petsBattleImg from "../images/pets-battle.png"
-import petsBattleGif from "../images/pets-battle.gif"
+import lawyerImg from "@/images/lawyer.png"
+import lawyerGif from "@/images/lawyer.gif"
+import blocImg from "@/images/bloc.png"
+import blocGif from "@/images/bloc.gif"
+import ecommerce from "@/images/ecommerce.png"
+import ecommerceGif from "@/images/ecommerce.gif"
+import instaImg from "@/images/insta.png"
+import instaGif from "@/images/insta.gif"
+import ticTacToeImg from "@/images/tic-tac-toe.png"
+import ticTacToeGif from "@/images/tic-tac-toe.gif"
+import timerImg from "@/images/timer.png"
+import timerGif from "@/images/timer.gif"
+import pokedexImg from "@/images/pokedex.png"
+import pokedexGif from "@/images/pokedex.gif"
+import simuladorImg from "@/images/mi-credito.png"
+import simuladorGif from "@/images/mi-credito.gif"
+import petsBattleImg from "@/images/pets-battle.png"
+import petsBattleGif from "@/images/pets-battle.gif"
 
 export const PROJECTS: ProjectType[] = [
+  {
+    title: "Ecommerce Rick and Morty",
+    projectName: "ecommerce-rick-and-morty",
+    description:
+      "Rick and Morty es una Ecommerce que permite a los usuarios comprar tarjetas de la serie, desde una tienda en línea.",
+    href: "/proyectos/ecommerce-rick-and-morty",
+    content: `
+      <p>
+        Este proyecto es una aplicación de ecommerce construida con React que utiliza la API de Rick and Morty para mostrar detalles de los personajes y permitir a los usuarios agregarlos a un carrito de compras.
+      </p>
+
+      <p>
+        Contiene página de inicio de sesión, página princiál, página de productos, páginación de productos, página de detalles del producto, página de carrito de compras y página de pago.
+      </p>
+
+      <span class="text-gray-300 text-lg">
+        *Puedes acceder utilizando cualquier
+        <strong class="text-golden underline">correo</strong> y 
+        <strong class="text-golden underline">contraseña</strong>.*
+      </span>
+
+      <p class="text-golden font-semibold text-xl">
+        Características principales:
+      </p>
+      
+      <ul class="bg-blue-light flex flex-col gap-2 text-white text-lg mb-4 p-3 rounded-md">
+        <li class="flex">
+          <span class="mr-2">►</span>
+          <span class="leading-6">
+            <span class="text-golden font-semibold">
+              Lista de personajes de Rick and Morty:
+            </span>
+            La aplicación obtiene una lista de personajes de la API de Rick and Morty y los muestra en la interfaz de usuario.
+          </span>
+        </li>
+
+        <li class="flex">
+          <span class="mr-2">►</span>
+          <span class="leading-6">
+            <span class="text-golden font-semibold">
+              Detalles de cada personaje:
+            </span>
+             Los usuarios pueden hacer clic en un personaje para ver más detalles sobre ese personaje.
+          </span>
+        </li>
+
+        <li class="flex">
+          <span class="mr-2">►</span>
+          <span class="leading-6">
+            <span class="text-golden font-semibold">
+              Funcionalidad de carrito de compras:
+            </span>
+            Los usuarios pueden agregar personajes a un carrito de compras y ver todos los personajes que han agregado.
+          </span>
+        </li>
+
+        <li class="flex">
+          <span class="mr-2">►</span>
+          <span class="leading-6">
+            <span class="text-golden font-semibold">
+              Redux:
+            </span>
+            Este proyecto utiliza Redux para el manejo del estado de la aplicación.
+          </span>
+        </li>
+
+        <li class="flex">
+          <span class="mr-2">►</span>
+          <span class="leading-6">
+            <span class="text-golden font-semibold">
+              Redux Persist:
+            </span>
+            Redux Persist se utiliza para persistir el estado de la aplicación a través de las sesiones del navegador.
+          </span>
+        </li>
+      </ul>
+    `,
+    technologies: [
+      "React",
+      "API",
+      "Tailwind CSS",
+      "Redux",
+      "Redux Persist",
+      "Ant Design",
+    ],
+    img: `${ecommerce.src}`,
+    gif: `${ecommerceGif.src}`,
+    link: "https://ecommerce-react-lime.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/ecommerce-react",
+  },
   {
     title: "Salinas abogados",
     projectName: "salinas-abogados",
@@ -89,32 +179,6 @@ export const PROJECTS: ProjectType[] = [
     gif: `${blocGif.src}`,
     link: "https://notes-deploy-client.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/notes-deploy",
-  },
-  {
-    title: "Shopping cart",
-    projectName: "shopping-cart",
-    description:
-      "En este proyecto, se desarrolló un carrito de compras con React, utilizando el patrón de estado global a través del Context de React.",
-    href: "/proyectos/shopping-cart",
-    content: `
-      <p>
-        En este proyecto, se desarrolló un carrito de compras con React, utilizando el patrón de estado global a través del Context de React. Se destaca el uso de la funcionalidad de Context API para crear un Context llamado 'CartContext', permitiendo a los componentes acceder y compartir información del carrito sin pasar props manualmente. La implementación incluye un 'useReducer' personalizado llamado 'cartReducer' para gestionar acciones como agregar, eliminar productos y manipular la cantidad en el carrito.
-      </p>
-
-      <p>
-        Además, se proporcionan funciones como 'addToCart', 'removeToCart', 'removeFromCart' y 'clearCart' para interactuar con el carrito desde otros componentes. Se destaca la creación del componente 'CartProvider', que utiliza 'useCartReducer' para obtener y proveer el estado del carrito y las funciones asociadas a través de 'CartContext.Provider' a los componentes hijos que necesitan acceder a esta información.
-      </p>      
-    `,
-    technologies: [
-      "React",
-      "API",
-      "JavaScript",
-      "CSS",
-    ],
-    img: `${shoppingImg.src}`,
-    gif: `${shoppingGif.src}`,
-    link: "https://shopping-cart-wine-two.vercel.app/",
-    repo: "https://github.com/Daniel-Vasquez/shopping-cart",
   },
   {
     title: "Instagram (2020)",
