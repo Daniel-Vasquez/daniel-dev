@@ -10,7 +10,7 @@ export const ROUTES: RouteType[] = [
     label: "Proyectos",
   },
   {
-    href: "/instagram",
-    label: "Replica Instagram (2020)",
+    href: "/rick-and-morty",
+    label: "Rick and Morty",
   }
 ];
