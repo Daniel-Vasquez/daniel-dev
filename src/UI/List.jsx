@@ -13,6 +13,7 @@ import { LogoDark } from "@/components/icons/LogoDark";
 import { LogoApi } from "@/components/icons/LogoApi";
 import { LogoRedux } from "@/components/icons/LogoRedux";
 import { LogoAntDesign } from "@/components/icons/LogoAntDesign";
+import { LogoLocalStorage } from "@/components/icons/LogoLocalStorage";
 
 const LOGOSSVG = [
   {
@@ -82,6 +83,10 @@ const LOGOSSVG = [
   {
     name: "ant design",
     svg: <LogoAntDesign className="w-11" />,
+  },
+  {
+    name: "localStorage",
+    svg: <LogoLocalStorage className="w-11 text-orange-600" />,
   },
 ]
 

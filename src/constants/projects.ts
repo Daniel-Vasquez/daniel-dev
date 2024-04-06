@@ -17,6 +17,9 @@ import simuladorImg from "@/images/mi-credito.png"
 import simuladorGif from "@/images/mi-credito.gif"
 import petsBattleImg from "@/images/pets-battle.png"
 import petsBattleGif from "@/images/pets-battle.gif"
+import writeDownImg from "@/images/write-down.png"
+import writeDownGif from "@/images/write-down.gif"
+
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -143,11 +146,11 @@ export const PROJECTS: ProjectType[] = [
     repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
   },
   {
-    title: "Bloc",
-    projectName: "bloc",
+    title: "Frases para compartir",
+    projectName: "frases-para-compartir",
     description:
       "El proyecto consiste en una página web de Bloc desarrollada con Node.js y Express para el backend, siguiendo la arquitectura MVC, mientras que React y Tailwind se emplean en el frontend.",
-    href: "/proyectos/bloc",
+    href: "/proyectos/frases-para-compartir",
     content: `
       <p>
         El proyecto consiste en una página web de Bloc desarrollada con Node.js
@@ -205,6 +208,37 @@ export const PROJECTS: ProjectType[] = [
     gif: `${instaGif.src}`,
     link: "https://instagram-dani.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/instagram",
+  },
+  {
+    title: "Notas",
+    projectName: "notas",
+    description:
+      "El proyecto consiste en una página web de Bloc desarrollada con Node.js y Express para el backend, siguiendo la arquitectura MVC, mientras que React y Tailwind se emplean en el frontend.",
+    href: "/proyectos/notas",
+    content: `
+      <p>
+        Es una aplicación web desarrollada en React que te permite crear,
+        editar, eliminar y buscar notas de manera sencilla y eficiente.
+        Utiliza Tailwind CSS para un diseño moderno y responsivo, y aprovecha
+        el almacenamiento local (localStorage) del navegador para guardar las
+        notas de forma segura en tu dispositivo.
+      </p>
+      <p>
+        Además, cuenta con un modo oscuro (dark mode) que cambia la
+        apariencia de la aplicación para una experiencia visual más cómoda en
+        entornos con poca iluminación.
+      </p>
+    `,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Dark mode",
+      "localStorage",
+    ],
+    img: `${writeDownImg.src}`,
+    gif: `${writeDownGif.src}`,
+    link: "https://write-down-gamma.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/write-down",
   },
   {
     title: "Tic Tac Toe",
