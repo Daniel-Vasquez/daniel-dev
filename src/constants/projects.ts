@@ -7,11 +7,8 @@ import ecommerce from "@/images/ecommerce.png"
 import ecommerceGif from "@/images/ecommerce.gif"
 import instaImg from "@/images/insta.png"
 import instaGif from "@/images/insta.gif"
-
 import calculatorImg from "@/images/calculator.png"
 import calculatorGif from "@/images/calculator.gif"
-
-
 import ticTacToeImg from "@/images/tic-tac-toe.png"
 import ticTacToeGif from "@/images/tic-tac-toe.gif"
 import timerImg from "@/images/timer.png"
@@ -241,8 +238,8 @@ export const PROJECTS: ProjectType[] = [
     ],
     img: `${calculatorImg.src}`,
     gif: `${calculatorGif.src}`,
-    link: "https://www.salinasabogados.mx/",
-    repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+    link: "https://calculator-app-omega-lovat.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/calculator-app",
   },
   {
     title: "Notas",
