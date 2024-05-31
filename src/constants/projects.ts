@@ -7,6 +7,11 @@ import ecommerce from "@/images/ecommerce.png"
 import ecommerceGif from "@/images/ecommerce.gif"
 import instaImg from "@/images/insta.png"
 import instaGif from "@/images/insta.gif"
+
+import calculatorImg from "@/images/calculator.png"
+import calculatorGif from "@/images/calculator.gif"
+
+
 import ticTacToeImg from "@/images/tic-tac-toe.png"
 import ticTacToeGif from "@/images/tic-tac-toe.gif"
 import timerImg from "@/images/timer.png"
@@ -208,6 +213,36 @@ export const PROJECTS: ProjectType[] = [
     gif: `${instaGif.src}`,
     link: "https://instagram-dani.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/instagram",
+  },
+  {
+    title: "Calculadora",
+    projectName: "calculadora",
+    description:
+      "En este proyecto, se desarrolló una calculadora utilizando React, react hooks y Tailwind CSS.",
+    href: "/proyectos/calculadora",
+    content: `
+      <p>
+        Este es un proyecto de una calculadora simple desarrollada en React.
+        Utiliza el hook useReducer de React para manejar el estado de la calculadora
+        y la funcionalidad de las operaciones matemáticas. Además, se utiliza
+        localStorage para almacenar el tema deseado por el usuario.
+      </p>
+      <p>
+        La calculadora es completamente funcional y permite a los usuarios realizar
+        operaciones matemáticas básicas como suma, resta, multiplicación y división.
+        También cuenta con un tema oscuro que cambia la apariencia de la calculadora
+        para una experiencia visual más cómoda en entornos con poca iluminación.
+      </p>
+    `,
+    technologies: [
+      "react",
+      "Tailwind CSS",
+      "localStorage",
+    ],
+    img: `${calculatorImg.src}`,
+    gif: `${calculatorGif.src}`,
+    link: "https://www.salinasabogados.mx/",
+    repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
   },
   {
     title: "Notas",
