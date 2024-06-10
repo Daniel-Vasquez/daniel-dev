@@ -2,39 +2,38 @@
 import { DropdownMenu } from "@/components/DropdownMenu";
 import { ROUTES } from "@/constants/routes";
 const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
-
 ---
-<header class="z-10">
-  <div class="px-3">
-    <div class="bg-blue max-w-7xl flex items-center justify-between mx-auto overflow-visible py-5 px-4 rounded-2xl rounded-t-none">
-      <a 
-        href={PUBLIC_LINKEDIN_LINK}
-        target="_blank"
-        class="text-golden"
-        title="LinkedIn"
-      >
-        <h2 class="text-2xl text-center font-bold hover:underline">
-          Daniel Vásquez
-        </h2>
-      </a>
-      <nav class="hidden md:block">
-        <ul class="flex gap-4">
-          {ROUTES.map(({ href, label }) =>
+
+<header class="z-10 sticky top-0 w-full">
+  <div class="bg-blue flex items-center justify-between mx-auto overflow-visible py-5 px-11 rounded-2xl rounded-t-none border-b-2 border-golden">
+    <a
+      href={PUBLIC_LINKEDIN_LINK}
+      target="_blank"
+      class="text-golden"
+      title="LinkedIn"
+    >
+      <h2 class="text-2xl text-center font-bold hover:underline">
+        Daniel Vásquez
+      </h2>
+    </a>
+    <nav class="hidden md:block">
+      <ul class="flex gap-4">
+        {
+          ROUTES.map(({ href, label }) => (
             <li>
               <a
                 href={href}
-                class="text-white font-semibol transition-colors duration-300 border-golden border-l-4 pl-2 hover:text-golden"
+                class="text-white font-semibold transition-colors duration-300 border-golden border-l-4 pl-2 hover:text-golden"
               >
                 {label}
               </a>
             </li>
-          )}
-        </ul>
-      </nav>
-      <div class="block md:hidden">
-        <DropdownMenu client:idle />
-      </div>
+          ))
+        }
+      </ul>
+    </nav>
+    <div class="block md:hidden">
+      <DropdownMenu client:idle />
     </div>
   </div>
 </header>
-
