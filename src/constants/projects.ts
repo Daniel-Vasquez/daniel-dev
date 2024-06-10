@@ -245,7 +245,7 @@ export const PROJECTS: ProjectType[] = [
     title: "Notas",
     projectName: "notas",
     description:
-      "Bloc de notas desarrollado en React que te permite crear, editar, eliminar y buscar notas de manera sencilla y eficiente. Utiliza Tailwind CSS para un diseño moderno y responsivo, y aprovecha el almacenamiento local (localStorage) del navegador para guardar las notas de forma segura en tu dispositivo. Además, cuenta con un modo oscuro (dark mode) que cambia la apariencia de la aplicación para una experiencia visual más cómoda en entornos con poca iluminación.",
+      "Bloc de notas desarrollado en React que te permite crear, editar, eliminar y buscar notas de manera sencilla y eficiente. Utiliza Tailwind CSS para un diseño moderno y responsivo.",
     href: "/proyectos/notas",
     content: `
       <p>
