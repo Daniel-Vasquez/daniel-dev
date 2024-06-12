@@ -14,6 +14,8 @@ import { LogoApi } from "@/components/icons/LogoApi";
 import { LogoRedux } from "@/components/icons/LogoRedux";
 import { LogoAntDesign } from "@/components/icons/LogoAntDesign";
 import { LogoLocalStorage } from "@/components/icons/LogoLocalStorage";
+import { LogoFlask } from "@/components/icons/LogoFlask";
+import { LogoPython } from "@/components/icons/LogoPython";
 
 const LOGOSSVG = [
   {
@@ -87,6 +89,14 @@ const LOGOSSVG = [
   {
     name: "localStorage",
     svg: <LogoLocalStorage className="w-11 text-orange-600" />,
+  },
+  {
+    name: "flask",
+    svg: <LogoFlask className="w-11 text-white" />,
+  },
+  {
+    name: "python",
+    svg: <LogoPython className="w-11" />,
   },
 ]
 

@@ -21,7 +21,8 @@ import petsBattleImg from "@/images/pets-battle.png"
 import petsBattleGif from "@/images/pets-battle.gif"
 import writeDownImg from "@/images/write-down.png"
 import writeDownGif from "@/images/write-down.gif"
-
+import flaskImg from "@/images/frases-flask.png"
+import flaskGif from "@/images/frases-flask.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -148,20 +149,20 @@ export const PROJECTS: ProjectType[] = [
     repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
   },
   {
-    title: "Frases para compartir",
-    projectName: "frases-para-compartir",
+    title: "Citas Clásicas",
+    projectName: "citas-clasicas",
     description:
       "El proyecto consiste en una página web de Bloc desarrollada con Node.js y Express para el backend, siguiendo la arquitectura MVC, mientras que React y Tailwind se emplean en el frontend.",
-    href: "/proyectos/frases-para-compartir",
+    href: "/proyectos/citas-clasicas",
     content: `
       <p>
-        El proyecto consiste en una página web de Bloc desarrollada con Node.js
-        y Express para el backend, siguiendo la arquitectura MVC, mientras que
-        React y Tailwind se emplean en el frontend. Se implementa el módulo CORS
-        para gestionar las solicitudes HTTP entre dominios, garantizando una
-        comunicación segura entre el cliente y el servidor. Destaca la
-        funcionalidad CRUD en el router, con opciones de Crear, Leer, Actualizar
-        y Eliminar (para mejorar la experiencia, se han deshabilitado las
+        El proyecto consiste en una página web para compartir frases, desarrollada
+        con Node.js y Express para el backend, siguiendo la arquitectura MVC,
+        mientras que React y Tailwind se emplean en el frontend. Se implementa
+        el módulo CORS para gestionar las solicitudes HTTP entre dominios,
+        garantizando una comunicación segura entre el cliente y el servidor.
+        Destaca la funcionalidad CRUD en el router, con opciones de Crear, Leer,
+        Actualizar y Eliminar (para mejorar la experiencia, se han deshabilitado las
         opciones de Actualizar y Eliminar, aunque permanecen accesibles a
         través del código). Además, la aplicación se comunica con un backend
         a través de una API RESTful, utilizando funciones como getEnvValue y
@@ -401,5 +402,36 @@ export const PROJECTS: ProjectType[] = [
     gif: `${petsBattleGif.src}`,
     link: "https://daniel-vasquez.github.io/pet-battle/",
     repo: "https://github.com/Daniel-Vasquez/pet-battle",
+  },
+  {
+    title: "Frases Flask",
+    projectName: "frases-flask",
+    description:
+      "Comparte una frase inspiradora con tus amigos y familiares. El proyecto se desarrolló con Python y Flask.",
+    href: "/proyectos/frases-flask",
+    content: `
+      <p>
+        Comparte una frase inspiradora con tus amigos y familiares. El proyecto se desarrolló con
+        <strong>Python</strong> y
+        <strong>Flask</strong>
+        , y destaca por su sencillez y facilidad de uso. Los usuarios pueden crear una frase añadiendo su nombre y frase.
+      </p>
+      <p>
+        Las frases se guardan localmente con uso de
+        <strong>localStorage</strong>,
+        lo que permite a los usuarios ver las frases que han creado anteriormente.
+      </p>
+    `,
+    technologies: [
+      "python",
+      "Flask",
+      "javascript",
+      "localStorage",
+      "CSS"
+    ],
+    img: `${flaskImg.src}`,
+    gif: `${flaskGif.src}`,
+    link: "https://daniel-vasquez.github.io/flask-dev/templates/",
+    repo: "https://daniel-vasquez.github.io/flask-dev/templates/",
   },
 ];
