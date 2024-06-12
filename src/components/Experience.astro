@@ -8,26 +8,27 @@ import { EXPERIENCE } from "@/constants/experience";
       Experiencia
     </p>
   </div>
-  <div class="flex flex-col gap-4 rounded-lg text-white">
+  <div class="flex flex-col gap-7 rounded-lg text-white">
     {EXPERIENCE.map(({ name, position, skills, start_date, end_date, link }) => (
-      <div class="border-b-2 border-white pb-2">
-        <div>
-          <span>Empresa: </span>
+      <div class="flex flex-col gap-1 border-b-2 border-white pb-2">
+        <div class="flex flex-wrap gap-1">
+          <strong>Empresa:</strong>
           <a
-            class="text-blue-500 font-semibold text-base underline hover:text-blue-600"
+            class="text-golden font-semibold text-base hover:text-blue-600"
             href={link}
             target="_blank"
           >
             {name}
           </a>
+          <span class="text-gray-400 font-semibold">
+            {`(${ start_date } - ${ end_date }).`}
+          </span>
         </div>
-        <p>Posición: {position}</p>
+        { position && <p><strong>Posición:</strong> {position}.</p>}
         <p>
-          Skills:{" "}
-          <span class="font-semibold text-blue-300">{skills}</span>
+          <strong>Experiencia con:</strong>
+          <span class="font-semibold text-blue-300">{skills}.</span>
         </p>
-        <p>Fecha de inicio: {start_date}</p>
-        {end_date && <p>Fecha de finalización: {end_date}</p>}
       </div>
     ))}
   </div>
