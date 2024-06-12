@@ -17,7 +17,7 @@ export const TECHNOLOGIES = [
     nameLogo: "react"
   },
   {
-    name: "Shopify - liquid",
+    name: "Shopify (liquid)",
     description: "He trabajado con Shopify, abarcando temas como la creación de temas personalizados, la gestión de productos y la configuración de aplicaciones. Estos conocimientos me han permitido crear componentes eficientes y atractivas para los usuarios.",
     link: "https://mascaradelatex.com/pages/mayoreo",
     nameLogo: "shopify"
@@ -28,7 +28,7 @@ export const TECHNOLOGIES = [
     nameLogo: "sql"
   },
   {
-    name: "Shopify - Remix",
+    name: "Remix (Shopify)",
     description: "Un nuevo marco de trabajo para la construcción de aplicaciones web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de rutas y la generación de páginas estáticas, lo que me permite crear aplicaciones web rápidas y eficientes.",
     link: "https://remix.run/",
     nameLogo: "remix"
@@ -36,6 +36,7 @@ export const TECHNOLOGIES = [
   {
     name: "Node.js",
     description: "Me permite trabajar en proyectos más completos y escalables. Tengo conocimientos en la creación de módulos con la extensión .mjs, la lectura de archivos utilizando Promesas y/o async/await, y el uso de los módulos path, http, net y process para una gestión eficiente de rutas y procesos.",
+    link: "https://notes-deploy-client.vercel.app/",
     nameLogo: "node"
   },
   {

@@ -48,31 +48,23 @@ const LOGOS = [
   },
   {
     name: "remix",
-    logo: <LogoRemix className="w-16 h-16 m-auto text-white" />,
+    logo: <LogoRemix className="w-16 h-16 m-auto text-black" />,
   },
 ];
 
 export const Technologies = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-      {TECHNOLOGIES.map(({ name, description, link, nameLogo }, index) => (
-        <div key={index} className="bg-blue-light flex flex-col gap-2 p-6 border-2 border-black rounded-lg shadow cursor-pointer hover:bg-blue hover:border-gray-300 hover:shadow-lg">
-          <h5 className="text-2xl font-bold tracking-tight text-white">
-            {name}
-          </h5>
-          <p className="font-normal text-gray-400">
-            {description} {""}
-            {link && (
-              <a
-                href={link}
-                target="_blank"
-                className="text-blue-500 font-semibold text-base underline hover:text-white"
-              >
-                Proyecto
-              </a>
-            )}
-          </p>
-          <div>
+    <div className="flex justify-center gap-3 flex-wrap">
+      {TECHNOLOGIES.map(({ name, link, nameLogo }, index) => (
+        <div
+          key={index}
+          className="bg-blue-light flex flex-col justify-center gap-2 p-6 border-2 border-black rounded-lg shadow cursor-pointer hover:bg-blue hover:border-blue-400 hover:shadow-lg"
+        >
+          <a
+            className="grid gap-4 w-40"
+            href={link}
+            target="_blank"
+          >
             {LOGOS.map(({ name, logo }, index) => (
               nameLogo === name && (
                 <div key={index}>
@@ -80,7 +72,10 @@ export const Technologies = () => {
                 </div>
               )
             ))}
-          </div>
+            <h5 className="text-2xl text-center font-bold tracking-tight text-white">
+              {name}
+            </h5>
+          </a>
         </div>
       ))}
     </div>
