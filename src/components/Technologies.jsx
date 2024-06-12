@@ -8,6 +8,7 @@ import { LogoPython } from "@/components/icons/LogoPython";
 import { LogoShopify } from "@/components/icons/LogoShopify";
 import { LogoSql } from "@/components/icons/LogoSql";
 import { LogoRemix } from "@/components/icons/LogoRemix";
+import { LogoAws } from "@/components/icons/LogoAws";
 
 const LOGOS = [
   {
@@ -50,6 +51,10 @@ const LOGOS = [
     name: "remix",
     logo: <LogoRemix className="w-16 h-16 m-auto text-black" />,
   },
+  {
+    name: "aws",
+    logo: <LogoAws className="w-16 h-16 m-auto text-orange-400" />,
+  },
 ];
 
 export const Technologies = () => {
@@ -58,7 +63,7 @@ export const Technologies = () => {
       {TECHNOLOGIES.map(({ name, link, nameLogo }, index) => (
         <div
           key={index}
-          className="bg-blue-light flex flex-col justify-center gap-2 p-6 border-2 border-black rounded-lg shadow cursor-pointer hover:bg-blue hover:border-blue-400 hover:shadow-lg"
+          className="bg-blue-light flex flex-col justify-center gap-2 p-6 border-2 border-black rounded-lg shadow cursor-pointer hover:bg-blue-medium hover:border-blue-400 hover:shadow-lg"
         >
           <a
             className="grid gap-4 w-40"

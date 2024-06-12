@@ -52,8 +52,14 @@ export const TECHNOLOGIES = [
     nameLogo: "javascript"
   },
   {
-    name: "Python",
+    name: "Python (Flask)",
     description: "Cuento con experiencia en Python, dominando conceptos como el entorno virtual, list comprehensions, high order functions y módulos. Esto me ha permitido abordar proyectos desde diferentes perspectivas y ofrecer soluciones eficientes.",
+    link: "https://daniel-vasquez.github.io/flask-dev/templates/",
     nameLogo: "python"
+  },
+  {
+    name: "AWS (S3 y CloudWatch)",
+    description: "He trabajado con AWS, abarcando consultas en S3 y CloudWatch.",
+    nameLogo: "aws"
   }
 ]
