@@ -10,63 +10,66 @@ import { LogoSql } from "@/components/icons/LogoSql";
 import { LogoRemix } from "@/components/icons/LogoRemix";
 import { LogoAws } from "@/components/icons/LogoAws";
 
+const WIDTHLOGO = "w-10";
+const HEIGHTLOGO = "h-10";
+
 const LOGOS = [
   {
     name: "astro",
-    logo: <LogoAstro className="w-20 h-20 m-auto text-orange-500" />,
+    logo: <LogoAstro className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-orange-500`} />,
   },
   {
     name: "tailwind css",
-    logo: <LogoTailwind className="w-20 h-20 m-auto text-cyan-300" />,
+    logo: <LogoTailwind className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-cyan-300`} />,
   },
   {
     name: "react",
-    logo: <LogoReact className="w-20 h-20 m-auto text-blue-500" />,
+    logo: <LogoReact className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-blue-500`} />,
   },
   {
     name: "node",
-    logo: <LogoNodejs className="w-20 h-20 m-auto text-green-500" />,
+    logo: <LogoNodejs className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-green-500`} />,
   },
   {
     name: "express",
-    logo: <LogoNodejs className="w-20 h-20 m-auto text-green-500" />,
+    logo: <LogoNodejs className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-green-500`} />,
   },
   {
     name: "javascript",
-    logo: <LogoJavascript className="w-20 h-20 m-auto text-yellow-400" />,
+    logo: <LogoJavascript className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-yellow-400`} />,
   },
   {
     name: "python",
-    logo: <LogoPython className="w-20 h-20 m-auto text-yellow-400" />,
+    logo: <LogoPython className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-yellow-400`} />,
   },
   {
     name: "shopify",
-    logo: <LogoShopify className="w-20 h-20 m-auto text-green-500" />,
+    logo: <LogoShopify className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-green-500`} />,
   },
   {
     name: "sql",
-    logo: <LogoSql className="w-20 h-20 m-auto text-cyan-400" />,
+    logo: <LogoSql className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-cyan-400`} />,
   },
   {
     name: "remix",
-    logo: <LogoRemix className="w-16 h-16 m-auto text-black" />,
+    logo: <LogoRemix className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-white`} />,
   },
   {
     name: "aws",
-    logo: <LogoAws className="w-16 h-16 m-auto text-orange-400" />,
+    logo: <LogoAws className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-orange-400`} />,
   },
 ];
 
 export const Technologies = () => {
   return (
-    <div className="flex justify-center gap-3 flex-wrap">
+    <div className="flex justify-center gap-11 flex-wrap">
       {TECHNOLOGIES.map(({ name, link, nameLogo }, index) => (
         <div
           key={index}
-          className="bg-blue-light flex flex-col justify-center gap-2 p-6 border-2 border-black rounded-lg shadow cursor-pointer hover:bg-blue-medium hover:border-blue-400 hover:shadow-lg"
+          className="flex flex-col justify-center cursor-pointer trasition duration-300 ease-in-out transform hover:scale-110"
         >
           <a
-            className="grid gap-4 w-40"
+            className="grid gap-2"
             href={link}
             target="_blank"
           >
@@ -77,9 +80,9 @@ export const Technologies = () => {
                 </div>
               )
             ))}
-            <h5 className="text-2xl text-center font-bold tracking-tight text-white">
+            <p className="text-lg text-center font-bold tracking-tight text-white hover:underline">
               {name}
-            </h5>
+            </p>
           </a>
         </div>
       ))}

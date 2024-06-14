@@ -6,11 +6,6 @@ export const TECHNOLOGIES = [
     nameLogo: "astro"
   },
   {
-    name: "Tailwind CSS",
-    description: "Construcción de interfaces web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de estilos y la generación de páginas web responsivas, lo que me permite crear aplicaciones web rápidas y eficientes.",
-    nameLogo: "tailwind css"
-  },
-  {
     name: "React",
     description: "Haciendo uso de conceptos como useContext, useState, useEffect, hooks y props. Esto me ha permitido crear aplicaciones web modernas y escalables, brindando a los usuarios una experiencia única e interactiva. Puedes accerder al siguiente proyecto utilizando cualquier correo y contraseña.",
     link: "https://ecommerce-react-lime.vercel.app/",
@@ -21,17 +16,6 @@ export const TECHNOLOGIES = [
     description: "He trabajado con Shopify, abarcando temas como la creación de temas personalizados, la gestión de productos y la configuración de aplicaciones. Estos conocimientos me han permitido crear componentes eficientes y atractivas para los usuarios.",
     link: "https://mascaradelatex.com/pages/mayoreo",
     nameLogo: "shopify"
-  },
-  {
-    name: "SQL",
-    description: "He trabajado con SQL, abarcando temas como la creación de bases de datos, la gestión de tablas y la ejecución de consultas. Estos conocimientos me han permitido crear bases de datos eficientes y escalables para diferentes proyectos.",
-    nameLogo: "sql"
-  },
-  {
-    name: "Remix (Shopify)",
-    description: "Un nuevo marco de trabajo para la construcción de aplicaciones web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de rutas y la generación de páginas estáticas, lo que me permite crear aplicaciones web rápidas y eficientes.",
-    link: "https://remix.run/",
-    nameLogo: "remix"
   },
   {
     name: "Node.js",
@@ -46,6 +30,22 @@ export const TECHNOLOGIES = [
     nameLogo: "express"
   },
   {
+    name: "Remix (Shopify)",
+    description: "Un nuevo marco de trabajo para la construcción de aplicaciones web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de rutas y la generación de páginas estáticas, lo que me permite crear aplicaciones web rápidas y eficientes.",
+    link: "https://remix.run/",
+    nameLogo: "remix"
+  },
+  {
+    name: "Tailwind CSS",
+    description: "Construcción de interfaces web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de estilos y la generación de páginas web responsivas, lo que me permite crear aplicaciones web rápidas y eficientes.",
+    nameLogo: "tailwind css"
+  },
+  {
+    name: "SQL",
+    description: "He trabajado con SQL, abarcando temas como la creación de bases de datos, la gestión de tablas y la ejecución de consultas. Estos conocimientos me han permitido crear bases de datos eficientes y escalables para diferentes proyectos.",
+    nameLogo: "sql"
+  },
+  {
     name: "JavaScript",
     description: "He trabajado con JavaScript, abarcando temas como el asincronismo, manipulación del DOM y el uso de Promesas. Estos conocimientos me han permitido crear aplicaciones interactivas y dinámicas que ofrecen una experiencia fluida a los usuarios.",
     link: "https://daniel-vasquez.github.io/pet-battle/",
@@ -58,7 +58,7 @@ export const TECHNOLOGIES = [
     nameLogo: "python"
   },
   {
-    name: "AWS (S3 y CloudWatch)",
+    name: "AWS",
     description: "He trabajado con AWS, abarcando consultas en S3 y CloudWatch.",
     nameLogo: "aws"
   }
