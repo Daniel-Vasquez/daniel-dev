@@ -12,6 +12,11 @@ export const TECHNOLOGIES = [
     nameLogo: "react"
   },
   {
+    name: "Tailwind CSS",
+    description: "Construcción de interfaces web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de estilos y la generación de páginas web responsivas, lo que me permite crear aplicaciones web rápidas y eficientes.",
+    nameLogo: "tailwind css"
+  },
+  {
     name: "Shopify (liquid)",
     description: "He trabajado con Shopify, abarcando temas como la creación de temas personalizados, la gestión de productos y la configuración de aplicaciones. Estos conocimientos me han permitido crear componentes eficientes y atractivas para los usuarios.",
     link: "https://mascaradelatex.com/pages/mayoreo",
@@ -32,13 +37,7 @@ export const TECHNOLOGIES = [
   {
     name: "Remix (Shopify)",
     description: "Un nuevo marco de trabajo para la construcción de aplicaciones web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de rutas y la generación de páginas estáticas, lo que me permite crear aplicaciones web rápidas y eficientes.",
-    link: "https://remix.run/",
     nameLogo: "remix"
-  },
-  {
-    name: "Tailwind CSS",
-    description: "Construcción de interfaces web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de estilos y la generación de páginas web responsivas, lo que me permite crear aplicaciones web rápidas y eficientes.",
-    nameLogo: "tailwind css"
   },
   {
     name: "SQL",
@@ -61,5 +60,15 @@ export const TECHNOLOGIES = [
     name: "AWS",
     description: "He trabajado con AWS, abarcando consultas en S3 y CloudWatch.",
     nameLogo: "aws"
+  },
+  {
+    name: "Git y GitHub",
+    description: "He trabajado con Git y GitHub, abarcando temas como la creación de repositorios, la gestión de ramas y la colaboración en proyectos. Estos conocimientos me han permitido trabajar de forma eficiente en diferentes proyectos y equipos.",
+    nameLogo: "git"
+  },
+  {
+    name: "Redux",
+    description: "He trabajado con Redux y Redux Persist, abarcando temas como la creación de stores, la gestión de acciones y la persistencia de estados. Estos conocimientos me han permitido crear aplicaciones web escalables y eficientes.",
+    nameLogo: "redux"
   }
 ]

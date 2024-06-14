@@ -9,6 +9,8 @@ import { LogoShopify } from "@/components/icons/LogoShopify";
 import { LogoSql } from "@/components/icons/LogoSql";
 import { LogoRemix } from "@/components/icons/LogoRemix";
 import { LogoAws } from "@/components/icons/LogoAws";
+import { LogoGit } from "@/components/icons/LogoGit";
+import { LogoRedux } from "@/components/icons/LogoRedux";
 
 const WIDTHLOGO = "w-10";
 const HEIGHTLOGO = "h-10";
@@ -58,6 +60,14 @@ const LOGOS = [
     name: "aws",
     logo: <LogoAws className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-orange-400`} />,
   },
+  {
+    name: "git",
+    logo: <LogoGit className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-red-500`} />,
+  },
+  {
+    name: "redux",
+    logo: <LogoGit className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-purple-500`} />,
+  },
 ];
 
 export const Technologies = () => {
@@ -69,7 +79,7 @@ export const Technologies = () => {
           className="flex flex-col justify-center cursor-pointer trasition duration-300 ease-in-out transform hover:scale-110"
         >
           <a
-            className="grid gap-2"
+            className={`grid gap-2 ${link ? "text-blue-600" : ""}`}
             href={link}
             target="_blank"
           >
@@ -80,7 +90,7 @@ export const Technologies = () => {
                 </div>
               )
             ))}
-            <p className="text-lg text-center font-bold tracking-tight text-white hover:underline">
+            <p className={`text-lg text-center font-bold tracking-tight ${link ? "text-blue-600" : "text-white"} hover:underline`}>
               {name}
             </p>
           </a>
