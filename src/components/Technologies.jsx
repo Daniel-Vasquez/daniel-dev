@@ -66,7 +66,7 @@ const LOGOS = [
   },
   {
     name: "redux",
-    logo: <LogoGit className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-purple-500`} />,
+    logo: <LogoRedux className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-purple-500`} />,
   },
 ];
 
