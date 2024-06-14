@@ -69,6 +69,7 @@ export const TECHNOLOGIES = [
   {
     name: "Redux",
     description: "He trabajado con Redux y Redux Persist, abarcando temas como la creación de stores, la gestión de acciones y la persistencia de estados. Estos conocimientos me han permitido crear aplicaciones web escalables y eficientes.",
+    link: "https://ecommerce-react-lime.vercel.app/",
     nameLogo: "redux"
   }
 ]
