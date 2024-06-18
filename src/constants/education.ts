@@ -4,7 +4,7 @@ import uamImg from "@/images/logouam.png"
 
 export const EDUCATION = [
   {
-    name: "Universidad Nacional Autónoma de México",
+    name: "Universidad Autónoma Metropolitana",
     title: "Lic. en Computación",
     date: "Ago. 2014 - Mar. 2016",
     logo: `${uamImg.src}`,
