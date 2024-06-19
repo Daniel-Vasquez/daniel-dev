@@ -23,6 +23,8 @@ import writeDownImg from "@/images/write-down.png"
 import writeDownGif from "@/images/write-down.gif"
 import flaskImg from "@/images/frases-flask.png"
 import flaskGif from "@/images/frases-flask.gif"
+import passwordImg from "@/images/generete-password.png"
+import passwordGif from "@/images/generete-password.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -241,6 +243,40 @@ export const PROJECTS: ProjectType[] = [
     gif: `${calculatorGif.src}`,
     link: "https://calculator-app-omega-lovat.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/calculator-app",
+  },
+  {
+    title: "Generador de contraseñas",
+    projectName: "generador-de-contraseñas",
+    description:
+      "El proyecto es un generador de contraseñas desarrollado con vite + react, que permite a los usuarios personalizar la longitud y los caracteres de la contraseña.",
+    href: "/proyectos/generador-de-contraseñas",
+    content: `
+      <p>
+        El proyecto es un generador de contraseñas desarrollado con
+        <strong>vite + react</strong>, que permite a los usuarios personalizar
+        la longitud y los caracteres de la contraseña. Destacan funciones clave
+        como la generación de contraseñas seguras y aleatorias, la selección de
+        caracteres especiales, números y letras, y la copia de la contraseña al
+        portapapeles con un solo clic.
+  
+        Las contraseñas generadas se guardan en localStorage, lo que permite a
+        los usuarios ver las contraseñas que han creado anteriormente.
+      </p>
+      <p>
+        El diseño responsivo de la interfaz de usuario se logra con Tailwind
+        CSS, que proporciona estilos limpios y atractivos, incluyendo colores y
+        márgenes específicos para un diseño visualmente agradable.
+      </p>
+    `,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "localStorage",
+    ],
+    img: `${passwordImg.src}`,
+    gif: `${passwordGif.src}`,
+    link: "https://password-generator-gilt-theta.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/password-generator",
   },
   {
     title: "Notas",
