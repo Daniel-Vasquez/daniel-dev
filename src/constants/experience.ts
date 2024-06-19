@@ -25,7 +25,7 @@ export const EXPERIENCE = [
   },
   {
     name: "Freelance",
-    skills: "Astro, tailwind, redex, redux-toolkit",
+    skills: "Astro, tailwind, redux, redux-toolkit",
     start_date: "Mar. 2024",
     end_date: "Actualidad",
     link: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
