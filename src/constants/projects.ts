@@ -25,6 +25,8 @@ import flaskImg from "@/images/frases-flask.png"
 import flaskGif from "@/images/frases-flask.gif"
 import passwordImg from "@/images/generete-password.png"
 import passwordGif from "@/images/generete-password.gif"
+import quizImg from "@/images/quiz.png"
+import quizGif from "@/images/quiz.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -409,6 +411,37 @@ export const PROJECTS: ProjectType[] = [
     gif: `${simuladorGif.src}`,
     link: "https://mi-credito.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/mi-credito",
+  },
+  {
+    title: "Quiz de cultura general",
+    projectName: "quiz-de-cultura-general",
+    description:
+      "Pon a prueba tus conocimientos con este quiz de cultura general. Responde 10 preguntas seleccionadas aleatoriamente para evaluar tu conocimiento en diversos temas.",
+    href: "/proyectos/quiz-de-cultura-general",
+    content: `
+      <p>
+        Pon a prueba tus conocimientos con este quiz de cultura general.
+        Responde 10 preguntas seleccionadas aleatoriamente para evaluar
+        tu conocimiento en diversos temas. El proyecto destaca por su diseño
+        interactivo y atractivo, con preguntas de opción múltiple, las
+        respuestas correctas resaltadas en verde y las incorrectas en rojo.
+      </p>
+
+      <p>
+        La aplicación muestra el puntaje final al finalizar el quiz y ofrece la
+        opción de reiniciar para intentar mejorar el resultado.
+      </p>
+    `,
+    technologies: [
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "API"
+    ],
+    img: `${quizImg.src}`,
+    gif: `${quizGif.src}`,
+    link: "https://daniel-vasquez.github.io/general-culture-test/",
+    repo: "https://github.com/Daniel-Vasquez/general-culture-test",
   },
   {
     title: "Batalla de mascotas",
