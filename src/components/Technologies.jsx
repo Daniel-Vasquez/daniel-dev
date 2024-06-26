@@ -12,8 +12,8 @@ import { LogoAws } from "@/components/icons/LogoAws";
 import { LogoGit } from "@/components/icons/LogoGit";
 import { LogoRedux } from "@/components/icons/LogoRedux";
 
-const WIDTHLOGO = "w-10";
-const HEIGHTLOGO = "h-10";
+const WIDTHLOGO = "w-14";
+const HEIGHTLOGO = "h-14";
 
 const LOGOS = [
   {
@@ -72,11 +72,11 @@ const LOGOS = [
 
 export const Technologies = () => {
   return (
-    <div className="flex justify-center gap-11 flex-wrap">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-7">
       {TECHNOLOGIES.map(({ name, link, nameLogo }, index) => (
         <div
           key={index}
-          className="flex flex-col justify-center cursor-pointer trasition duration-300 ease-in-out transform hover:scale-110"
+          className="flex flex-col justify-center cursor-pointer p-3 rounded-lg trasition duration-300 ease-in-out transform hover:bg-blue-light hover:scale-110"
         >
           <a
             className={`grid gap-2 ${link ? "text-blue-600" : ""}`}

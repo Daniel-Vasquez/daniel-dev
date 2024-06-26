@@ -3,16 +3,16 @@ import { EDUCATION } from "@/constants/education";
 
 ---
 <div id="educacion" class="h-24"></div>
-<section class="bg-blue-light p-5 rounded-xl">
+<section class="bg-blue-light px-5 py-7 rounded-3xl">
   <div>
     <p class="text-white text-3xl text-center font-semibold mb-5 sm:text-start">
       Educación
     </p>
   </div>
-  <div>
+  <div class="flex flex-col gap-7">
     {EDUCATION.map(({ name, title, date, logo, link }) => (
-      <div class="flex flex-col text-center items-center gap-3 p-2 border-b-2 border-white sm:flex-row sm:text-start">
-        <div class="w-12">
+      <div class="flex flex-col text-center text-lg items-center gap-6 p-2 border-b-2 border-white sm:flex-row sm:text-start">
+        <div class="w-16">
           <img
             class="rounded-full"
             src={logo}
@@ -28,7 +28,7 @@ import { EDUCATION } from "@/constants/education";
               {name}
             </a>
           </h4>
-          <p class="mb-1 text-white">
+          <p class="mb-1 text-white font-semibold">
             {title}
           </p>
           <p class="mb-1 text-white">

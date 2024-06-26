@@ -17,7 +17,7 @@ export const TECHNOLOGIES = [
     nameLogo: "tailwind css"
   },
   {
-    name: "Shopify (liquid)",
+    name: "Shopify",
     description: "He trabajado con Shopify, abarcando temas como la creación de temas personalizados, la gestión de productos y la configuración de aplicaciones. Estos conocimientos me han permitido crear componentes eficientes y atractivas para los usuarios.",
     link: "https://mascaradelatex.com/pages/mayoreo",
     nameLogo: "shopify"
@@ -35,7 +35,7 @@ export const TECHNOLOGIES = [
     nameLogo: "express"
   },
   {
-    name: "Remix (Shopify)",
+    name: "Remix",
     description: "Un nuevo marco de trabajo para la construcción de aplicaciones web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de rutas y la generación de páginas estáticas, lo que me permite crear aplicaciones web rápidas y eficientes.",
     nameLogo: "remix"
   },

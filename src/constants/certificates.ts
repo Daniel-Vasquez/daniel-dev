@@ -1,7 +1,7 @@
 export const CERTIFICATES = [
   {
     tag: "astro",
-    title: "Introducción a Astro",
+    title: "Astro",
   },
   {
     tag: "react",
@@ -33,7 +33,7 @@ export const CERTIFICATES = [
   },
   {
     tag: "css grid",
-    title: "CSS Grid Layout",
+    title: "CSS Grid",
   },
   {
     tag: "dom",
@@ -41,7 +41,7 @@ export const CERTIFICATES = [
   },
   {
     tag: "git",
-    title: "Fundamentos de Git y GitHub",
+    title: "Git y GitHub",
   },
   {
     tag: "css",
