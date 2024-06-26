@@ -21,11 +21,15 @@ export const CERTIFICATES = [
   },
   {
     tag: "aws",
-    title: "Curso de Introducción a AWS",
+    title: "Introducción a AWS",
   },
   {
     tag: "javascript",
-    title: "Fundamentos de JavaScript",
+    title: "JavaScript",
+  },
+  {
+    tag: "python",
+    title: "Python",
   },
   {
     tag: "css grid",
@@ -33,10 +37,14 @@ export const CERTIFICATES = [
   },
   {
     tag: "dom",
-    title: "Curso de Manipulación del DOM",
+    title: "Manipulación del DOM",
   },
   {
     tag: "git",
-    title: "Fundamentos de git y GitHub",
+    title: "Fundamentos de Git y GitHub",
+  },
+  {
+    tag: "css",
+    title: "CSS",
   }
 ];

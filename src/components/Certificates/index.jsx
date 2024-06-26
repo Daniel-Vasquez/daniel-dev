@@ -8,60 +8,71 @@ import { LogoCssgrid } from "@/components/icons/LogoCssgrid";
 import { LogoDom } from "@/components/icons/LogoDom";
 import { LogoGit } from "@/components/icons/LogoGit";
 import { LogoTailwind } from "@/components/icons/LogoTailwind";
+import { LogoPython } from "@/components/icons/LogoPython";
+import { LogoCss } from "@/components/icons/LogoCss";
 
 const LOGOSSVG = [
   {
     name: "astro",
-    svg: <LogoAstro className="w-11 h-11 text-orange-500" />,
+    svg: <LogoAstro className=" w-14 h-14 text-orange-500" />,
   },
   {
     name: "react",
-    svg: <LogoReact className="w-11 h-11 text-blue-500" />,
+    svg: <LogoReact className="w-14 h-14 text-blue-500" />,
   },
   {
     name: "tailwind css",
-    svg: <LogoTailwind className="w-11 h-11 text-cyan-300" />,
+    svg: <LogoTailwind className="w-14 h-14 text-cyan-300" />,
   },
   {
     name: "nodejs",
-    svg: <LogoNodejs className="w-11 h-11 text-green-500" />,
+    svg: <LogoNodejs className="w-14 h-14 text-green-500" />,
   },
   {
     name: "expressjs",
-    svg: <LogoNodejs className="w-11 h-11 text-green-500" />,
+    svg: <LogoNodejs className="w-14 h-14 text-green-500" />,
   },
   {
     name: "aws",
-    svg: <LogoAws className="w-11 h-11 text-orange-400" />,
+    svg: <LogoAws className="w-14 h-14 text-orange-400" />,
   },
   {
     name: "javascript",
-    svg: <LogoJavascript className="w-11 h-11 text-yellow-400" />,
+    svg: <LogoJavascript className="w-14 h-14 text-yellow-400" />,
+  },
+  {
+    name: "python",
+    svg: <LogoPython className="w-14 h-14 text-yellow-400" />,
   },
   {
     name: "css grid",
-    svg: <LogoCssgrid className="w-11 h-11 text-black" />,
+    svg: <LogoCssgrid className="w-14 h-14 text-black" />,
   },
   {
     name: "dom",
-    svg: <LogoDom className="w-11 h-11 text-purple-600" />,
+    svg: <LogoDom className="w-14 h-14 text-purple-600" />,
   },
   {
     name: "git",
-    svg: <LogoGit className="w-11 h-11 text-red-500" />,
+    svg: <LogoGit className="w-14 h-14 text-red-500" />,
   },
+  {
+    name: "css",
+    svg: <LogoCss className="w-14 h-14 text-blue-500" />,
+  }
 ]
 
 export const Certificates = () => {
   return (
-    <section className="certificates my-9">
+    <section>
+      <div id="certificaciones" className="h-24"></div>
       <div>
         <p className="text-white text-3xl text-center font-semibold mb-5 sm:text-start">
           Certificaciones
         </p>
       </div>
       <div
-        className="bg-blue-light flex flex-col gap-4 max-h-72 rounded-xl p-5 border-2 border-black"
+        className="bg-blue-light m-auto flex flex-col gap-9 max-h-72 rounded-xl px-5 py-7 border-2 border-black"
         style={{
           overflowY: "scroll",
           scrollbarColor: "#2463eb transparent",
@@ -69,17 +80,17 @@ export const Certificates = () => {
       >
         {CERTIFICATES.map(({ tag, title }, index) => {
           return (
-            <div className="flex flex-col items-center text-center gap-5 font-semibold text-white sm:flex-row" key={index}>
+            <div className="flex flex-col items-center gap-7 sm:flex-row" key={index}>
               <div className="listCertificates-img">
                 {LOGOSSVG.find((logo) => logo.name === tag)?.svg || tag}
               </div>
-              <div>
+              <div className="text-lg font-semibold text-white">
                 {title}
               </div>
             </div>
           );
         })}
-        <p className="font-semibold text-md opacity-50 text-center my-2">Entre otros</p>
+        <p className="font-semibold text-md text-white opacity-60 text-center my-2">Entre otros</p>
       </div>
     </section>
   );
