@@ -27,6 +27,8 @@ import passwordImg from "@/images/generete-password.png"
 import passwordGif from "@/images/generete-password.gif"
 import quizImg from "@/images/quiz.png"
 import quizGif from "@/images/quiz.gif"
+import cssGeneratorImg from "@/images/css-generator.png"
+import cssGeneratorGif from "@/images/css-generator.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -217,6 +219,37 @@ export const PROJECTS: ProjectType[] = [
     repo: "https://github.com/Daniel-Vasquez/instagram",
   },
   {
+    title: "Editor de CSS",
+    projectName: "editor-de-css",
+    description:
+      "El proyecto es un editor de CSS interactivo que permite a los usuarios personalizar el diseño de un componente en tiempo real.",
+    href: "/proyectos/editor-de-css",
+    content: `
+      <p>
+        El proyecto es un editor de CSS interactivo que permite a los usuarios
+        personalizar el diseño de un Componente en tiempo real. Destacan
+        funciones clave como la edición de propiedades CSS, la visualización
+        de cambios en tiempo real y la exportación del código CSS personalizado.
+        Los usuarios pueden ajustar el color, border-radio, box-shadow, intencidad,
+        posición en X y Y, entre otras propiedades CSS.
+      </p>
+      <p>
+        La aplicación utiliza React + Vite para la interfaz de usuario y el
+        manejo del estado, y emplea Tailwind CSS para estilos y diseño
+        responsivo.
+      </p>
+    `,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "CSS",
+    ],
+    img: `${cssGeneratorImg.src}`,
+    gif: `${cssGeneratorGif.src}`,
+    link: "https://css-generator-gilt.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/css-generator",
+  },
+  {
     title: "Calculadora",
     projectName: "calculadora",
     description:
@@ -237,7 +270,7 @@ export const PROJECTS: ProjectType[] = [
       </p>
     `,
     technologies: [
-      "react",
+      "React",
       "Tailwind CSS",
       "localStorage",
     ],
