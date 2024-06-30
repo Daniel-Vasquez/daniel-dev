@@ -29,6 +29,8 @@ import quizImg from "@/images/quiz.png"
 import quizGif from "@/images/quiz.gif"
 import cssGeneratorImg from "@/images/css-generator.png"
 import cssGeneratorGif from "@/images/css-generator.gif"
+import memoryImg from "@/images/memory.png"
+import memoryGif from "@/images/memory.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -248,6 +250,37 @@ export const PROJECTS: ProjectType[] = [
     gif: `${cssGeneratorGif.src}`,
     link: "https://css-generator-gilt.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/css-generator",
+  },
+  {
+    title: "Memorama",
+    projectName: "memorama",
+    description:
+      "Un juego de memoria desarrollado con React y Vite, utilizando Tailwind CSS para el diseño y modo oscuro persistente.",
+    href: "/proyectos/memorama",
+    content: `
+      <p>
+        Este es un juego de memoria desarrollado con React + Vite, utilizando
+        <strong class="text-golden">Tailwind CSS</strong> para el diseño y
+        <strong class="text-golden">useContext</strong>
+        para manejar el estado del modo oscuro. La configuración del modo
+        oscuro se guarda en localStorage para persistencia.
+      </p>
+      <p>
+        El componente <strong>MemoryGame.jsx</strong> maneja la lógica del
+        juego de memoria, incluyendo la generación de cartas, el manejo de clics
+        y la verificación de coincidencias.
+      </p>
+    `,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "localStorage",
+      "dark mode",
+    ],
+    img: `${memoryImg.src}`,
+    gif: `${memoryGif.src}`,
+    link: "https://memory-game-three-smoky.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/memory-game",
   },
   {
     title: "Calculadora",
