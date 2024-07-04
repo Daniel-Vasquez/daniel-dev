@@ -31,6 +31,8 @@ import cssGeneratorImg from "@/images/css-generator.png"
 import cssGeneratorGif from "@/images/css-generator.gif"
 import memoryImg from "@/images/memory.png"
 import memoryGif from "@/images/memory.gif"
+import motherStewsImg from "@/images/guisados-mama.png"
+import motherStewsGif from "@/images/guisados-mama.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -155,6 +157,67 @@ export const PROJECTS: ProjectType[] = [
     gif: `${lawyerGif.src}`,
     link: "https://www.salinasabogados.mx/",
     repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+  },
+  {
+    title: "Los Guisados de Mamá",
+    projectName: "los-guisados-de-mama",
+    description:
+      "Página web de un restaurante de comida mexicana, desarrollada con Astro, TypeScript y Tailwind CSS.",
+    href: "/proyectos/los-guisados-de-mama",
+    content: `
+      <p>
+        Creación una página web profesional y atractiva para un restaurante de
+        comida mexicana, destacando su identidad única y ofreciendo una
+        experiencia de usuario excepcional. El proyecto incluyó desde la
+        conceptualización inicial hasta el despliegue en un dominio real.
+      </p>
+      <p class="text-xl font-bold">
+        Proceso de Creación:
+      </p>
+      <ul class="flex flex-col gap-2">
+        <li class="text-gray-300 list-disc ml-4">
+          Creación del <span class="text-golden font-semibold">mockup</span>
+          detallado que reflejaba la estructura, el flujo de navegación y la
+          estética deseada para la página.
+        </li>
+        <li class="text-gray-300 list-disc ml-4">
+          Selección de Colores: Se Selecciono una paleta de colores que
+          reflejara la autenticidad y la vibrante cultura mexicana, utilizando
+          tonos cálidos y acogedores.
+        </li>
+        <li class="text-gray-300 list-disc ml-4">
+          Imágenes: Se crearon imágenes personalizadas de cada platillo/producto.
+        </li>
+        <li class="text-gray-300 list-disc ml-4">
+          Contenido Atractivo: Redacción de textos persuasivos y descriptivos
+          para cada sección del sitio, destacando la descripción de cada
+          platilo/producto, que lo hacen único.
+        </li>
+        <li class="text-gray-300 list-disc ml-4">
+          Deploy: Se desplegó la página web en
+          <span class="text-golden font-semibold">Vercel</span>, asegurando
+          un rendimiento óptimo y una gestión sencilla de despliegue continuo.
+        </li>
+        <li class="text-gray-300 list-disc ml-4">
+          <span class="text-golden font-semibold">Dominio Real</span>:
+          Adquisición de un dominio en
+          <span class="text-golden font-semibold">Namecheap</span>,
+          configurando y enlazando adecuadamente el dominio con Vercel para
+          asegurar un acceso rápido y seguro.
+        </li>
+      </ul>
+    `,
+    technologies: [
+      "Astro",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+      "JavaScript",
+    ],
+    img: `${motherStewsImg.src}`,
+    gif: `${motherStewsGif.src}`,
+    link: "https://www.losguisadosdemama.shop/",
+    repo: "https://www.losguisadosdemama.shop/",
   },
   {
     title: "Citas Clásicas",
