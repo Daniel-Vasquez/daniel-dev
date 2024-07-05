@@ -33,6 +33,8 @@ import memoryImg from "@/images/memory.png"
 import memoryGif from "@/images/memory.gif"
 import motherStewsImg from "@/images/guisados-mama.png"
 import motherStewsGif from "@/images/guisados-mama.gif"
+import hangmanImg from "@/images/hangman.png"
+import hangmanGif from "@/images/hangman.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -344,6 +346,33 @@ export const PROJECTS: ProjectType[] = [
     gif: `${memoryGif.src}`,
     link: "https://memory-game-three-smoky.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/memory-game",
+  },
+  {
+    title: "Hangman",
+    projectName: "hangman",
+    description:
+      "Este es un juego del Ahorcado hecho con React, Vite y Tailwind CSS. El juego permite a los usuarios adivinar letras para descubrir una palabra oculta antes de agotar el número máximo de intentos permitidos.",
+    href: "/proyectos/hangman",
+    content: `
+      <p>
+        Este es un juego del Ahorcado hecho con React, Vite y Tailwind CSS.
+        El juego permite a los usuarios adivinar letras para descubrir una
+        palabra oculta antes de agotar el número máximo de intentos permitidos.
+        Destacan funciones clave como la selección de palabras aleatorias,
+        la visualización de letras adivinadas y la actualización de la interfaz
+        de usuario en tiempo real.
+      </p>
+    `,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "API",
+      "CSS"
+    ],
+    img: `${hangmanImg.src}`,
+    gif: `${hangmanGif.src}`,
+    link: "https://hangman-game-tau-weld.vercel.app/",
+    repo: "https://github.com/Daniel-Vasquez/hangman-game",
   },
   {
     title: "Calculadora",
