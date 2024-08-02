@@ -71,5 +71,10 @@ export const TECHNOLOGIES = [
     description: "He trabajado con Redux y Redux Persist, abarcando temas como la creación de stores, la gestión de acciones y la persistencia de estados. Estos conocimientos me han permitido crear aplicaciones web escalables y eficientes.",
     link: "https://ecommerce-react-lime.vercel.app/",
     nameLogo: "redux"
+  },
+  {
+    name: "WordPress",
+    description: "He trabajado con WordPress, abarcando temas como la creación de temas personalizados, la gestión de plugins y la configuración de widgets. Estos conocimientos me han permitido crear sitios web atractivos y funcionales para diferentes clientes.",
+    nameLogo: "wordpress"
   }
 ]

@@ -11,6 +11,7 @@ import { LogoRemix } from "@/components/icons/LogoRemix";
 import { LogoAws } from "@/components/icons/LogoAws";
 import { LogoGit } from "@/components/icons/LogoGit";
 import { LogoRedux } from "@/components/icons/LogoRedux";
+import { LogoWordPress } from "@/components/icons/LogoWordPress";
 
 const WIDTHLOGO = "w-14";
 const HEIGHTLOGO = "h-14";
@@ -67,6 +68,10 @@ const LOGOS = [
   {
     name: "redux",
     logo: <LogoRedux className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-purple-500`} />,
+  },
+  {
+    name: "wordpress",
+    logo: <LogoWordPress className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-blue-400`} />,
   },
 ];
 
