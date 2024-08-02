@@ -6,10 +6,10 @@ import { LogoJavascript } from "@/components/icons/LogoJavascript";
 import { LogoTailwind } from "@/components/icons/LogoTailwind";
 import { LogoPython } from "@/components/icons/LogoPython";
 import { LogoShopify } from "@/components/icons/LogoShopify";
-import { LogoSql } from "@/components/icons/LogoSql";
 import { LogoRemix } from "@/components/icons/LogoRemix";
 import { LogoAws } from "@/components/icons/LogoAws";
 import { LogoGit } from "@/components/icons/LogoGit";
+import { LogoGithub } from "@/components/icons/LogoGithub";
 import { LogoRedux } from "@/components/icons/LogoRedux";
 import { LogoWordPress } from "@/components/icons/LogoWordPress";
 
@@ -50,10 +50,6 @@ const LOGOS = [
     logo: <LogoShopify className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-green-500`} />,
   },
   {
-    name: "sql",
-    logo: <LogoSql className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-cyan-400`} />,
-  },
-  {
     name: "remix",
     logo: <LogoRemix className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-white`} />,
   },
@@ -64,6 +60,10 @@ const LOGOS = [
   {
     name: "git",
     logo: <LogoGit className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-red-500`} />,
+  },
+  {
+    name: "github",
+    logo: <LogoGithub className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-purple-600`} />,
   },
   {
     name: "redux",

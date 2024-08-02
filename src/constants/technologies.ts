@@ -40,18 +40,13 @@ export const TECHNOLOGIES = [
     nameLogo: "remix"
   },
   {
-    name: "SQL",
-    description: "He trabajado con SQL, abarcando temas como la creación de bases de datos, la gestión de tablas y la ejecución de consultas. Estos conocimientos me han permitido crear bases de datos eficientes y escalables para diferentes proyectos.",
-    nameLogo: "sql"
-  },
-  {
     name: "JavaScript",
     description: "He trabajado con JavaScript, abarcando temas como el asincronismo, manipulación del DOM y el uso de Promesas. Estos conocimientos me han permitido crear aplicaciones interactivas y dinámicas que ofrecen una experiencia fluida a los usuarios.",
     link: "https://daniel-vasquez.github.io/pet-battle/",
     nameLogo: "javascript"
   },
   {
-    name: "Python (Flask)",
+    name: "Python",
     description: "Cuento con experiencia en Python, dominando conceptos como el entorno virtual, list comprehensions, high order functions y módulos. Esto me ha permitido abordar proyectos desde diferentes perspectivas y ofrecer soluciones eficientes.",
     link: "https://daniel-vasquez.github.io/flask-dev/templates/",
     nameLogo: "python"
@@ -62,9 +57,14 @@ export const TECHNOLOGIES = [
     nameLogo: "aws"
   },
   {
-    name: "Git y GitHub",
+    name: "Git",
     description: "He trabajado con Git y GitHub, abarcando temas como la creación de repositorios, la gestión de ramas y la colaboración en proyectos. Estos conocimientos me han permitido trabajar de forma eficiente en diferentes proyectos y equipos.",
     nameLogo: "git"
+  },
+  {
+    name: "GitHub",
+    description: "He trabajado con Git y GitHub, abarcando temas como la creación de repositorios, la gestión de ramas y la colaboración en proyectos. Estos conocimientos me han permitido trabajar de forma eficiente en diferentes proyectos y equipos.",
+    nameLogo: "github"
   },
   {
     name: "Redux",
