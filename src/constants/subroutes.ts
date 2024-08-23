@@ -1,22 +1,22 @@
 export const SUBROUTES = [
   {
-    href: "#acerca-de",
+    id: "acerca-de",
     label: "Acerca de mi",
   },
   {
-    href: "#experiencia",
+    id: "experiencia",
     label: "Experiencia",
   },
   {
-    href: "#educacion",
+    id: "educacion",
     label: "Educación",
   },
   {
-    href: "#certificaciones",
+    id: "certificaciones",
     label: "Certificaciones",
   },
   {
-    href: "#proyectos",
+    id: "proyectos",
     label: "Proyectos",
   },
 ];

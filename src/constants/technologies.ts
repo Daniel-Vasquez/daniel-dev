@@ -12,9 +12,9 @@ export const TECHNOLOGIES = [
     nameLogo: "react"
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     description: "Construcción de interfaces web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de estilos y la generación de páginas web responsivas, lo que me permite crear aplicaciones web rápidas y eficientes.",
-    nameLogo: "tailwind css"
+    nameLogo: "tailwind"
   },
   {
     name: "Shopify",
@@ -33,11 +33,6 @@ export const TECHNOLOGIES = [
     description: "Un popular framework de aplicaciones web para Node.js. Conozco su potencial para manejar diferentes métodos HTTP (GET, POST, PUT, DELETE, etc.), lo que me permite construir APIs robustas y aplicaciones web eficientes.",
     link: "https://notes-deploy-client.vercel.app/",
     nameLogo: "express"
-  },
-  {
-    name: "Remix",
-    description: "Un nuevo marco de trabajo para la construcción de aplicaciones web modernas. Conozco su potencial para la creación de componentes reutilizables, la gestión de rutas y la generación de páginas estáticas, lo que me permite crear aplicaciones web rápidas y eficientes.",
-    nameLogo: "remix"
   },
   {
     name: "JavaScript",

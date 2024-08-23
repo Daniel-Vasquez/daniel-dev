@@ -2,6 +2,13 @@ import { Menu, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 
 export function SubDropMenu({ routes, className, children }) {
+  const scrollToNextSection = (id) => {
+    const nextSection = document.getElementById(id)
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <div className={ className }>
       <Menu as="div" className="relative inline-block text-left">
@@ -20,14 +27,14 @@ export function SubDropMenu({ routes, className, children }) {
         >
           <Menu.Items className="z-40 absolute mt-2 w-72 focus:outline-none">
             <div className="bg-blue flex flex-col gap-3 px-4 py-7 rounded-md border border-border">
-              {routes.map(({ href, label }, index) => (
+              {routes.map(({ id, label }, index) => (
                 <Menu.Item key={index}>
-                  <a
-                    href={href}
+                  <button
+                    onClick={() => scrollToNextSection(id)}
                     className="bg-blue-medium text-white rounded-md px-3 py-2 font-bold hover:bg-golden hover:text-black"
                   >
                     {label}
-                  </a>
+                  </button>
                 </Menu.Item>
               ))}
             </div>
