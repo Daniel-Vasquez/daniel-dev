@@ -11,6 +11,7 @@ import { LogoGit } from "@/components/icons/LogoGit";
 import { LogoGithub } from "@/components/icons/LogoGithub";
 import { LogoRedux } from "@/components/icons/LogoRedux";
 import { LogoWordPress } from "@/components/icons/LogoWordPress";
+import { LogoWoo } from "@/components/icons/LogoWoo";
 
 const WIDTHLOGO = "w-9";
 const HEIGHTLOGO = "h-9";
@@ -29,7 +30,7 @@ const LOGOS = [
     logo: <LogoReact className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-blue-500`} />,
   },
   {
-    name: "node",
+    name: "nodejs",
     logo: <LogoNodejs className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-green-500`} />,
   },
   {
@@ -67,6 +68,10 @@ const LOGOS = [
   {
     name: "wordpress",
     logo: <LogoWordPress className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-blue-400`} />,
+  },
+  {
+    name: "woo",
+    logo: <LogoWoo className={`${WIDTHLOGO} ${HEIGHTLOGO} m-auto text-purple-400`} />,
   },
 ];
 

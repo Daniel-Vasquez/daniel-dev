@@ -12,11 +12,15 @@ export const CERTIFICATES = [
     title: "Tailwind CSS",
   },
   {
+    tag: "wordpress",
+    title: "WordPress",
+  },
+  {
     tag: "nodejs",
     title: "Node JS",
   },
   {
-    tag: "expressjs",
+    tag: "express",
     title: "Express JS",
   },
   {

@@ -23,10 +23,10 @@ export const TECHNOLOGIES = [
     nameLogo: "shopify"
   },
   {
-    name: "Node.js",
+    name: "Node js",
     description: "Me permite trabajar en proyectos más completos y escalables. Tengo conocimientos en la creación de módulos con la extensión .mjs, la lectura de archivos utilizando Promesas y/o async/await, y el uso de los módulos path, http, net y process para una gestión eficiente de rutas y procesos.",
     link: "https://notes-deploy-client.vercel.app/",
-    nameLogo: "node"
+    nameLogo: "nodejs"
   },
   {
     name: "Express",
@@ -71,5 +71,10 @@ export const TECHNOLOGIES = [
     name: "WordPress",
     description: "He trabajado con WordPress, abarcando temas como la creación de temas personalizados, la gestión de plugins y la configuración de widgets. Estos conocimientos me han permitido crear sitios web atractivos y funcionales para diferentes clientes.",
     nameLogo: "wordpress"
+  },
+  {
+    name: "Woo",
+    description: "Tengo conocimientos con WooCommerce, abarcando temas como la creación de productos, la gestión de pedidos y la configuración de métodos de pago. Estos conocimientos me han permitido crear tiendas en línea eficientes y atractivas para diferentes clientes.",
+    nameLogo: "woo"
   }
 ]
