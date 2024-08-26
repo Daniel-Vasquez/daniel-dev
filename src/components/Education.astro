@@ -2,16 +2,16 @@
 import { EDUCATION } from "@/constants/education";
 
 ---
-<div id="educacion" class="h-24"></div>
-<section class="bg-blue-light px-5 py-7 rounded-3xl">
+<div id="educacion" class="h-28"></div>
+<section class="border-2 border-border px-5 py-7 rounded-3xl">
   <div>
-    <p class="text-white text-3xl text-center font-semibold mb-5 sm:text-start">
-      Educación
+    <p class="text-3xl font-bold text-golden pb-4 lg:text-4xl">
+      Educación.
     </p>
   </div>
   <div class="flex flex-col gap-7">
     {EDUCATION.map(({ name, title, date, logo, link }) => (
-      <div class="flex flex-col text-center text-lg items-center gap-6 p-2 border-b-2 border-white sm:flex-row sm:text-start">
+      <div class="flex flex-col-reverse text-center text-lg items-center gap-8 p-2 pb-5 border-b-2 border-white sm:flex-row sm:text-start">
         <div class="w-16">
           <img
             class="rounded-full"

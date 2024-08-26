@@ -3,7 +3,7 @@ import { type RouteType } from "@/types/routes";
 export const ROUTES: RouteType[] = [
   {
     href: "/",
-    label: "Acerca de mi",
+    label: "Inicio",
   },
   {
     href: "/proyectos",
