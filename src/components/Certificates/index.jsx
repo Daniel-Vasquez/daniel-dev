@@ -5,8 +5,8 @@ export const Certificates = () => {
   return (
     <section>
       <div id="certificaciones" className="h-28"></div>
-      <div className="border-2 border-gray-600 rounded-3xl px-5 py-11">
-        <p class="text-3xl font-bold text-golden pb-4 lg:text-4xl">
+      <div className="border-2 border-gray-600 rounded-3xl px-8 py-11">
+        <p className="text-3xl font-bold text-golden pb-4 lg:text-4xl">
           Certificaciones.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">

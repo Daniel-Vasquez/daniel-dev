@@ -8,7 +8,6 @@ import Experience from "@/components/Experience.astro";
 import Education from "@/components/Education.astro";
 import { Certificates } from "@/components/Certificates";
 import { SubDropMenu } from "@/components/SubDropMenu";
-import { LogoSubMenu } from "@/components/icons/LogoSubMenu";
 import { SUBROUTES } from "@/constants/subroutes";
 ---
 
@@ -16,14 +15,8 @@ import { SUBROUTES } from "@/constants/subroutes";
   title="Daniel Vásquez"
   description="Soy Desarrollador Full Stack, poseo una sólida experiencia en programación de alrededor de un dos años, durante el cual he trabajado en proyectos desafiantes utilizando lenguajes de programación como Python y herramientas de servicios en la nube de AWS, como: S3 y Cloudwatch."
 >
-  <SubDropMenu
-    client:idle
-    className="bg-golden rounded-lg z-50 fixed bottom-1/2 left-4"
-    routes={SUBROUTES}
-  >
-    <LogoSubMenu className="text-golden w-7 h-7" />
-  </SubDropMenu>
   <div class="container max-w-7xl m-auto mb-10 p-4 lg:mt-0">
+    <SubDropMenu client:idle routes={SUBROUTES} />
     <Main />
     <AboutMe />
     <Experience />

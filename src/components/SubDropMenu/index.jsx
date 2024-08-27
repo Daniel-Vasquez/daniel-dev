@@ -1,8 +1,11 @@
 import { Menu, Transition } from '@headlessui/react'
-import { Fragment } from 'react'
+import { useState, Fragment } from 'react'
+import { LogoSubMenu } from "@/components/icons/LogoSubMenu";
 
-export function SubDropMenu({ routes, className, children }) {
+export function SubDropMenu({ routes }) {
+  const [clickMenu, setClickMenu] = useState(false)
   const scrollToNextSection = (id) => {
+    setClickMenu(!clickMenu)
     const nextSection = document.getElementById(id)
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' })
@@ -10,10 +13,20 @@ export function SubDropMenu({ routes, className, children }) {
   }
 
   return (
-    <div className={ className }>
+    <div className="bg-blue border border-border rounded-lg z-50 sticky w-11 top-1/2 ml-0 lg:-ml-5">
       <Menu as="div" className="relative inline-block text-left">
-        <Menu.Button className="p-2 rounded-md">
-          {children}
+        <Menu.Button
+          className="p-1 rounded-md"
+          onClick={() => setClickMenu(!clickMenu)}
+        >
+          <LogoSubMenu
+            className={
+              `text-golden w-9 h-9 ${clickMenu
+                ? 'transform rotate-180 transition-all duration-300'
+                : 'transform rotate-0 transition-all duration-300'}
+              `
+            }
+          />
         </Menu.Button>
 
         <Transition

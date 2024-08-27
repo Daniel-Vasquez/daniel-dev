@@ -2,16 +2,16 @@ export const LogoSubMenu = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
       viewBox="0 0 24 24"
       className={className}
-      fill="currentColor"
     >
       <path
-        stroke="#000"
+        stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
-        d="M4 8h9m-9 4h16m0 0-3-3m3 3-3 3M4 16h9"
+        d="M5 17h8m-8-5h14m-8-5h8"
       />
     </svg>
   )
