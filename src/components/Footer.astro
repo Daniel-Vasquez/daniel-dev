@@ -1,10 +1,14 @@
 ---
+import SocialNetworks from "@/components/SocialNetworks.astro";
 const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
 
 ---
 
 <footer>
-  <div class="bg-blue p-5">
+  <div class="bg-blue py-14 px-5">
+    <div>
+      <SocialNetworks />
+    </div>
     <div class="text-md text-center text-white">
       Creado con ❤️ por
       <a
