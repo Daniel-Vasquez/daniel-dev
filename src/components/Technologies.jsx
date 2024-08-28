@@ -81,10 +81,10 @@ export const Technologies = () => {
       {TECHNOLOGIES.map(({ name, link, nameLogo }, index) => (
         <div
           key={index}
-          className="border border-border flex flex-col justify-center cursor-pointer p-3 rounded-lg trasition duration-300 ease-in-out transform hover:bg-blue-light hover:scale-110"
+          className="w-32 m-auto border border-border flex flex-col justify-center cursor-pointer p-3 rounded-lg trasition duration-300 ease-in-out transform hover:-translate-y-2 md:w-auto md:m-0"
         >
           <a
-            className={`grid gap-2 ${link ? "text-blue-600" : ""}`}
+            className={`grid gap-1 ${link ? "text-blue-600" : ""}`}
             href={link}
             target="_blank"
           >
@@ -95,7 +95,7 @@ export const Technologies = () => {
                 </div>
               )
             ))}
-            <p className={`text-md text-center font-bold tracking-tight ${link ? "text-blue-600" : "text-white"} hover:underline`}>
+            <p className={`text-md text-center font-bold tracking-tight ${link ? "text-blue-600 hover:underline" : "text-black"}`}>
               {name}
             </p>
           </a>

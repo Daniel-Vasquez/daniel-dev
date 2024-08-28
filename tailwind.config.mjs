@@ -10,8 +10,8 @@ export default {
 
         blue: {
           DEFAULT: "#111827", // hard blue
-          light: "#374151", // soft blue
-          medium: "#202a37", // medium blue
+          medium: "#334256", // medium blue
+          light: "#F5FCFF", // soft blue
         },
 
         /* GREY */

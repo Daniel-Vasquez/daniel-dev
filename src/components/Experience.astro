@@ -3,13 +3,13 @@ import { EXPERIENCE } from "@/constants/experience";
 ---
 
 <div id="experiencia" class="h-20"></div>
-<section class="border-2 border-border my-8 px-8 py-7 rounded-3xl">
+<section class="bg-blue-light border-2 border-border my-8 px-8 py-7 rounded-3xl">
   <div class="personal-info-title">
     <p class="text-3xl font-bold text-golden pb-2 lg:text-4xl">
       Experiencia.
     </p>
   </div>
-  <div class="flex flex-col gap-7 rounded-lg text-white">
+  <div class="flex flex-col gap-7 rounded-lg text-black">
     {EXPERIENCE.map(({ name, position, skills, start_date, end_date, link }) => (
       <div class="flex flex-col gap-1 border-b-2 text-lg border-white pb-2">
         <div class="flex flex-wrap items-center gap-1">

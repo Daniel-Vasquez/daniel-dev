@@ -52,7 +52,7 @@ export const PROJECTS: ProjectType[] = [
         Contiene página de inicio de sesión, página princiál, página de productos, páginación de productos, página de detalles del producto, página de carrito de compras y página de pago.
       </p>
 
-      <span class="text-gray-300 text-lg">
+      <span class="text-gray-500 text-lg">
         *Puedes acceder utilizando cualquier
         <strong class="text-golden underline">correo</strong> y 
         <strong class="text-golden underline">contraseña</strong>.*
@@ -62,7 +62,7 @@ export const PROJECTS: ProjectType[] = [
         Características principales:
       </p>
       
-      <ul class="bg-blue-light flex flex-col gap-2 text-white text-lg mb-4 p-3 rounded-md">
+      <ul class="bg-blue-light flex flex-col gap-2 text-black text-lg mb-4 rounded-lg border border-border py-7 px-4">
         <li class="flex">
           <span class="mr-2">►</span>
           <span class="leading-6">

@@ -36,32 +36,32 @@ const { title, content, description, gif, technologies, link, repo } = Astro.pro
       <h1 class="mb-2 py-2 text-4xl font-bold text-center text-golden border-b-2 border-border">
         {title}
       </h1>
-      <div class="flex flex-col gap-3 text-white" set:html={content} />
+      <div class="flex flex-col gap-3 text-black" set:html={content} />
       <div class="flex gap-4">
         <a
           href={link}
           target="_blank"
-          class="bg-golden text-black text-lg font-bold py-2 px-4 rounded-md hover:bg-blue-light hover:text-white"
+          class="bg-golden text-black text-lg font-bold py-2 px-4 rounded-md hover:bg-blue-medium hover:text-white"
         >
           Visitar
         </a>
         <a
           href={repo}
           target="_blank"
-          class="bg-golden text-black text-lg font-bold py-2 px-4 rounded-md hover:bg-blue-light hover:text-white"
+          class="bg-golden text-black text-lg font-bold py-2 px-4 rounded-md hover:bg-blue-medium hover:text-white"
         >
           Ver código
         </a>
       </div>
     </div>
 
-    <div class="text-white text-lg">
+    <div class="text-black text-lg">
       <h2 class="text-2xl font-bold mb-2 text-center">
         Tecnologías utilizadas en el proyecto:
       </h2>
       <List listTechnologies={technologies} />
     </div>
-    <div>
+    <div class="border border-border rounded-lg">
       <a
         class="aspect-video"
         href={link}
@@ -69,7 +69,7 @@ const { title, content, description, gif, technologies, link, repo } = Astro.pro
         title="Visitar"
       >
         <img
-          class="w-full m-auto rounded-md aspect-video"
+          class="w-full m-auto rounded-lg aspect-video"
           src={gif}
           alt={title}
         />
