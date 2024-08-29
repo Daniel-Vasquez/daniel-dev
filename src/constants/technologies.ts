@@ -73,7 +73,7 @@ export const TECHNOLOGIES = [
     nameLogo: "wordpress"
   },
   {
-    name: "Woo",
+    name: "Woocommerce",
     description: "Tengo conocimientos con WooCommerce, abarcando temas como la creación de productos, la gestión de pedidos y la configuración de métodos de pago. Estos conocimientos me han permitido crear tiendas en línea eficientes y atractivas para diferentes clientes.",
     link: "https://woocommerce.com/woocommerce/",
     nameLogo: "woo"

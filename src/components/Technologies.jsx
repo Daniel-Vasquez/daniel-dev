@@ -77,11 +77,11 @@ const LOGOS = [
 
 export const Technologies = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
       {TECHNOLOGIES.map(({ name, link, nameLogo }, index) => (
         <div
           key={index}
-          className={`w-40 m-auto border border-border shadow-lg flex flex-col justify-center cursor-pointer p-3 rounded-lg trasition duration-300 ease-in-out transform ${link ? "text-blue-600 hover:underline" : "text-gray-500"} ${link ? "hover:text-golden" : "hover:text-white"} hover:bg-blue-medium hover:-translate-y-2 md:w-auto md:m-0`}
+          className={`w-48 m-auto border border-border shadow-lg flex flex-col justify-center cursor-pointer p-3 rounded-lg trasition duration-300 ease-in-out transform ${link ? "text-blue-600 hover:underline" : "text-gray-600"} ${link ? "hover:text-golden" : "hover:text-white"} hover:bg-blue-medium hover:-translate-y-2 md:w-auto md:m-0`}
         >
           <a
             className="flex items-center gap-3"
