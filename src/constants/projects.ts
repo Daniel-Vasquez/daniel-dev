@@ -177,30 +177,30 @@ export const PROJECTS: ProjectType[] = [
         Proceso de Creación:
       </p>
       <ul class="flex flex-col gap-2">
-        <li class="text-gray-300 list-disc ml-4">
+        <li class="text-black list-disc ml-4">
           Creación del <span class="text-golden font-semibold">mockup</span>
           detallado que reflejaba la estructura, el flujo de navegación y la
           estética deseada para la página.
         </li>
-        <li class="text-gray-300 list-disc ml-4">
+        <li class="text-black list-disc ml-4">
           Selección de Colores: Se Selecciono una paleta de colores que
           reflejara la autenticidad y la vibrante cultura mexicana, utilizando
           tonos cálidos y acogedores.
         </li>
-        <li class="text-gray-300 list-disc ml-4">
+        <li class="text-black list-disc ml-4">
           Imágenes: Se crearon imágenes personalizadas de cada platillo/producto.
         </li>
-        <li class="text-gray-300 list-disc ml-4">
+        <li class="text-black list-disc ml-4">
           Contenido Atractivo: Redacción de textos persuasivos y descriptivos
           para cada sección del sitio, destacando la descripción de cada
           platilo/producto, que lo hacen único.
         </li>
-        <li class="text-gray-300 list-disc ml-4">
+        <li class="text-black list-disc ml-4">
           Deploy: Se desplegó la página web en
           <span class="text-golden font-semibold">Vercel</span>, asegurando
           un rendimiento óptimo y una gestión sencilla de despliegue continuo.
         </li>
-        <li class="text-gray-300 list-disc ml-4">
+        <li class="text-black list-disc ml-4">
           <span class="text-golden font-semibold">Dominio Real</span>:
           Adquisición de un dominio en
           <span class="text-golden font-semibold">Namecheap</span>,
