@@ -5,12 +5,12 @@ import { Technologies } from '@/components/Technologies'
 const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
 
 ---
-<main class="grid grid-cols-1 items-center justify-evenly gap-7 h-auto -mt-0 xl:grid-cols-[1fr_400px] lg:-mt-20 lg:h-screen">
+<main class="grid grid-cols-1 items-center justify-evenly gap-20 h-auto mb-20 xl:gap-2 xl:grid-cols-[1fr_400px]">
   <div class="flex flex-col justify-center px-5 gap-3 translate-y-0 lg:translate-y-7">
     <div>
-      <div class="flex gap-1 items-center flex-wrap text-justify">
+      <div class="flex gap-1 justify-center items-center flex-wrap text-justify mb-2 md:justify-start">
         <span class="text-2xl font-bold text-black">Hola, soy</span>
-        <h1 class="text-4xl font-bold text-golden lg:text-6xl">Daniel Vásquez,</h1>
+        <h1 class="text-3xl font-bold text-golden lg:text-5xl">Daniel Vásquez,</h1>
         <span class="text-2xl font-bold text-black">desarrollador Full Stack.</span>
       </div>
       <p class="text-2xl text-black mb-2 text-justify">
@@ -24,7 +24,6 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
       </p>
     </div>
     <Technologies />
-    <SocialNetworks />
   </div>
 
   <div class="w-auto m-auto">
@@ -41,5 +40,5 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
       />
     </a>
   </div>
-
 </main>
+<SocialNetworks />
