@@ -1,7 +1,7 @@
 ---
 import danielImg from "@/images/bg-main-dani-removebg.png";
 import SocialNetworks from "@/components/SocialNetworks.astro";
-import { Technologies } from '@/components/Technologies'
+import { Technologies } from "@/components/Technologies";
 const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
 
 ---
@@ -10,23 +10,29 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
     <div>
       <div class="flex gap-1 justify-center items-center flex-wrap text-justify mb-2 md:justify-start">
         <span class="text-2xl font-bold text-black">Hola, soy</span>
-        <h1 class="text-3xl font-bold text-golden lg:text-5xl">Daniel Vásquez,</h1>
-        <span class="text-2xl font-bold text-black">desarrollador Full Stack.</span>
+        <h1 class="text-3xl font-bold text-golden lg:text-5xl">
+          Daniel Vásquez,
+        </h1>
+        <span class="text-2xl font-bold text-black">
+          desarrollador Full Stack.
+        </span>
       </div>
       <p class="text-2xl text-black mb-2 text-justify">
-        Cuento con experiencia en el emocionante mundo 
-        del desarrollo web. A lo largo de mi carrera, he adquirido una amplia 
-        gama de habilidades y conocimientos que me han permitido trabajar en 
-        diversos proyectos y desafíos tecnológicos.
+        Cuento con experiencia en el emocionante mundo del desarrollo web. A lo
+        largo de mi carrera, he adquirido una amplia gama de habilidades y
+        conocimientos que me han permitido trabajar en diversos proyectos y
+        desafíos tecnológicos.
       </p>
       <p class="text-2xl text-black mb-2 text-justify">
         Te comparto mis habilidades en las siguientes áreas:
       </p>
     </div>
-    <Technologies />
+    <div class="fadeInLeft">
+      <Technologies />
+    </div>
   </div>
 
-  <div class="w-auto m-auto">
+  <div class="zoomIn w-auto m-auto">
     <a
       href={PUBLIC_LINKEDIN_LINK}
       target="_blank"
@@ -41,4 +47,102 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
     </a>
   </div>
 </main>
-<SocialNetworks />
+<div class="slideInDown relative top-7 w-full z-0 lg:sticky lg:z-10">
+  <SocialNetworks />
+</div>
+
+<style>
+  .zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+  }
+  @keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+  } 
+  
+
+  .slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInDown {
+    0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInDown {
+    0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+</style>

@@ -37,7 +37,7 @@ export const TECHNOLOGIES = [
   {
     name: "JavaScript",
     description: "He trabajado con JavaScript, abarcando temas como el asincronismo, manipulación del DOM y el uso de Promesas. Estos conocimientos me han permitido crear aplicaciones interactivas y dinámicas que ofrecen una experiencia fluida a los usuarios.",
-    link: "https://daniel-vasquez.github.io/pet-battle/",
+    link: "https://daniel-vasquez.github.io/general-culture-test/",
     nameLogo: "javascript"
   },
   {
