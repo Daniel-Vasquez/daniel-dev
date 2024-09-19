@@ -1,5 +1,6 @@
 ---
 import { DropdownMenu } from "@/components/DropdownMenu";
+import SocialNetworks from "@/components/SocialNetworks.astro";
 import { ROUTES } from "@/constants/routes";
 const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
 ---
@@ -16,22 +17,26 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
         Daniel Vásquez
       </h2>
     </a>
+
+    <div class="hidden lg:block">
+      <SocialNetworks />
+    </div>
+
     <nav class="hidden md:block">
       <ul class="flex gap-4">
-        {
-          ROUTES.map(({ href, label }) => (
-            <li>
-              <a
-                href={href}
-                class="text-black font-semibold transition-colors duration-300 border-golden border-l-4 pl-2 hover:underline"
-              >
-                {label}
-              </a>
-            </li>
-          ))
-        }
+        {ROUTES.map(({ href, label }) => (
+          <li>
+            <a
+              href={href}
+              class="text-black font-semibold transition-colors duration-300 border-golden border-l-4 pl-2 hover:underline"
+            >
+              {label}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
+    
     <div class="block md:hidden">
       <DropdownMenu client:idle />
     </div>

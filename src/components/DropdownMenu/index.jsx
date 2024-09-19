@@ -1,7 +1,7 @@
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { IconMenu } from '@/components/icons/LogoMenu'
-import { ROUTES } from "@/constants/routes";
+import { ROUTESDROPMENU } from "@/constants/routesDropMenu";
 
 export function DropdownMenu() {
   return (
@@ -22,11 +22,13 @@ export function DropdownMenu() {
         >
           <Menu.Items className="z-10 absolute -right-3 mt-2 w-72 focus:outline-none">
             <div className="bg-blue flex flex-col gap-3 px-4 py-7 rounded-md border border-border">
-              {ROUTES.map(({ href, label }, index) => (
+              {ROUTESDROPMENU.map(({ href, label, target }, index) => (
                 <Menu.Item key={index}>
                   <a
                     href={href}
                     className="bg-blue-medium text-white rounded-md px-3 py-2 font-bold hover:bg-golden hover:text-black"
+                    target={target ? "_blank" : undefined}
+                    title={label}
                   >
                     {label}
                   </a>
