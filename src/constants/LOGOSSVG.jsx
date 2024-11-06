@@ -18,6 +18,9 @@ import { LogoFlask } from "@/components/icons/LogoFlask";
 import { LogoPython } from "@/components/icons/LogoPython";
 import { LogoAws } from "@/components/icons/LogoAws";
 import { LogoWordPress } from "@/components/icons/LogoWordPress";
+import { LogoJetEngine } from "@/components/icons/LogoJetEngine";
+import { LogoForminatorPro } from "@/components/icons/LogoForminatorPro";
+import LogoBricks from "@/images/bricks.jpg";
 
 export const LOGOSSVG = [
   {
@@ -111,5 +114,17 @@ export const LOGOSSVG = [
   {
     name: "wordpress",
     svg: <LogoWordPress className="w-11 text-blue-400" />,
+  },
+  {
+    name: "jetEngine",
+    svg: <LogoJetEngine className="w-14 text-purple-500" />,
+  },
+  {
+    name: "forminator pro",
+    svg: <LogoForminatorPro className="w-11" />,
+  },
+  {
+    name: "bricks",
+    svg: <img class="w-11 rounded-md" src={LogoBricks.src} alt="Logo bricks"/>,
   },
 ]
