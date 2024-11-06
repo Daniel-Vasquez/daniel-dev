@@ -35,8 +35,37 @@ import motherStewsImg from "@/images/guisados-mama.png"
 import motherStewsGif from "@/images/guisados-mama.gif"
 import hangmanImg from "@/images/hangman.png"
 import hangmanGif from "@/images/hangman.gif"
+import negroArq from "@/images/negro-arquitectura.png"
+import negroArqGif from "@/images/negro-arquitectura.gif"
 
 export const PROJECTS: ProjectType[] = [
+  {
+    title: "Negro Arquitectura",
+    projectName: "negro-arquitectura",
+    description:
+      "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Proyectos personalizada, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente.",
+    href: "/proyectos/negro-arquitectura",
+    content: `
+      <p>
+        En este proyecto, implementé <strong>WordPress con el tema Bricks y JetEngine</strong> para crear una sección de Proyectos personalizada, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente. El objetivo fue proporcionar una experiencia de usuario intuitiva, resaltando el enfoque premium en diseño y construcción a medida.
+      </p>
+
+      <p>
+        Cada sección fue diseñada desde un entendimiento profundo de las necesidades del cliente, garantizando un equilibrio perfecto entre estilo, funcionalidad y exclusividad.
+      </p>
+    `,
+    technologies: [
+      "Bricks",
+      "wordpress",
+      "JetEngine",
+      "Forminator Pro",
+      "CSS"
+    ],
+    img: `${negroArq.src}`,
+    gif: `${negroArqGif.src}`,
+    link: "https://negroarquitectura.com/",
+    repo: "https://negroarquitectura.com/",
+  },
   {
     title: "Ecommerce Rick and Morty",
     projectName: "ecommerce-rick-and-morty",

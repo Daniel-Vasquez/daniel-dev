@@ -14,7 +14,7 @@ const { projects } = Astro.props;
     <h1 class="text-3xl text-black font-bold sm:text-5xl">Proyectos</h1>
   </hgroup>
 
-  <div class="m-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+  <div class="m-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-7">
     {projects.map((item: ProjectType) => (
       <Project
         title={item.title}
