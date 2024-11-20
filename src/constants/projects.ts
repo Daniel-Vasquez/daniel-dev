@@ -56,7 +56,7 @@ export const PROJECTS: ProjectType[] = [
     `,
     technologies: [
       "Bricks",
-      "wordpress",
+      "Wordpress",
       "JetEngine",
       "Forminator Pro",
       "CSS"

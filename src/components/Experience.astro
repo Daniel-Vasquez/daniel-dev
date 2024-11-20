@@ -15,7 +15,7 @@ import { EXPERIENCE } from "@/constants/experience";
         <div class="flex flex-wrap items-center gap-1">
           <strong>Empresa:</strong>
           <a
-            class="text-golden font-semibold text-xl hover:text-blue-600"
+            class="text-golden font-semibold text-xl hover:text-blue-600 hover:underline"
             href={link}
             target="_blank"
           >
@@ -28,7 +28,7 @@ import { EXPERIENCE } from "@/constants/experience";
         { position && <p><strong>Posición:</strong> {position}.</p>}
         <p>
           <strong>Experiencia con:</strong>
-          <span class="font-semibold text-blue-300">{skills}.</span>
+          <span class="font-semibold text-cyan-500">{skills}.</span>
         </p>
       </div>
     ))}
