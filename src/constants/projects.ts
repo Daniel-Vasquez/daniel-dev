@@ -37,8 +37,39 @@ import hangmanImg from "@/images/hangman.png"
 import hangmanGif from "@/images/hangman.gif"
 import negroArq from "@/images/negro-arquitectura.png"
 import negroArqGif from "@/images/negro-arquitectura.gif"
+import mthb from "@/images/mthb.png"
+import mthbGif from "@/images/mthb.gif"
 
 export const PROJECTS: ProjectType[] = [
+  {
+    title: "MT HomeBuilders",
+    projectName: "mt-homebuilders",
+    description:
+      "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Servicos personalizada, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente.",
+    href: "/proyectos/mt-homebuilders",
+    content: `
+      <p>
+        En este proyecto, implementé <strong>WordPress</strong> con el tema <strong>Bricks</strong> y <strong>JetEngine</strong> para crear una sección de Servicos personalizada, enfocada en mostrar espacios únicos que reflejan la visión del cliente. El objetivo fue proporcionar una experiencia de usuario intuitiva, resaltando el enfoque premium en diseño y construcción a medida.
+      </p>
+
+      <p>
+        Cada sección fue diseñada desde un entendimiento profundo de las necesidades del cliente, garantizando un equilibrio perfecto entre estilo, funcionalidad y exclusividad.
+      </p>
+      <p>
+        Con la ayuda de la <strong>Página de opciones</strong> (Options page) de <strong>JetEngine</strong>, se implementaron campos personalizados para cada servicio, facilitando al cliente la edición y gestión de la información de manera simple y eficiente.
+      </p>
+    `,
+    technologies: [
+      "Bricks",
+      "Wordpress",
+      "JetEngine",
+      "Forminator Pro",
+    ],
+    img: `${mthb.src}`,
+    gif: `${mthbGif.src}`,
+    link: "https://mt-homebuilders.com/",
+    repo: "https://mt-homebuilders.com/",
+  },
   {
     title: "Negro Arquitectura",
     projectName: "negro-arquitectura",
@@ -57,7 +88,6 @@ export const PROJECTS: ProjectType[] = [
     technologies: [
       "Bricks",
       "Wordpress",
-      "JetEngine",
       "Forminator Pro",
       "CSS"
     ],
