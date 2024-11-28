@@ -20,6 +20,9 @@ import { LogoAws } from "@/components/icons/LogoAws";
 import { LogoWordPress } from "@/components/icons/LogoWordPress";
 import { LogoJetEngine } from "@/components/icons/LogoJetEngine";
 import { LogoForminatorPro } from "@/components/icons/LogoForminatorPro";
+import { LogoGoogleAnalytics } from "@/components/icons/LogoGoogleAnalytics";
+import { LogoTagManager } from "@/components/icons/LogoTagManager";
+import { LogoSearchConsole } from "@/components/icons/LogoSearchConsole";
 import LogoBricks from "@/images/bricks.jpg";
 
 export const LOGOSSVG = [
@@ -126,5 +129,17 @@ export const LOGOSSVG = [
   {
     name: "bricks",
     svg: <img className="w-11 rounded-md" src={LogoBricks.src} alt="Logo bricks"/>,
+  },
+  {
+    name: "google analytics",
+    svg: <LogoGoogleAnalytics className="w-11 h-11 text-blue-500" />,
+  },
+  {
+    name: "google tag manager",
+    svg: <LogoTagManager className="w-11 h-11 text-blue-500" />,
+  },
+  {
+    name: "search console",
+    svg: <LogoSearchConsole className="w-11 h-11 text-blue-500" />,
   },
 ]

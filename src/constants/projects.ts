@@ -62,8 +62,11 @@ export const PROJECTS: ProjectType[] = [
     technologies: [
       "Bricks",
       "Wordpress",
+      "Google Analytics",
+      "Google Tag Manager",
+      "Search Console",
       "JetEngine",
-      "Forminator Pro",
+      "Forminator Pro"
     ],
     img: `${mthb.src}`,
     gif: `${mthbGif.src}`,
@@ -88,8 +91,9 @@ export const PROJECTS: ProjectType[] = [
     technologies: [
       "Bricks",
       "Wordpress",
-      "Forminator Pro",
-      "CSS"
+      "Google Analytics",
+      "Google Tag Manager",
+      "Forminator Pro"
     ],
     img: `${negroArq.src}`,
     gif: `${negroArqGif.src}`,
