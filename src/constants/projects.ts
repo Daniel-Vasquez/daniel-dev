@@ -39,6 +39,8 @@ import negroArq from "@/images/negro-arquitectura.png"
 import negroArqGif from "@/images/negro-arquitectura.gif"
 import mthb from "@/images/mthb.png"
 import mthbGif from "@/images/mthb.gif"
+import summmerHills from "@/images/Summer-Hills.png"
+import summmerHillsGif from "@/images/Summer-Hills.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -99,6 +101,31 @@ export const PROJECTS: ProjectType[] = [
     gif: `${negroArqGif.src}`,
     link: "https://negroarquitectura.com/",
     repo: "https://negroarquitectura.com/",
+  },
+  {
+    title: "Summer Hills",
+    projectName: "summer-hills",
+    description:
+      "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Servicos personalizada, enfocada en mostrar las instalaciones de las secciones de Summer Hills.",
+    href: "/proyectos/summer-hills",
+    content: `
+      <p>
+        En este proyecto, implementé <strong>WordPress</strong> con el tema <strong>Bricks</strong> y <strong>JetEngine</strong> para creación de Custom Post Types, lo que permitió una gestión más eficiente y organizada del contenido. Además, se configuraron relaciones entre los diferentes tipos de contenido para mejorar la navegación y la experiencia del usuario.
+      </p>
+
+      <p>
+        Con la ayuda de la <strong>Página de opciones</strong> (Options page) de <strong>JetEngine</strong>, se implementaron campos personalizados para cada servicio e información de contacto, facilitando al cliente la edición y gestión de la información de manera simple y eficiente.
+      </p>
+    `,
+    technologies: [
+      "Bricks",
+      "Wordpress",
+      "JetEngine",
+    ],
+    img: `${summmerHills.src}`,
+    gif: `${summmerHillsGif.src}`,
+    link: "https://summerhills.com.mx/",
+    repo: "https://summerhills.com.mx/",
   },
   {
     title: "Ecommerce Rick and Morty",
