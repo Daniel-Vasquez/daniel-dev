@@ -1,6 +1,6 @@
 import { type ProjectType } from "@/types/projects";
-import lawyerImg from "@/images/lawyer.png"
-import lawyerGif from "@/images/lawyer.gif"
+// import lawyerImg from "@/images/lawyer.png"
+// import lawyerGif from "@/images/lawyer.gif"
 import blocImg from "@/images/bloc.png"
 import blocGif from "@/images/bloc.gif"
 import ecommerce from "@/images/ecommerce.png"
@@ -41,8 +41,40 @@ import mthb from "@/images/mthb.png"
 import mthbGif from "@/images/mthb.gif"
 import summmerHills from "@/images/Summer-Hills.png"
 import summmerHillsGif from "@/images/Summer-Hills.gif"
+import beConsultores from "@/images/be-consultores.png"
+import beConsultoresGif from "@/images/be-consultores.gif"
 
 export const PROJECTS: ProjectType[] = [
+  {
+    title: "Be Consultores",
+    projectName: "be-consultores",
+    description:
+      "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Bolsa de trabajo, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente.",
+    href: "/proyectos/be-consultores",
+    content: `
+      <p>
+        En este proyecto, implementé <strong>WordPress</strong> con el tema <strong>Bricks</strong> y <strong>JetEngine</strong> para crear una sección de Bolsa de trabajo, enfocada en mostrar espacios únicos que reflejan la visión del cliente. El objetivo fue proporcionar una experiencia de usuario intuitiva, resaltando el enfoque premium en diseño y construcción a medida.
+      </p>
+
+      <p>
+        Se reconstruyó el diseño original de la página utilizando <strong>Bricks</strong>, lo que permitió una personalización completa y una mayor flexibilidad en la creación de secciones y bloques. Además, se implementaron campos personalizados para cada empleo, facilitando al cliente la edición y gestión de la información de manera simple y eficiente.
+      </p>
+
+      <p>
+        La página cuenta con versión en <strong>inglés y español</strong>, y se ha optimizado para SEO, garantizando una mayor visibilidad en los motores de búsqueda.
+      </p>
+    `,
+    technologies: [
+      "Bricks",
+      "Wordpress",
+      "JetEngine",
+      "Forminator Pro"
+    ],
+    img: `${beConsultores.src}`,
+    gif: `${beConsultoresGif.src}`,
+    link: "https://beconsultores.com",
+    repo: "https://beconsultores.com",
+  },
   {
     title: "MT HomeBuilders",
     projectName: "mt-homebuilders",
@@ -217,39 +249,39 @@ export const PROJECTS: ProjectType[] = [
     link: "https://ecommerce-react-lime.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/ecommerce-react",
   },
-  {
-    title: "Salinas abogados",
-    projectName: "salinas-abogados",
-    description:
-      "En este proyecto, se desarrolló una página web para un bufete de abogados utilizando Astro, TypeScript y Tailwind CSS.",
-    href: "/proyectos/salinas-abogados",
-    content: `
-      <p>
-        En este proyecto, se desarrolló una página web para un bufete de abogados
-        utilizando Astro, TypeScript y Tailwind CSS. Las características
-        principales incluyen la configuración de rutas dinámicas con la función
-        getStaticPaths, que devuelve un array de rutas estáticas y sus propiedades
-        correspondientes. Se aplican estilos de diseño con Tailwind CSS para
-        lograr un diseño responsivo, márgenes, espaciado y otros estilos.
-      </p>
-      <p>
-        Además, el código está escrito en TypeScript, proporcionando una capa
-        adicional de tipado estático para mejorar la robustez y claridad del código.
-        Se emplea el patrón de módulos para organizar y estructurar el código,
-        permitiendo la reutilización de definiciones y tipos en otros archivos.
-      </p>
-    `,
-    technologies: [
-      "Astro",
-      "TypeScript",
-      "Tailwind CSS",
-      "HTML",
-    ],
-    img: `${lawyerImg.src}`,
-    gif: `${lawyerGif.src}`,
-    link: "https://www.salinasabogados.mx/",
-    repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
-  },
+  // {
+  //   title: "Salinas abogados",
+  //   projectName: "salinas-abogados",
+  //   description:
+  //     "En este proyecto, se desarrolló una página web para un bufete de abogados utilizando Astro, TypeScript y Tailwind CSS.",
+  //   href: "/proyectos/salinas-abogados",
+  //   content: `
+  //     <p>
+  //       En este proyecto, se desarrolló una página web para un bufete de abogados
+  //       utilizando Astro, TypeScript y Tailwind CSS. Las características
+  //       principales incluyen la configuración de rutas dinámicas con la función
+  //       getStaticPaths, que devuelve un array de rutas estáticas y sus propiedades
+  //       correspondientes. Se aplican estilos de diseño con Tailwind CSS para
+  //       lograr un diseño responsivo, márgenes, espaciado y otros estilos.
+  //     </p>
+  //     <p>
+  //       Además, el código está escrito en TypeScript, proporcionando una capa
+  //       adicional de tipado estático para mejorar la robustez y claridad del código.
+  //       Se emplea el patrón de módulos para organizar y estructurar el código,
+  //       permitiendo la reutilización de definiciones y tipos en otros archivos.
+  //     </p>
+  //   `,
+  //   technologies: [
+  //     "Astro",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "HTML",
+  //   ],
+  //   img: `${lawyerImg.src}`,
+  //   gif: `${lawyerGif.src}`,
+  //   link: "https://www.salinasabogados.mx/",
+  //   repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+  // },
   {
     title: "Los Guisados de Mamá",
     projectName: "los-guisados-de-mama",
