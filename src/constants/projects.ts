@@ -43,6 +43,8 @@ import summmerHills from "@/images/Summer-Hills.png"
 import summmerHillsGif from "@/images/Summer-Hills.gif"
 import beConsultores from "@/images/be-consultores.png"
 import beConsultoresGif from "@/images/be-consultores.gif"
+import velazquezAbogados from "@/images/Velazquezabogados.png"
+import velazquezAbogadosGif from "@/images/Velazquezabogados.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -133,6 +135,33 @@ export const PROJECTS: ProjectType[] = [
     gif: `${negroArqGif.src}`,
     link: "https://negroarquitectura.com/",
     repo: "https://negroarquitectura.com/",
+  },
+  {
+    title: "Velázquez Abogados",
+    projectName: "velazquez-abogados",
+    description:
+      "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Servicos personalizada, enfocada en mostrar las instalaciones de las secciones de Summer Hills.",
+    href: "/proyectos/velazquez-abogados",
+    content: `
+      <p>
+        Landing page de un bufete de abogados, implementada con <strong>WordPress</strong> y el tema <strong>Bricks</strong>. El objetivo fue proporcionar una experiencia de usuario intuitiva, resaltando el enfoque premium en diseño y construcción a medida.
+      </p>
+
+      <p>
+        La página cuenta con secciones personalizadas para mostrar los servicios, los compromisos y la sección de comunicados; son Blogs personalizados para mostrar las noticias y eventos más recientes.
+      </p>
+    `,
+    technologies: [
+      "Bricks",
+      "Wordpress",
+      "Google Analytics",
+      "Google Tag Manager",
+      "Search Console",
+    ],
+    img: `${velazquezAbogados.src}`,
+    gif: `${velazquezAbogadosGif.src}`,
+    link: "https://velazquezabogados.mx/",
+    repo: "https://velazquezabogados.mx/",
   },
   {
     title: "Summer Hills",
