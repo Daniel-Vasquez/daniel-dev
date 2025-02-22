@@ -22,6 +22,7 @@ import summmerHills from "@/images/Summer-Hills.png"
 import beConsultores from "@/images/be-consultores.png"
 import velazquezAbogados from "@/images/Velazquezabogados.png"
 import MarketingDigita from "@/images/Marketing-digita.png"
+import CentroEstetico from "@/images/Centro-estetico.png"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -111,6 +112,33 @@ export const PROJECTS: ProjectType[] = [
     img: `${MarketingDigita.src}`,
     link: "https://dinamo.agency/servicios-de-marketing-digital",
     repo: "https://dinamo.agency/servicios-de-marketing-digital",
+  },
+  {
+    title: "Centro Estético Abaroa",
+    projectName: "centro-estetico-abaroa",
+    description:
+      "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Servicos personalizada, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente.",
+    href: "/proyectos/centro-estetico-abaroa",
+    content: `
+      <p>
+        Landing de sitio web para clínica de estética, implementada con <strong>WordPress</strong> y el tema <strong>Bricks</strong>. El objetivo fue proporcionar información clara sobre los servicios y poder agendar citas.
+      </p>
+
+      <p>
+        El diseño cuenta con transiciones suaves y animaciones, lo que mejora la experiencia de usuario y proporciona una mayor interactividad.
+      </p>
+      <p>
+        Cuenta con templates y componentes personalizados, lo que facilita la edición y gestión de la información de manera simple y eficiente.
+      </p>
+    `,
+    technologies: [
+      "Bricks",
+      "Wordpress",
+      "Forminator Pro",
+    ],
+    img: `${CentroEstetico.src}`,
+    link: "https://www.centroesteticoabaroa.mx",
+    repo: "https://www.centroesteticoabaroa.mx",
   },
   {
     title: "Negro Arquitectura",
