@@ -10,32 +10,47 @@ export async function getStaticPaths() {
       title,
       content,
       description,
-      gif,
+      img,
       technologies,
       link,
       repo,
     }) => {
       return {
         params: { projectName },
-        props: { title, content, description, gif, technologies, link, repo },
+        props: { title, content, description, img, technologies, link, repo },
       };
     }
   );
 }
 
-const { title, content, description, gif, technologies, link, repo } = Astro.props;
+const { title, content, description, img, technologies, link, repo } = Astro.props;
 
 ---
 
 <Layout title={title} description={description}>
   <div
     class="container max-w-4xl m-auto mt-7 p-4 flex flex-col justify-center gap-5 mb-20"
-    transition:name=`media-image-${gif.split('.')[0]}`
+    transition:name=`media-image-${img.split('.')[0]}`
   >
     <div class="flex flex-col gap-4 w-full m-auto">
-      <h1 class="mb-2 py-2 text-4xl font-bold text-center text-golden border-b-2 border-border">
+      <h1 class="py-2 text-4xl font-bold text-center text-golden border-b-2 border-border">
         {title}
       </h1>
+      <div class="border-2 border-border rounded-md transition-all hover:border-golden">
+        <a
+          class="aspect-video"
+          href={link}
+          target="_blank"
+          title="Visitar"
+        >
+          <img
+            class="w-full m-auto rounded-md aspect-video"
+            src={img}
+            alt={title}
+          />
+        </a>
+      </div>
+
       <div class="flex flex-col gap-3 text-black" set:html={content} />
       <div class="flex gap-4">
         <a
@@ -60,20 +75,6 @@ const { title, content, description, gif, technologies, link, repo } = Astro.pro
         Tecnologías utilizadas en el proyecto:
       </h2>
       <List listTechnologies={technologies} />
-    </div>
-    <div class="border border-border rounded-lg">
-      <a
-        class="aspect-video"
-        href={link}
-        target="_blank"
-        title="Visitar"
-      >
-        <img
-          class="w-full m-auto rounded-lg aspect-video"
-          src={gif}
-          alt={title}
-        />
-      </a>
     </div>
   </div>
   

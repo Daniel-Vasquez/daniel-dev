@@ -1,50 +1,26 @@
 import { type ProjectType } from "@/types/projects";
-// import lawyerImg from "@/images/lawyer.png"
-// import lawyerGif from "@/images/lawyer.gif"
+import lawyerImg from "@/images/lawyer.png"
 import blocImg from "@/images/bloc.png"
-import blocGif from "@/images/bloc.gif"
 import ecommerce from "@/images/ecommerce.png"
-import ecommerceGif from "@/images/ecommerce.gif"
 import instaImg from "@/images/insta.png"
-import instaGif from "@/images/insta.gif"
 import calculatorImg from "@/images/calculator.png"
-import calculatorGif from "@/images/calculator.gif"
 import ticTacToeImg from "@/images/tic-tac-toe.png"
-import ticTacToeGif from "@/images/tic-tac-toe.gif"
 import timerImg from "@/images/timer.png"
-import timerGif from "@/images/timer.gif"
 import pokedexImg from "@/images/pokedex.png"
-import pokedexGif from "@/images/pokedex.gif"
-import simuladorImg from "@/images/mi-credito.png"
-import simuladorGif from "@/images/mi-credito.gif"
 import petsBattleImg from "@/images/pets-battle.png"
-import petsBattleGif from "@/images/pets-battle.gif"
 import writeDownImg from "@/images/write-down.png"
-import writeDownGif from "@/images/write-down.gif"
 import flaskImg from "@/images/frases-flask.png"
-import flaskGif from "@/images/frases-flask.gif"
 import passwordImg from "@/images/generete-password.png"
-import passwordGif from "@/images/generete-password.gif"
 import quizImg from "@/images/quiz.png"
-import quizGif from "@/images/quiz.gif"
 import cssGeneratorImg from "@/images/css-generator.png"
-import cssGeneratorGif from "@/images/css-generator.gif"
 import memoryImg from "@/images/memory.png"
-import memoryGif from "@/images/memory.gif"
 import motherStewsImg from "@/images/guisados-mama.png"
-import motherStewsGif from "@/images/guisados-mama.gif"
 import hangmanImg from "@/images/hangman.png"
-import hangmanGif from "@/images/hangman.gif"
 import negroArq from "@/images/negro-arquitectura.png"
-import negroArqGif from "@/images/negro-arquitectura.gif"
 import mthb from "@/images/mthb.png"
-import mthbGif from "@/images/mthb.gif"
 import summmerHills from "@/images/Summer-Hills.png"
-import summmerHillsGif from "@/images/Summer-Hills.gif"
 import beConsultores from "@/images/be-consultores.png"
-import beConsultoresGif from "@/images/be-consultores.gif"
 import velazquezAbogados from "@/images/Velazquezabogados.png"
-import velazquezAbogadosGif from "@/images/Velazquezabogados.gif"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -73,7 +49,6 @@ export const PROJECTS: ProjectType[] = [
       "Forminator Pro"
     ],
     img: `${beConsultores.src}`,
-    gif: `${beConsultoresGif.src}`,
     link: "https://beconsultores.com",
     repo: "https://beconsultores.com",
   },
@@ -105,7 +80,6 @@ export const PROJECTS: ProjectType[] = [
       "Forminator Pro"
     ],
     img: `${mthb.src}`,
-    gif: `${mthbGif.src}`,
     link: "https://mt-homebuilders.com/",
     repo: "https://mt-homebuilders.com/",
   },
@@ -132,7 +106,6 @@ export const PROJECTS: ProjectType[] = [
       "Forminator Pro"
     ],
     img: `${negroArq.src}`,
-    gif: `${negroArqGif.src}`,
     link: "https://negroarquitectura.com/",
     repo: "https://negroarquitectura.com/",
   },
@@ -159,7 +132,6 @@ export const PROJECTS: ProjectType[] = [
       "Search Console",
     ],
     img: `${velazquezAbogados.src}`,
-    gif: `${velazquezAbogadosGif.src}`,
     link: "https://velazquezabogados.mx/",
     repo: "https://velazquezabogados.mx/",
   },
@@ -184,7 +156,6 @@ export const PROJECTS: ProjectType[] = [
       "JetEngine",
     ],
     img: `${summmerHills.src}`,
-    gif: `${summmerHillsGif.src}`,
     link: "https://summerhills.com.mx/",
     repo: "https://summerhills.com.mx/",
   },
@@ -274,43 +245,41 @@ export const PROJECTS: ProjectType[] = [
       "Ant Design",
     ],
     img: `${ecommerce.src}`,
-    gif: `${ecommerceGif.src}`,
     link: "https://ecommerce-react-lime.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/ecommerce-react",
   },
-  // {
-  //   title: "Salinas abogados",
-  //   projectName: "salinas-abogados",
-  //   description:
-  //     "En este proyecto, se desarrolló una página web para un bufete de abogados utilizando Astro, TypeScript y Tailwind CSS.",
-  //   href: "/proyectos/salinas-abogados",
-  //   content: `
-  //     <p>
-  //       En este proyecto, se desarrolló una página web para un bufete de abogados
-  //       utilizando Astro, TypeScript y Tailwind CSS. Las características
-  //       principales incluyen la configuración de rutas dinámicas con la función
-  //       getStaticPaths, que devuelve un array de rutas estáticas y sus propiedades
-  //       correspondientes. Se aplican estilos de diseño con Tailwind CSS para
-  //       lograr un diseño responsivo, márgenes, espaciado y otros estilos.
-  //     </p>
-  //     <p>
-  //       Además, el código está escrito en TypeScript, proporcionando una capa
-  //       adicional de tipado estático para mejorar la robustez y claridad del código.
-  //       Se emplea el patrón de módulos para organizar y estructurar el código,
-  //       permitiendo la reutilización de definiciones y tipos en otros archivos.
-  //     </p>
-  //   `,
-  //   technologies: [
-  //     "Astro",
-  //     "TypeScript",
-  //     "Tailwind CSS",
-  //     "HTML",
-  //   ],
-  //   img: `${lawyerImg.src}`,
-  //   gif: `${lawyerGif.src}`,
-  //   link: "https://www.salinasabogados.mx/",
-  //   repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
-  // },
+  {
+    title: "Salinas abogados",
+    projectName: "salinas-abogados",
+    description:
+      "En este proyecto, se desarrolló una página web para un bufete de abogados utilizando Astro, TypeScript y Tailwind CSS.",
+    href: "/proyectos/salinas-abogados",
+    content: `
+      <p>
+        En este proyecto, se desarrolló una página web para un bufete de abogados
+        utilizando Astro, TypeScript y Tailwind CSS. Las características
+        principales incluyen la configuración de rutas dinámicas con la función
+        getStaticPaths, que devuelve un array de rutas estáticas y sus propiedades
+        correspondientes. Se aplican estilos de diseño con Tailwind CSS para
+        lograr un diseño responsivo, márgenes, espaciado y otros estilos.
+      </p>
+      <p>
+        Además, el código está escrito en TypeScript, proporcionando una capa
+        adicional de tipado estático para mejorar la robustez y claridad del código.
+        Se emplea el patrón de módulos para organizar y estructurar el código,
+        permitiendo la reutilización de definiciones y tipos en otros archivos.
+      </p>
+    `,
+    technologies: [
+      "Astro",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+    ],
+    img: `${lawyerImg.src}`,
+    link: "https://www.salinasabogados.mx/",
+    repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+  },
   {
     title: "Los Guisados de Mamá",
     projectName: "los-guisados-de-mama",
@@ -368,7 +337,6 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
     ],
     img: `${motherStewsImg.src}`,
-    gif: `${motherStewsGif.src}`,
     link: "https://www.losguisadosdemama.shop/",
     repo: "https://www.losguisadosdemama.shop/",
   },
@@ -406,7 +374,6 @@ export const PROJECTS: ProjectType[] = [
       "Dark mode",
     ],
     img: `${blocImg.src}`,
-    gif: `${blocGif.src}`,
     link: "https://notes-deploy-client.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/notes-deploy",
   },
@@ -432,7 +399,6 @@ export const PROJECTS: ProjectType[] = [
       "CSS",
     ],
     img: `${instaImg.src}`,
-    gif: `${instaGif.src}`,
     link: "https://instagram-dani.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/instagram",
   },
@@ -463,7 +429,6 @@ export const PROJECTS: ProjectType[] = [
       "CSS",
     ],
     img: `${cssGeneratorImg.src}`,
-    gif: `${cssGeneratorGif.src}`,
     link: "https://css-generator-gilt.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/css-generator",
   },
@@ -494,7 +459,6 @@ export const PROJECTS: ProjectType[] = [
       "dark mode",
     ],
     img: `${memoryImg.src}`,
-    gif: `${memoryGif.src}`,
     link: "https://memory-game-three-smoky.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/memory-game",
   },
@@ -521,7 +485,6 @@ export const PROJECTS: ProjectType[] = [
       "CSS"
     ],
     img: `${hangmanImg.src}`,
-    gif: `${hangmanGif.src}`,
     link: "https://hangman-game-tau-weld.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/hangman-game",
   },
@@ -551,7 +514,6 @@ export const PROJECTS: ProjectType[] = [
       "localStorage",
     ],
     img: `${calculatorImg.src}`,
-    gif: `${calculatorGif.src}`,
     link: "https://calculator-app-omega-lovat.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/calculator-app",
   },
@@ -585,7 +547,6 @@ export const PROJECTS: ProjectType[] = [
       "localStorage",
     ],
     img: `${passwordImg.src}`,
-    gif: `${passwordGif.src}`,
     link: "https://password-generator-gilt-theta.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/password-generator",
   },
@@ -616,7 +577,6 @@ export const PROJECTS: ProjectType[] = [
       "localStorage",
     ],
     img: `${writeDownImg.src}`,
-    gif: `${writeDownGif.src}`,
     link: "https://write-down-gamma.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/write-down",
   },
@@ -641,7 +601,6 @@ export const PROJECTS: ProjectType[] = [
       "CSS",
     ],
     img: `${ticTacToeImg.src}`,
-    gif: `${ticTacToeGif.src}`,
     link: "https://tic-tac-toe-daniel-vasquez.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/tic-tac-toe",
   },
@@ -666,7 +625,6 @@ export const PROJECTS: ProjectType[] = [
       "CSS",
     ],
     img: `${timerImg.src}`,
-    gif: `${timerGif.src}`,
     link: "https://timer-coral-zeta.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/timer",
   },
@@ -692,34 +650,8 @@ export const PROJECTS: ProjectType[] = [
       "TypeScript"
     ],
     img: `${pokedexImg.src}`,
-    gif: `${pokedexGif.src}`,
     link: "https://pokedex-beryl-one.vercel.app/",
     repo: "https://github.com/Daniel-Vasquez/pokedex",
-  },
-  {
-    title: "Simulador de crédito",
-    projectName: "simulador-de-credito",
-    description:
-      "El proyecto es un simulador de crédito desarrollado con React, diseñado para calcular detalles como el pago mensual, comisión de apertura, monto neto depositado y el CAT del crédito.",
-    href: "/proyectos/simulador-de-credito",
-    content: `
-      <p>
-        El proyecto es un simulador de crédito desarrollado con React, diseñado para calcular detalles como el pago mensual, comisión de apertura, monto neto depositado y el CAT del crédito. La interfaz de usuario destaca por su intuitividad, con controles deslizantes y botones que permiten a los usuarios ajustar el monto, tasa y plazo. Los cálculos son precisos, presentados en formato de moneda MXN, y la aplicación ofrece una visión completa al mostrar la comisión de apertura y el CAT.
-      </p>
-
-      <p>
-        El código revela la implementación del simulador utilizando el hook useState, funciones de cálculo y formateo para proporcionar una experiencia interactiva y personalizada.
-      </p>
-    `,
-    technologies: [
-      "React",
-      "JavaScript",
-      "CSS",
-    ],
-    img: `${simuladorImg.src}`,
-    gif: `${simuladorGif.src}`,
-    link: "https://mi-credito.vercel.app/",
-    repo: "https://github.com/Daniel-Vasquez/mi-credito",
   },
   {
     title: "Quiz de cultura general",
@@ -748,7 +680,6 @@ export const PROJECTS: ProjectType[] = [
       "API"
     ],
     img: `${quizImg.src}`,
-    gif: `${quizGif.src}`,
     link: "https://daniel-vasquez.github.io/general-culture-test/",
     repo: "https://github.com/Daniel-Vasquez/general-culture-test",
   },
@@ -777,7 +708,6 @@ export const PROJECTS: ProjectType[] = [
       "HTML"
     ],
     img: `${petsBattleImg.src}`,
-    gif: `${petsBattleGif.src}`,
     link: "https://daniel-vasquez.github.io/pet-battle/",
     repo: "https://github.com/Daniel-Vasquez/pet-battle",
   },
@@ -808,7 +738,6 @@ export const PROJECTS: ProjectType[] = [
       "CSS"
     ],
     img: `${flaskImg.src}`,
-    gif: `${flaskGif.src}`,
     link: "https://daniel-vasquez.github.io/flask-dev/templates/",
     repo: "https://daniel-vasquez.github.io/flask-dev/templates/",
   },

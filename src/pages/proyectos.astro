@@ -10,13 +10,12 @@ import Container from "@/UI/Container.astro";
   description="Proyectos personales y colaboraciones que he realizado a lo largo de mi carrera profesional. Desde aplicaciones web hasta proyectos open source"
 >
   <Container title="Proyectos">
-    {PROJECTS.map(({ title, href, description, img, gif }) => (
+    {PROJECTS.map(({ title, href, description, img }) => (
       <Project
         title={title}
         description={description}
         href={href}
         img={img}
-        gif={gif}
       />
     ))}
   </Container>
