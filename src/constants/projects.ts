@@ -21,6 +21,7 @@ import mthb from "@/images/mthb.png"
 import summmerHills from "@/images/Summer-Hills.png"
 import beConsultores from "@/images/be-consultores.png"
 import velazquezAbogados from "@/images/Velazquezabogados.png"
+import MarketingDigita from "@/images/Marketing-digita.png"
 
 export const PROJECTS: ProjectType[] = [
   {
@@ -82,6 +83,34 @@ export const PROJECTS: ProjectType[] = [
     img: `${mthb.src}`,
     link: "https://mt-homebuilders.com/",
     repo: "https://mt-homebuilders.com/",
+  },
+  {
+    title: "Marketing Digital",
+    projectName: "marketing-digital",
+    description:
+      "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Servicos personalizada, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente.",
+    href: "/proyectos/marketing-digital",
+    content: `
+      <p>
+        Landing de sitio web para Marketing Digital, implementada con <strong>WordPress</strong> y el tema <strong>Bricks</strong>. El objetivo fue proporcionar una experiencia de usuario intuitiva, resaltando el enfoque premium en diseño y construcción a medida.
+      </p>
+
+      <p>
+        Algunas secciones cambian de color al pasar sobre ellas, generando una interacción dinámica y visualmente atractiva.
+      </p>
+      <p>
+        Cuenta con animaciones y transiciones suaves, lo que mejora la experiencia de usuario y proporciona una mayor interactividad.
+      </p>
+    `,
+    technologies: [
+      "Bricks",
+      "Wordpress",
+      "Forminator Pro",
+      "Google Analytics"
+    ],
+    img: `${MarketingDigita.src}`,
+    link: "https://dinamo.agency/servicios-de-marketing-digital",
+    repo: "https://dinamo.agency/servicios-de-marketing-digital",
   },
   {
     title: "Negro Arquitectura",
