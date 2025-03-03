@@ -23,7 +23,7 @@ import { LogoForminatorPro } from "@/components/icons/LogoForminatorPro";
 import { LogoGoogleAnalytics } from "@/components/icons/LogoGoogleAnalytics";
 import { LogoTagManager } from "@/components/icons/LogoTagManager";
 import { LogoSearchConsole } from "@/components/icons/LogoSearchConsole";
-import LogoBricks from "@/images/bricks.jpg";
+import LogoBricks from "@/images/bricks.webp";
 
 export const LOGOSSVG = [
   {

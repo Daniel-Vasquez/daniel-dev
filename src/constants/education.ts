@@ -1,6 +1,6 @@
-import platziImg from "@/images/logoplatzi.png"
-import emeImg from "@/images/logoeme.png"
-import uamImg from "@/images/logouam.png"
+import platziImg from "@/images/logoplatzi.webp"
+import emeImg from "@/images/logoeme.webp"
+import uamImg from "@/images/logouam.webp"
 
 export const EDUCATION = [
   {
