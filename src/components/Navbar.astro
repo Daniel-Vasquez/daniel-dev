@@ -6,23 +6,23 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
 ---
 
 <header class="z-10 sticky top-0 w-full">
-  <div class="bg-white shadow-lg flex items-center justify-between mx-auto overflow-visible py-7 px-14 rounded-2xl rounded-t-none border-b border-border">
+  <div class="bg-white shadow-lg grid grid-cols-2 xl:grid-cols-3 items-center mx-auto overflow-visible py-4 px-5 md:py-7 md:px-14 rounded-2xl rounded-t-none border-b border-border">
     <a
       href={PUBLIC_LINKEDIN_LINK}
       target="_blank"
-      class="text-blakc"
+      class="w-fit text-blakc"
       title="LinkedIn"
     >
-      <h2 class="text-2xl text-center font-bold hover:underline">
+      <h2 class="text-sm md:text-2xl text-center font-bold hover:underline">
         Daniel Vásquez
       </h2>
     </a>
 
-    <div class="hidden lg:block">
+    <div class="hidden xl:block">
       <SocialNetworks />
     </div>
 
-    <nav class="hidden md:block">
+    <nav class="hidden justify-end lg:flex">
       <ul class="flex gap-4">
         {ROUTES.map(({ href, label }) => (
           <li>
@@ -38,7 +38,7 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
       </ul>
     </nav>
     
-    <div class="block md:hidden">
+    <div class="flex justify-end lg:hidden">
       <DropdownMenu client:idle />
     </div>
   </div>

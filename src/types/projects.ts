@@ -1,5 +1,6 @@
 export type ProjectType = {
   title: string;
+  projectType?: string;
   projectName: string;
   description: string;
   href: string;

@@ -28,6 +28,7 @@ export const PROJECTS: ProjectType[] = [
   {
     title: "Be Consultores",
     projectName: "be-consultores",
+    projectType: "web page",
     description:
       "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Bolsa de trabajo, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente.",
     href: "/proyectos/be-consultores",
@@ -56,6 +57,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "MT HomeBuilders",
+    projectType: "web page",
     projectName: "mt-homebuilders",
     description:
       "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Servicos personalizada, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente.",
@@ -87,6 +89,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Marketing Digital",
+    projectType: "web page",
     projectName: "marketing-digital",
     description:
       "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Servicos personalizada, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente.",
@@ -115,6 +118,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Centro Estético Abaroa",
+    projectType: "web page",
     projectName: "centro-estetico-abaroa",
     description:
       "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Servicos personalizada, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente.",
@@ -142,6 +146,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Negro Arquitectura",
+    projectType: "web page",
     projectName: "negro-arquitectura",
     description:
       "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Proyectos personalizada, enfocada en mostrar espacios únicos que reflejan la visión de cada cliente.",
@@ -168,6 +173,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Velázquez Abogados",
+    projectType: "web page",
     projectName: "velazquez-abogados",
     description:
       "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Servicos personalizada, enfocada en mostrar las instalaciones de las secciones de Summer Hills.",
@@ -194,6 +200,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Summer Hills",
+    projectType: "web page",
     projectName: "summer-hills",
     description:
       "En este proyecto, implementé WordPress con el tema Bricks y JetEngine para crear una sección de Servicos personalizada, enfocada en mostrar las instalaciones de las secciones de Summer Hills.",
@@ -217,7 +224,102 @@ export const PROJECTS: ProjectType[] = [
     repo: "https://summerhills.com.mx/",
   },
   {
+    title: "Salinas abogados",
+    projectType: "web page",
+    projectName: "salinas-abogados",
+    description:
+      "En este proyecto, se desarrolló una página web para un bufete de abogados utilizando Astro, TypeScript y Tailwind CSS.",
+    href: "/proyectos/salinas-abogados",
+    content: `
+      <p>
+        En este proyecto, se desarrolló una página web para un bufete de abogados
+        utilizando Astro, TypeScript y Tailwind CSS. Las características
+        principales incluyen la configuración de rutas dinámicas con la función
+        getStaticPaths, que devuelve un array de rutas estáticas y sus propiedades
+        correspondientes. Se aplican estilos de diseño con Tailwind CSS para
+        lograr un diseño responsivo, márgenes, espaciado y otros estilos.
+      </p>
+      <p>
+        Además, el código está escrito en TypeScript, proporcionando una capa
+        adicional de tipado estático para mejorar la robustez y claridad del código.
+        Se emplea el patrón de módulos para organizar y estructurar el código,
+        permitiendo la reutilización de definiciones y tipos en otros archivos.
+      </p>
+    `,
+    technologies: [
+      "Astro",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+    ],
+    img: `${lawyerImg.src}`,
+    link: "https://www.salinasabogados.mx/",
+    repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+  },
+  {
+    title: "Los Guisados de Mamá",
+    projectType: "web page",
+    projectName: "los-guisados-de-mama",
+    description:
+      "Página web de un restaurante de comida mexicana, desarrollada con Astro, TypeScript y Tailwind CSS.",
+    href: "/proyectos/los-guisados-de-mama",
+    content: `
+      <p>
+        Creación una página web profesional y atractiva para un restaurante de
+        comida mexicana, destacando su identidad única y ofreciendo una
+        experiencia de usuario excepcional. El proyecto incluyó desde la
+        conceptualización inicial hasta el despliegue en un dominio real.
+      </p>
+      <p class="text-xl font-bold">
+        Proceso de Creación:
+      </p>
+      <ul class="flex flex-col gap-2">
+        <li class="text-black list-disc ml-4">
+          Creación del <span class="text-golden font-semibold">mockup</span>
+          detallado que reflejaba la estructura, el flujo de navegación y la
+          estética deseada para la página.
+        </li>
+        <li class="text-black list-disc ml-4">
+          Selección de Colores: Se Selecciono una paleta de colores que
+          reflejara la autenticidad y la vibrante cultura mexicana, utilizando
+          tonos cálidos y acogedores.
+        </li>
+        <li class="text-black list-disc ml-4">
+          Imágenes: Se crearon imágenes personalizadas de cada platillo/producto.
+        </li>
+        <li class="text-black list-disc ml-4">
+          Contenido Atractivo: Redacción de textos persuasivos y descriptivos
+          para cada sección del sitio, destacando la descripción de cada
+          platilo/producto, que lo hacen único.
+        </li>
+        <li class="text-black list-disc ml-4">
+          Deploy: Se desplegó la página web en
+          <span class="text-golden font-semibold">Vercel</span>, asegurando
+          un rendimiento óptimo y una gestión sencilla de despliegue continuo.
+        </li>
+        <li class="text-black list-disc ml-4">
+          <span class="text-golden font-semibold">Dominio Real</span>:
+          Adquisición de un dominio en
+          <span class="text-golden font-semibold">Namecheap</span>,
+          configurando y enlazando adecuadamente el dominio con Vercel para
+          asegurar un acceso rápido y seguro.
+        </li>
+      </ul>
+    `,
+    technologies: [
+      "Astro",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+      "JavaScript",
+    ],
+    img: `${motherStewsImg.src}`,
+    link: "https://www.losguisadosdemama.shop/",
+    repo: "https://www.losguisadosdemama.shop/",
+  },
+  {
     title: "Ecommerce Rick and Morty",
+    projectType: "project",
     projectName: "ecommerce-rick-and-morty",
     description:
       "Rick and Morty es una Ecommerce que permite a los usuarios comprar tarjetas de la serie, desde una tienda en línea.",
@@ -306,99 +408,8 @@ export const PROJECTS: ProjectType[] = [
     repo: "https://github.com/Daniel-Vasquez/ecommerce-react",
   },
   {
-    title: "Salinas abogados",
-    projectName: "salinas-abogados",
-    description:
-      "En este proyecto, se desarrolló una página web para un bufete de abogados utilizando Astro, TypeScript y Tailwind CSS.",
-    href: "/proyectos/salinas-abogados",
-    content: `
-      <p>
-        En este proyecto, se desarrolló una página web para un bufete de abogados
-        utilizando Astro, TypeScript y Tailwind CSS. Las características
-        principales incluyen la configuración de rutas dinámicas con la función
-        getStaticPaths, que devuelve un array de rutas estáticas y sus propiedades
-        correspondientes. Se aplican estilos de diseño con Tailwind CSS para
-        lograr un diseño responsivo, márgenes, espaciado y otros estilos.
-      </p>
-      <p>
-        Además, el código está escrito en TypeScript, proporcionando una capa
-        adicional de tipado estático para mejorar la robustez y claridad del código.
-        Se emplea el patrón de módulos para organizar y estructurar el código,
-        permitiendo la reutilización de definiciones y tipos en otros archivos.
-      </p>
-    `,
-    technologies: [
-      "Astro",
-      "TypeScript",
-      "Tailwind CSS",
-      "HTML",
-    ],
-    img: `${lawyerImg.src}`,
-    link: "https://www.salinasabogados.mx/",
-    repo: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
-  },
-  {
-    title: "Los Guisados de Mamá",
-    projectName: "los-guisados-de-mama",
-    description:
-      "Página web de un restaurante de comida mexicana, desarrollada con Astro, TypeScript y Tailwind CSS.",
-    href: "/proyectos/los-guisados-de-mama",
-    content: `
-      <p>
-        Creación una página web profesional y atractiva para un restaurante de
-        comida mexicana, destacando su identidad única y ofreciendo una
-        experiencia de usuario excepcional. El proyecto incluyó desde la
-        conceptualización inicial hasta el despliegue en un dominio real.
-      </p>
-      <p class="text-xl font-bold">
-        Proceso de Creación:
-      </p>
-      <ul class="flex flex-col gap-2">
-        <li class="text-black list-disc ml-4">
-          Creación del <span class="text-golden font-semibold">mockup</span>
-          detallado que reflejaba la estructura, el flujo de navegación y la
-          estética deseada para la página.
-        </li>
-        <li class="text-black list-disc ml-4">
-          Selección de Colores: Se Selecciono una paleta de colores que
-          reflejara la autenticidad y la vibrante cultura mexicana, utilizando
-          tonos cálidos y acogedores.
-        </li>
-        <li class="text-black list-disc ml-4">
-          Imágenes: Se crearon imágenes personalizadas de cada platillo/producto.
-        </li>
-        <li class="text-black list-disc ml-4">
-          Contenido Atractivo: Redacción de textos persuasivos y descriptivos
-          para cada sección del sitio, destacando la descripción de cada
-          platilo/producto, que lo hacen único.
-        </li>
-        <li class="text-black list-disc ml-4">
-          Deploy: Se desplegó la página web en
-          <span class="text-golden font-semibold">Vercel</span>, asegurando
-          un rendimiento óptimo y una gestión sencilla de despliegue continuo.
-        </li>
-        <li class="text-black list-disc ml-4">
-          <span class="text-golden font-semibold">Dominio Real</span>:
-          Adquisición de un dominio en
-          <span class="text-golden font-semibold">Namecheap</span>,
-          configurando y enlazando adecuadamente el dominio con Vercel para
-          asegurar un acceso rápido y seguro.
-        </li>
-      </ul>
-    `,
-    technologies: [
-      "Astro",
-      "TypeScript",
-      "Tailwind CSS",
-      "HTML",
-      "JavaScript",
-    ],
-    img: `${motherStewsImg.src}`,
-    link: "https://www.losguisadosdemama.shop/",
-    repo: "https://www.losguisadosdemama.shop/",
-  },
-  {
     title: "Citas Clásicas",
+    projectType: "project",
     projectName: "citas-clasicas",
     description:
       "El proyecto consiste en una página web de Bloc desarrollada con Node.js y Express para el backend, siguiendo la arquitectura MVC, mientras que React y Tailwind se emplean en el frontend.",
@@ -436,6 +447,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Instagram (2020)",
+    projectType: "project",
     projectName: "instagram-2020",
     description:
       "En este proyecto de réplica de la página de Instagram (2020) con React.",
@@ -461,6 +473,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Editor de CSS",
+    projectType: "project",
     projectName: "editor-de-css",
     description:
       "El proyecto es un editor de CSS interactivo que permite a los usuarios personalizar el diseño de un componente en tiempo real.",
@@ -491,6 +504,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Memorama",
+    projectType: "project",
     projectName: "memorama",
     description:
       "Un juego de memoria desarrollado con React y Vite, utilizando Tailwind CSS para el diseño y modo oscuro persistente.",
@@ -521,6 +535,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Hangman",
+    projectType: "project",
     projectName: "hangman",
     description:
       "Este es un juego del Ahorcado hecho con React, Vite y Tailwind CSS. El juego permite a los usuarios adivinar letras para descubrir una palabra oculta antes de agotar el número máximo de intentos permitidos.",
@@ -547,6 +562,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Calculadora",
+    projectType: "project",
     projectName: "calculadora",
     description:
       "En este proyecto, se desarrolló una calculadora utilizando React, react hooks y Tailwind CSS.",
@@ -576,6 +592,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Generador de contraseñas",
+    projectType: "project",
     projectName: "generador-de-contraseñas",
     description:
       "El proyecto es un generador de contraseñas desarrollado con vite + react, que permite a los usuarios personalizar la longitud y los caracteres de la contraseña.",
@@ -609,6 +626,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Notas",
+    projectType: "project",
     projectName: "notas",
     description:
       "Bloc de notas desarrollado en React que te permite crear, editar, eliminar y buscar notas de manera sencilla y eficiente. Utiliza Tailwind CSS para un diseño moderno y responsivo.",
@@ -639,6 +657,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Tic Tac Toe",
+    projectType: "project",
     projectName: "tic-tac-toe",
     description:
       "El proyecto consiste en el clásico juego de Tic Tac Toe para dos jugadores, con la opción de enfrentarse a la máquina (modo básico) como oponente.",
@@ -663,6 +682,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Temporizador",
+    projectType: "project",
     projectName: "temporizador",
     description:
       "El proyecto presenta un temporizador personalizable que permite a los usuarios configurar el tiempo en horas, minutos y segundos.",
@@ -687,6 +707,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Pokedex",
+    projectType: "project",
     projectName: "pokedex",
     description:
       "El proyecto ofrece a los usuarios una Pokedex interactiva para explorar los primeros 151 Pokémon.",
@@ -712,6 +733,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Quiz de cultura general",
+    projectType: "project",
     projectName: "quiz-de-cultura-general",
     description:
       "Pon a prueba tus conocimientos con este quiz de cultura general. Responde 10 preguntas seleccionadas aleatoriamente para evaluar tu conocimiento en diversos temas.",
@@ -742,6 +764,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Batalla de mascotas",
+    projectType: "project",
     projectName: "batalla-de-mascotas",
     description:
       "El juego interactivo de batalla de mascotas, desarrollado con JavaScript y CSS, ofrece a los usuarios la posibilidad de elegir entre seis mascotas con habilidades únicas para enfrentarse a enemigos controlados por la computadora.",
@@ -770,6 +793,7 @@ export const PROJECTS: ProjectType[] = [
   },
   {
     title: "Frases Flask",
+    projectType: "project",
     projectName: "frases-flask",
     description:
       "Comparte una frase inspiradora con tus amigos y familiares. El proyecto se desarrolló con Python y Flask.",

@@ -3,6 +3,8 @@ import Layout from "@/layouts/Layout.astro";
 import { PROJECTS } from "@/constants/projects";
 import Project from "@/components/Project.astro";
 import Container from "@/UI/Container.astro";
+
+const projects = PROJECTS.filter((project) => project.projectType === "project");
 ---
 
 <Layout
@@ -10,7 +12,7 @@ import Container from "@/UI/Container.astro";
   description="Proyectos personales y colaboraciones que he realizado a lo largo de mi carrera profesional. Desde aplicaciones web hasta proyectos open source"
 >
   <Container title="Proyectos">
-    {PROJECTS.map(({ title, href, description, img }) => (
+    {projects.map(({ title, href, description, img }) => (
       <Project
         title={title}
         description={description}

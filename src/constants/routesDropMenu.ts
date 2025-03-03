@@ -7,6 +7,11 @@ export const ROUTESDROPMENU = [
     target: false,
   },
   {
+    href: "/paginas-web",
+    label: "Páginas web",
+    target: false,
+  },
+  {
     href: "/proyectos",
     label: "Proyectos",
     target: false,

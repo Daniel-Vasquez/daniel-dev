@@ -1,0 +1,42 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { PROJECTS } from "@/constants/projects";
+import Container from "@/UI/Container.astro";
+
+const webPages = PROJECTS.filter((project) => project.projectType === "web page");
+---
+
+<Layout
+  title="Páginas web"
+  description="Proyectos personales y colaboraciones que he realizado a lo largo de mi carrera profesional. Desde aplicaciones web hasta proyectos open source"
+>
+  <Container title="Páginas web">
+    {
+      webPages.map(({ title, projectName, description, img }) => (
+        <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 transform hover:scale-105">
+          <div class="relative">
+            <a href={`/paginas-web/${projectName}`} title={title}>
+              <img
+                class="w-full h-60"
+                src={img}
+                alt={title}
+                title={title}
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <a
+            href={`/paginas-web/${projectName}`}
+            class="flex flex-col p-4 border-t border-gray-300"
+            title={title}
+          >
+            <p class="font-semibold text-golden text-xl inline-block">
+              {title}
+            </p>
+            <p class="text-black font-semibold text-sm">{description}</p>
+          </a>
+        </div>
+      ))
+    }
+  </Container>
+</Layout>
