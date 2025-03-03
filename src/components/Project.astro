@@ -14,16 +14,22 @@ const { title, description, href, img } = Astro.props;
     <a 
       href={href}
       transition:name=`media-image-${img.split('.')[0]}`
+      title={title}
     >
       <img
         class="w-full h-60"
         src={img}
         alt={title}
+        title={title}
         loading="lazy"
       />
     </a>
   </div>
-  <a href={href} class="flex flex-col p-4 border-t border-gray-300">
+  <a 
+    href={href} 
+    class="flex flex-col p-4 border-t border-gray-300"
+    title={title}
+  >
     <p class="font-semibold text-golden text-xl inline-block">
       {title}
     </p>

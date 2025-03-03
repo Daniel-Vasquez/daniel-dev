@@ -108,6 +108,7 @@ export const Technologies = () => {
             href={link} 
             target="_blank" 
             data-swapy-item={`item-${index}`}
+            title={name}
           >
             {LOGOS.map(({ name, logo }, idx) => nameLogo === name && 
               <div key={idx}>{logo}</div>

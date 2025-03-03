@@ -128,7 +128,7 @@ export const LOGOSSVG = [
   },
   {
     name: "bricks",
-    svg: <img className="w-11 rounded-md" src={LogoBricks.src} alt="Logo bricks"/>,
+    svg: <img className="w-11 rounded-md" src={LogoBricks.src} alt="Logo bricks" title="Logo bricks" />,
   },
   {
     name: "google analytics",

@@ -47,6 +47,7 @@ const { title, content, description, img, technologies, link, repo } = Astro.pro
             class="w-full m-auto rounded-md aspect-video"
             src={img}
             alt={title}
+            title={title}
           />
         </a>
       </div>
@@ -57,6 +58,7 @@ const { title, content, description, img, technologies, link, repo } = Astro.pro
           href={link}
           target="_blank"
           class="bg-golden text-black text-lg font-bold py-2 px-4 rounded-md hover:bg-blue-medium hover:text-white"
+          title="Visitar"
         >
           Visitar
         </a>
@@ -64,6 +66,7 @@ const { title, content, description, img, technologies, link, repo } = Astro.pro
           href={repo}
           target="_blank"
           class="bg-golden text-black text-lg font-bold py-2 px-4 rounded-md hover:bg-blue-medium hover:text-white"
+          title="Ver código"
         >
           Ver código
         </a>
