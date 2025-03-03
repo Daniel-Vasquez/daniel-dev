@@ -1,36 +1,62 @@
 ---
-import danielImg from "@/images/bg-main-dani-removebg.webp";
-import { Technologies } from "@/components/Technologies";
+import danielImg from "@/images/daniel-vasquez.webp";
+// import { Technologies } from "@/components/Technologies";
 const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
+const PUBLIC_MY_PHONE = import.meta.env.PUBLIC_MY_PHONE;
+
+const msgWhatsapp = "Hola,%20me%20gustar%C3%ADa%20cotizar%20una%20p%C3%A1gina%20web...";
 
 ---
-<main class="grid grid-cols-1 items-center justify-evenly gap-20 h-auto mb-20 xl:gap-2 xl:grid-cols-[1fr_400px]">
-  <div class="flex flex-col justify-center px-5 gap-3 translate-y-0 lg:translate-y-7">
-    <div>
-      <div class="flex gap-1 justify-center items-center flex-wrap text-justify mb-2 md:justify-start">
-        <span class="text-2xl font-bold text-black">Hola, soy</span>
-        <h1 class="text-3xl font-bold text-golden lg:text-5xl">
-          Daniel Vásquez,
-        </h1>
-        <span class="text-2xl font-bold text-black">
-          desarrollador Full Stack.
-        </span>
-      </div>
-      <p class="text-2xl text-black mb-2 text-justify">
-        Cuento con experiencia en el emocionante mundo del desarrollo web. A lo
-        largo de mi carrera, he adquirido una amplia gama de habilidades y
-        conocimientos que me han permitido trabajar en diversos proyectos y
-        desafíos tecnológicos.
-      </p>
-      <p class="text-2xl text-black mb-2 text-justify">
-        Te comparto mis habilidades en las siguientes áreas:
-      </p>
+<main class="grid grid-cols-1 items-center justify-evenly gap-20 mb-20 xl:gap-2 xl:grid-cols-[1fr_500px]">
+  <div class="flex flex-col justify-center gap-5 translate-y-0 lg:translate-y-7">
+    <div class="flex gap-1 justify-center items-center flex-wrap text-justify md:justify-start">
+      <span class="text-xl font-bold text-black">Hola, soy</span>
+      <h1 class="text-xl font-bold text-golden lg:text-5xl">
+        Daniel Vásquez,
+      </h1>
+      <span class="text-xl font-bold text-black">
+        desarrollador web.
+      </span>
     </div>
-    <div class="fadeInLeft">
-      <Technologies client:idle />
+    <p class="text-lg text-black text-justify md:text-2xl">
+      Transformo ideas en sitios web funcionales, atractivos y optimizados. 
+      Con experiencia en desarrollo web, he trabajado en diversos proyectos, 
+      combinando creatividad y tecnología para ofrecer soluciones efectivas.
+    </p>
+    <div class="flex flex-col gap-3">
+      <p class="text-lg md:text-2xl text-black text-justify">
+        Mis habilidades incluyen:
+      </p>
+
+      <div class="flex gap-2 flex-wrap">
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">Astro</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">React</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">Tailwind CSS</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">Shopify</p>
+        <p class="bg-blue flex text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">WordPress</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">y más.</p>
+      </div>
+    </div>
+    <div class="flex gap-4 mt-3 fadeInLeft">
+      <!-- <Technologies client:idle />
       <div class="flex w-full justify-center mt-7 font-bold">
         <p class="text-gray-400">Arrastra y suelta</p>
-      </div>
+      </div> -->
+      <a
+        class="flex w-fit text-xl font-bold text-black bg-golden py-2 px-5 rounded-lg"
+        href={`https://api.whatsapp.com/send?phone=${PUBLIC_MY_PHONE}&text=${msgWhatsapp}`}
+        title="Contáctame"
+        target="_blank"
+      >
+        Contáctame
+      </a>
+      <a
+        class="flex w-fit text-xl font-bold text-white bg-blue py-2 px-5 rounded-lg"
+        href="/paginas-web"
+        title="Contáctame"
+      >
+        Páginas web
+      </a>
     </div>
   </div>
 
@@ -39,10 +65,9 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
       href={PUBLIC_LINKEDIN_LINK}
       target="_blank"
       title="Linkedin"
-      class="aspect-square"
     >
       <img
-        class="aspect-square w-full h-full rounded-lg transition duration-500 ease-in-out transform hover:drop-shadow-xl hover:rotate-6"
+        class="w-full h-full rounded-lg cursor-pointer transition duration-500 ease-in-out transform hover:drop-shadow-xl hover:scale-95"
         src={danielImg.src}
         alt="Daniel Vásquez, Desarrollador Full Stack."
         title="Daniel Vásquez, Desarrollador Full Stack."
@@ -84,8 +109,8 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
   .fadeInLeft {
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
