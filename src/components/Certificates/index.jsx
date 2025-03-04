@@ -3,16 +3,18 @@ import { LOGOSSVG } from "../../constants/LOGOSSVG";
 
 export const Certificates = () => {
   return (
-    <section>
+    <section class="max-w-6xl mx-auto">
       <div id="certificaciones" className="h-28"></div>
-      <div className="bg-blue-light border-2 border-gray-600 rounded-3xl px-8 py-11">
-        <p className="text-3xl font-bold text-golden pb-4 lg:text-4xl">
-          Certificaciones.
-        </p>
+      <div className="flex flex-col gap-5">
+        <div class="bg-white shadow-lg rounded-2xl p-6">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
+            Certificaciones
+          </h2>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
           {CERTIFICATES.map(({ tag, title }, index) => {
             return (
-              <div key={index} className="bg-blue-medium border border-border flex flex-col items-center gap-3 p-5 rounded-lg text-white cursor-pointer transition duration-300 ease-in-out transform hover:text-black hover:bg-blue-light hover:-translate-y-2">
+              <div key={index} className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center gap-3 text-black cursor-pointer transition duration-300 ease-in-out transform hover:text-black hover:bg-blue-light hover:-translate-y-2">
                 <div className="listCertificates-img">
                   {LOGOSSVG.find((logo) => logo.name === tag)?.svg || tag}
                 </div>

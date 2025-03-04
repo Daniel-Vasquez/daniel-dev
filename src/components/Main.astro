@@ -1,13 +1,12 @@
 ---
 import danielImg from "@/images/daniel-vasquez.webp";
-// import { Technologies } from "@/components/Technologies";
 const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
 const PUBLIC_MY_PHONE = import.meta.env.PUBLIC_MY_PHONE;
 
 const msgWhatsapp = "Hola,%20me%20gustar%C3%ADa%20cotizar%20una%20p%C3%A1gina%20web...";
 
 ---
-<main class="grid grid-cols-1 items-center justify-evenly gap-20 mb-20 xl:gap-2 xl:grid-cols-[1fr_500px]">
+<main class="grid grid-cols-1 items-center justify-evenly gap-11 md:gap-20 my-0 md:mx-10 mb-7 md:mb-20 xl:gap-2 xl:grid-cols-[1fr_500px]">
   <div class="flex flex-col justify-center gap-5 translate-y-0 lg:translate-y-7">
     <div class="flex gap-1 justify-center items-center flex-wrap text-justify md:justify-start">
       <span class="text-xl font-bold text-black">Hola, soy</span>
@@ -29,21 +28,19 @@ const msgWhatsapp = "Hola,%20me%20gustar%C3%ADa%20cotizar%20una%20p%C3%A1gina%20
       </p>
 
       <div class="flex gap-2 flex-wrap">
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">Astro</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">React</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">Tailwind CSS</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">Shopify</p>
-        <p class="bg-blue flex text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">WordPress</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg">y más.</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">WordPress</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">JetEngine</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">Bricks Builders</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">Astro</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">React</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">Tailwind CSS</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">Shopify</p>
+        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">y más.</p>
       </div>
     </div>
-    <div class="flex gap-4 mt-3 fadeInLeft">
-      <!-- <Technologies client:idle />
-      <div class="flex w-full justify-center mt-7 font-bold">
-        <p class="text-gray-400">Arrastra y suelta</p>
-      </div> -->
+    <div class="flex flex-col mx-auto md:mx-0 md:flex-row gap-4 mt-3 fadeInLeft">
       <a
-        class="flex w-fit text-xl font-bold text-black bg-golden py-2 px-5 rounded-lg"
+        class="flex w-fit text-xl font-bold text-black border border-transparent bg-golden py-2 px-5 rounded-lg hover:bg-white hover:text-black hover:border-black"
         href={`https://api.whatsapp.com/send?phone=${PUBLIC_MY_PHONE}&text=${msgWhatsapp}`}
         title="Contáctame"
         target="_blank"
@@ -51,7 +48,7 @@ const msgWhatsapp = "Hola,%20me%20gustar%C3%ADa%20cotizar%20una%20p%C3%A1gina%20
         Contáctame
       </a>
       <a
-        class="flex w-fit text-xl font-bold text-white bg-blue py-2 px-5 rounded-lg"
+        class="flex w-fit text-xl font-bold text-white border border-transparent bg-blue py-2 px-5 rounded-lg hover:bg-white hover:text-black hover:border-black"
         href="/paginas-web"
         title="Contáctame"
       >
