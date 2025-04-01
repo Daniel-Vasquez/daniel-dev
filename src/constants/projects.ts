@@ -212,8 +212,8 @@ export const PROJECTS: ProjectType[] = [
       "Google Analytics"
     ],
     img: `${MarketingDigita.src}`,
-    link: "https://dinamo.agency/servicios-de-marketing-digital",
-    repo: "https://dinamo.agency/servicios-de-marketing-digital",
+    link: "https://dinamo.agency/agencia-de-publicidad/",
+    repo: "https://dinamo.agency/agencia-de-publicidad/",
   },
   {
     title: "Centro Estético Abaroa",
