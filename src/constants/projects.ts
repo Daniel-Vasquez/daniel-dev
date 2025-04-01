@@ -24,8 +24,60 @@ import velazquezAbogados from "@/images/Velazquezabogados.webp"
 import MarketingDigita from "@/images/Marketing-digita.webp"
 import CentroEstetico from "@/images/Centro-estetico.webp"
 import ingdeser from "@/images/ingdeser.webp"
+import grupoGos from "@/images/grupogos.webp"
 
 export const PROJECTS: ProjectType[] = [
+  {
+    title: "Grupo Gos",
+    projectName: "grupo-gos",
+    projectType: "web page",
+    description:
+      "Desarrollo de un sitio web profesional para Grupo Gos, una empresa especializada en logística y transporte a nivel global.",
+    href: "/proyectos/grupo-gos",
+    content: `
+      <p>
+        Desarrollo de un sitio web profesional para Grupo Gos, una empresa especializada en <strong>logística y transporte</strong> a nivel global.
+      </p>
+
+      <div>
+        <p>
+          Características del Proyecto:
+        </p>
+        <ul>
+          <li>
+            <strong>Desarrollo en WordPress</strong>: Con el tema Bricks Builder, asegurando una estructura flexible y escalable.
+          </li>
+          <li>
+            <strong>Uso de JetEngine</strong>: para crear Custom Post Types que organizan eficientemente los servicios de la empresa.
+          </li>
+          <li>
+            <strong>Página de opciones personalizada</strong>: Facilitando la gestión de contenido por parte del cliente.
+          </li>
+          <li>
+            <strong>Sitio multilingüe</strong>: Con versiones en inglés y español, mejorando el alcance internacional de la empresa.
+          </li>
+          <li>
+            <strong>Diseño intuitivo y optimizado</strong>: Destacando la experiencia y confiabilidad de Grupo Gos en la industria logística.
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        Este proyecto proporciona una plataforma moderna y funcional, diseñada para transmitir la solidez y especialización de Grupo Gos en el sector de transporte y logística.
+      </p>
+    `,
+    technologies: [
+      "Bricks",
+      "Wordpress",
+      "JetEngine",
+      "Forminator Pro",
+      "Google Analytics",
+      "Google Tag Manager",
+    ],
+    img: `${grupoGos.src}`,
+    link: "https://grupogos.com.mx/",
+    repo: "https://grupogos.com.mx/",
+  },
   {
     title: "Ingdeser",
     projectName: "ingdeser",
