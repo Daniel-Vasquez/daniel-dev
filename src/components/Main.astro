@@ -4,6 +4,7 @@ const PUBLIC_LINKEDIN_LINK = import.meta.env.PUBLIC_LINKEDIN_LINK;
 const PUBLIC_MY_PHONE = import.meta.env.PUBLIC_MY_PHONE;
 
 const msgWhatsapp = "Hola,%20me%20gustar%C3%ADa%20cotizar%20una%20p%C3%A1gina%20web...";
+const TECNOLOGIES = ["WordPress", "JetEngine", "Bricks Builders", "Astro", "React", "Tailwind CSS", "Shopify", "y más."];
 
 ---
 <main class="grid grid-cols-1 items-center justify-evenly gap-11 md:gap-20 my-0 md:mx-10 mb-7 md:mb-20 xl:gap-2 xl:grid-cols-[1fr_500px]">
@@ -18,7 +19,7 @@ const msgWhatsapp = "Hola,%20me%20gustar%C3%ADa%20cotizar%20una%20p%C3%A1gina%20
       </span>
     </div>
     <p class="text-lg text-black text-justify md:text-2xl">
-      Transformo ideas en sitios web funcionales, atractivos y optimizados. 
+      Transformo <strong>ideas</strong> en sitios web funcionales, atractivos y optimizados. 
       Con experiencia en desarrollo web, he trabajado en diversos proyectos, 
       combinando creatividad y tecnología para ofrecer soluciones efectivas.
     </p>
@@ -28,14 +29,13 @@ const msgWhatsapp = "Hola,%20me%20gustar%C3%ADa%20cotizar%20una%20p%C3%A1gina%20
       </p>
 
       <div class="flex gap-2 flex-wrap">
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">WordPress</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">JetEngine</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">Bricks Builders</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">Astro</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">React</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">Tailwind CSS</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">Shopify</p>
-        <p class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-2">y más.</p>
+        {TECNOLOGIES.map((technology) => (
+          <span
+            class="bg-blue text-white font-medium px-5 py-2 rounded-md text-md md:text-lg cursor-pointer transition-all hover:bg-blue-medium hover:-translate-y-1"
+          >
+            {technology}
+          </span>
+        ))}
       </div>
     </div>
     <div class="flex flex-col mx-auto md:mx-0 md:flex-row gap-4 mt-3 fadeInLeft">

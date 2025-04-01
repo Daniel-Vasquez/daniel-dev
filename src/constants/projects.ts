@@ -23,8 +23,55 @@ import beConsultores from "@/images/be-consultores.webp"
 import velazquezAbogados from "@/images/Velazquezabogados.webp"
 import MarketingDigita from "@/images/Marketing-digita.webp"
 import CentroEstetico from "@/images/Centro-estetico.webp"
+import ingdeser from "@/images/ingdeser.webp"
 
 export const PROJECTS: ProjectType[] = [
+  {
+    title: "Ingdeser",
+    projectName: "ingdeser",
+    projectType: "web page",
+    description:
+      "Desarrollo de un sitio web profesional para una empresa especializada en mantenimiento, calibración y calificación de equipos de laboratorio y proceso.",
+    href: "/proyectos/ingdeser",
+    content: `
+      <p>
+        Desarrollo de un sitio web profesional para una empresa especializada en <strong>mantenimiento, calibración y calificación</strong> de equipos de laboratorio y proceso.
+      </p>
+
+      <div>
+        <p>
+          Características del Proyecto:
+        </p>
+        <ul>
+          <li>
+            <strong>WordPress</strong>: Utilicé WordPress como plataforma de gestión de contenido para crear y gestionar el sitio web.
+          </li>
+          <li>
+            <strong>Bricks</strong>: Implementé Bricks como un framework de diseño para crear una estructura de bloques y componentes personalizados.
+          </li>
+          <li>
+            <strong>JetEngine</strong>: Utilicé JetEngine como un complemento de WordPress para gestionar y personalizar el contenido de la página.
+          </li>
+          <li>
+            <strong>Forminator Pro</strong>: Utilicé Forminator Pro como un complemento de WordPress para gestionar y personalizar el formulario de contacto.
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        Este proyecto brinda una plataforma moderna y funcional que permite a la empresa comunicar su experiencia y compromiso con la calidad de manera efectiva.
+      </p>
+    `,
+    technologies: [
+      "Bricks",
+      "Wordpress",
+      "JetEngine",
+      "Forminator Pro"
+    ],
+    img: `${ingdeser.src}`,
+    link: "https://ingdeser.com/",
+    repo: "https://ingdeser.com/",
+  },
   {
     title: "Be Consultores",
     projectName: "be-consultores",
