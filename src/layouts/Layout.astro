@@ -2,6 +2,7 @@
 import { ViewTransitions } from 'astro:transitions';
 import Navbar from "@/components/Navbar.astro";
 import Footer from "@/components/Footer.astro";
+import GoogleAnalytics from '@/components/GoogleAnalytics.astro';
 import danielImg from "@/images/daniel-vasquez-og-image.webp"
 
 interface Props {
@@ -27,6 +28,7 @@ const { title, description } = Astro.props;
     <meta property="og:image" content={danielImg.src} />
     <meta property="og:description" content="Hola, soy Daniel Vásquez, desarrollador Full Stack." />
     <title>{title}</title>
+    <GoogleAnalytics />
     <ViewTransitions />
     
   </head>
