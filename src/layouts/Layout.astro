@@ -2,8 +2,9 @@
 import { ViewTransitions } from 'astro:transitions';
 import Navbar from "@/components/Navbar.astro";
 import Footer from "@/components/Footer.astro";
-import GoogleAnalytics from '@/components/GoogleAnalytics.astro';
 import danielImg from "@/images/daniel-vasquez-og-image.webp"
+
+const PUBLIC_GA_ID = import.meta.env.PUBLIC_GA_ID;
 
 interface Props {
   title: string;
@@ -28,8 +29,34 @@ const { title, description } = Astro.props;
     <meta property="og:image" content={danielImg.src} />
     <meta property="og:description" content="Hola, soy Daniel Vásquez, desarrollador Full Stack." />
     <title>{title}</title>
-    <GoogleAnalytics />
     <ViewTransitions />
+
+        <!-- Google tag (gtag.js) -->
+        <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${PUBLIC_GA_ID}`}
+      />
+      <script>
+        const PUBLIC_GA_ID = import.meta.env.PUBLIC_GA_ID;
+  
+        declare global {
+          interface Window {
+            dataLayer: any[];
+          }
+        }
+  
+        window.dataLayer = window.dataLayer || [];
+  
+        // @ts-ignore
+        function gtag(...args: any[]){
+          window.dataLayer.push(arguments);
+          console.log('gtag - window.dataLayer', window.dataLayer)
+        }
+  
+        gtag('js', new Date());
+  
+        gtag('config', PUBLIC_GA_ID);
+      </script>
     
   </head>
   <body class="bg-white">
