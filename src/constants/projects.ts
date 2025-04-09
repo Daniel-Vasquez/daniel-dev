@@ -413,8 +413,8 @@ export const PROJECTS: ProjectType[] = [
       "JavaScript",
     ],
     img: `${motherStewsImg.src}`,
-    link: "https://www.losguisadosdemama.shop/",
-    repo: "https://www.losguisadosdemama.shop/",
+    link: "https://www.losguisadosdemama.com/",
+    repo: "https://www.losguisadosdemama.com/",
   },
   {
     title: "Ecommerce Rick and Morty",

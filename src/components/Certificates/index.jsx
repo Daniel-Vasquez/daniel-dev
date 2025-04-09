@@ -3,10 +3,10 @@ import { LOGOSSVG } from "../../constants/LOGOSSVG";
 
 export const Certificates = () => {
   return (
-    <section class="max-w-6xl mx-auto">
+    <section className="max-w-6xl mx-auto">
       <div id="certificaciones" className="h-28"></div>
       <div className="flex flex-col gap-5">
-        <div class="bg-white shadow-lg rounded-2xl p-6">
+        <div className="bg-white shadow-lg rounded-2xl p-6">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
             Certificaciones
           </h2>
